@@ -1,0 +1,48 @@
+/* TRANSITIONS */
+.header ul li,
+.order-btn,
+.active-add-to-cart,
+.cartoverlay-product-interaction button,
+.cart-product-interaction button,
+.view-bag,
+.check-out,
+.single-currency,
+.big-picture,
+.big-picture.zoom-image,
+.cart-overlay-button {
+  transition: all ease-in-out 0.2s;
+}
+
+@media (hover: hover) {
+  .header ul li:hover,
+  .order-btn:hover,
+  .active-add-to-cart:hover .cartoverlay-product-interaction button:hover,
+  .cart-product-interaction button:hover,
+  .view-bag:hover,
+  .check-out:hover,
+  .single-currency:hover {
+    transition: all ease-in-out 0.2s;
+  }
+  .header ul li:hover {
+    color: var(--c-primary);
+  }
+  .order-btn:hover,
+  .active-add-to-cart:hover {
+    opacity: 0.7;
+  }
+
+  .cartoverlay-product-interaction button:hover,
+  .cart-product-interaction button:hover {
+    color: var(--c-primary);
+    border-color: var(--c-primary);
+  }
+  .view-bag:hover {
+    color: var(--c-primary);
+    border-color: var(--c-primary);
+  }
+  .check-out:hover {
+    color: var(--c-primary);
+    border-color: var(--c-primary);
+    background-color: transparent;
+  }
+}

@@ -1,0 +1,46 @@
+import React from "react";
+import CurrencySwitcher from "./CurrencySwitcher";
+export default class CurrencyMenu extends React.Component {
+  handleOutsideClick = (e) => {
+    if (!this.node.contains(e.target)) this.toggleCurrencyMenu();
+  };
+  render() {
+    const {
+      toggleCurrencyMenu,
+      dropdownMenu,
+      selectedCurrency,
+      allCurrencies,
+      changeCurrency,
+    } = this.props;
+
+    return (
+      <section
+        onClick={toggleCurrencyMenu}
+        className="initial-currency"
+        ref={(node) => {
+          this.node = node;
+        }}
+      >
+        <p>
+          {selectedCurrency}{" "}
+          <span
+            style={
+              dropdownMenu === false ? null : { transform: "rotate(180deg)" }
+            }
+            className="arrow-icon"
+          >
+            ⌄
+          </span>
+        </p>
+        {dropdownMenu && (
+          <CurrencySwitcher
+            allCurrencies={allCurrencies}
+            changeCurrency={changeCurrency}
+            dropdownMenu={dropdownMenu}
+            toggleCurrencyMenu={this.toggleCurrencyMenu}
+          />
+        )}
+      </section>
+    );
+  }
+}

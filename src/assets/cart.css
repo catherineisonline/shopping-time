@@ -1,0 +1,220 @@
+/* CART PRODUCTS */
+.cart {
+  flex-direction: column;
+  margin: 0 auto;
+  width: 90%;
+  /* margin-top: 10rem; */
+  margin-bottom: 3.5rem;
+  gap: 4.6rem;
+}
+.cart-hero {
+  min-height: 25rem;
+  height: 100%;
+  background-image: linear-gradient(to bottom, transparent, #ffffff),
+    url("../images/cartHero.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.cart .empty-cart {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.cart-hero h2 {
+  margin-top: 30%;
+  letter-spacing: 1px;
+}
+.cart-item-section {
+  flex-direction: column;
+  gap: 2.8rem;
+}
+.cart-products-single {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cart-products-single .cart-data {
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.cart-products-single .cart-data h2 {
+  font-size: 1.875rem;
+}
+
+.cart-products-single .product-brand {
+  font-weight: 600;
+}
+.cart-products-single .product-name {
+  font-weight: 400;
+}
+.cart-item-pricing .product-price {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+/* SELECTED ATTRIBUTES */
+.cart-attr {
+  flex-direction: column;
+  gap: 0.313rem;
+}
+div.rsis-container {
+  max-width: 100%;
+}
+
+.cart-attr .selected-attr-box {
+  flex-direction: row;
+  align-items: flex-start;
+  cursor: pointer;
+  padding: 0.2rem 0.8rem;
+  /* width: 3.938rem;
+  height: 2.813rem; */
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--c-white);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+.cart-attr .unselected-attr-box {
+  flex-direction: row;
+  align-items: flex-start;
+  cursor: not-allowed;
+  padding: 0.2rem 0.8rem;
+  /* width: 3.938rem;
+  height: 2.813rem; */
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--c-text);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(157, 156, 156);
+  border-radius: 5px;
+}
+
+.cart-attr .selected-color-box {
+  border-color: var(--c-white);
+  border-width: 2px;
+  border-style: solid;
+  border: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: "pointer";
+}
+
+.cart-attr .unselected-color-box {
+  border-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: not-allowed;
+}
+
+.cart-attr .selected-color-box-section {
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(157, 156, 156);
+  width: 1.5rem;
+  height: 1.5rem;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-attr .unselected-color-box-section {
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--c-white);
+}
+
+.cart-attr h3 {
+  font-family: var(--font-roboto);
+  font-weight: 700;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+}
+.cart-attr .attr-button-container {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0.313rem;
+}
+
+.cart-content {
+  flex-direction: row;
+  gap: 1.3rem;
+}
+
+/* CART PRODUCT INTERACTION */
+
+.cart-product-interaction {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.cart-product-interaction button {
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--c-text);
+  padding: 0.4rem 0.938rem;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+.cart-product-interaction p {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.cart-product-button {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cart-totals {
+  margin-top: 0.5rem;
+
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.cart-totals section {
+  flex-direction: row;
+  gap: 1rem;
+  width: 20%;
+}
+.cart-totals .cart-totals-sum {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.cart-totals p {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.order-btn {
+  cursor: pointer;
+  color: var(--c-white);
+  text-transform: uppercase;
+  border: none;
+  padding: 1rem 2rem;
+  width: 17.438rem;
+  height: 2.688rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  background-color: var(--c-primary);
+  margin-top: -0.313rem;
+}
