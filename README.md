@@ -33,3 +33,7 @@ This project is open source and available under [the MIT License](https://openso
 
 ## Contact
 If you have any questions or comments about the project, please feel free to reach out to me. I would love to hear from you!
+
+
+- To do list
+[ ] Fix the bug when opening the product quick cart that opens previous ones all together

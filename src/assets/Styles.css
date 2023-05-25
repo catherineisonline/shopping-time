@@ -159,30 +159,62 @@ header {
   text-decoration: none;
 }
 .landing-hero {
-  min-height: 55rem;
+  height: 100vh;
+  position: relative;
+}
+.landing-hero h2 {
+  position: absolute;
+  z-index: 3;
+  font-family: var(--font-raleway);
+  top: 40%;
+  left: 60%;
+  font-size: 4rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.landing-hero h2 span {
+  color: var(--c-primary);
+  /* text-decoration: underline; */
+}
+.landing-hero video {
+  position: absolute;
+  width: 100%;
   height: 100%;
-  background-image: linear-gradient(to bottom, transparent, #ffffff), url("../images/header-cover.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  object-fit: cover;
+  z-index: 2;
 }
 
 .products-hero {
-  min-height: 20rem;
-  height: 100%;
-  background-image: linear-gradient(to bottom, transparent, #ffffff), url("../images/categoryPage.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  height: 70vh;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .products-hero h2 {
-  text-align: center;
   position: absolute;
-  top: 90%;
+  z-index: 3;
+  font-family: var(--font-raleway);
+  top: 50%;
+  font-size: 4rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+.products-hero video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 2;
+}
+
+.product-listing-page h3 {
+  text-align: center;
+  /* position: absolute; */
+  /* top: 90%; */
   color: var(--c-text);
   font-family: var(--font-raleway);
   text-transform: capitalize;
@@ -292,8 +324,8 @@ header ul a {
   position: absolute;
   top: 100%;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.693);
+  backdrop-filter: blur(2px);
   width: max-content;
   box-shadow: var(--product-card-box-shadow);
   -webkit-box-shadow: var(--product-card-box-shadow);
@@ -301,6 +333,7 @@ header ul a {
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  color: white;
 }
 .arrow-icon {
   font-size: 1.2rem;
@@ -319,12 +352,11 @@ header ul a {
   width: 100%;
 }
 .single-currency:hover {
-  background-color: #eeeeee;
+  background-color: #111111;
 }
 main {
   display: flex;
   flex-direction: column;
-  gap: 5rem;
 }
 
 .landing-grid {
@@ -491,7 +523,7 @@ main {
   gap: 6.5rem;
   width: 86.11111111111111%;
   margin: 0 auto;
-  margin-top: 11rem;
+  margin-top: 2rem;
   position: relative;
 }
 

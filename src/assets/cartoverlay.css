@@ -1,8 +1,8 @@
 /* CART OVERLAY */
 .cartoverlay {
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.693);
+  backdrop-filter: blur(2px);
   transform: translate(-10%, 0);
   width: max-content;
   top: 0;
@@ -15,14 +15,14 @@
 .cartoverlay-background {
   display: inline-block;
   position: fixed;
-  top: 4rem;
+  top: 4.5rem;
   left: 0;
   width: 100%;
   min-height: 100vh;
   bottom: 0;
   height: 100%;
-  background-color: rgba(57, 55, 72, 0.166);
-  backdrop-filter: blur(10px);
+  /* background-color: rgba(57, 55, 72, 0.496);
+  backdrop-filter: blur(5px); */
   z-index: 999;
 }
 

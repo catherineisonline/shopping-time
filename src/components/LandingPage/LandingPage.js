@@ -1,12 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import HeroVideo from '../../images/landing-images/hero-video.mp4'
 
 export default class LandingPage extends React.Component {
   render() {
     const { changeCategory } = this.props;
     return (
       <main>
-        <article className="landing-hero"></article>
+        <article className="landing-hero">
+          <h2>Building a better <span>you!</span></h2>
+          <video autoPlay loop muted playsInline className="hero-video" >
+            <source src={HeroVideo} type="video/mp4" />
+          </video>
+        </article>
         <article className="landing-grid">
           <section className="div1">
             <Link
