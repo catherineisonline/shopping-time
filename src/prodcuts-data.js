@@ -25,14 +25,14 @@ const categoriesObj = [
 const itemsObj = [
     {
         "__typename": "Product",
-        "id": "bodycon-dress",
-        "name": "Bodycon Dress",
-        "brand": "Gracie",
+        "id": "long-puff-dress",
+        "name": "Long Puff Dress",
+        "brand": "Olivia",
         "gallery": [
-            "https://m.media-amazon.com/images/I/61TWz0yJnOL._AC_SY741._SX._UX._SY._UY_.jpg",
-            "https://m.media-amazon.com/images/I/616wnVzFxjL._AC_SY741._SX._UX._SY._UY_.jpg",
-            "https://m.media-amazon.com/images/I/61GEW3qKVZL._AC_SY741._SX._UX._SY._UY_.jpg",
-            "https://m.media-amazon.com/images/I/61cy1VPYMqS._AC_SX569._SX._UX._SY._UY_.jpg"
+            "https://m.media-amazon.com/images/I/81-xqvTXSXL._AC_SY879._SX._UX._SY._UY_.jpg",
+            "https://m.media-amazon.com/images/I/71EzKY2k6jL._AC_SY879._SX._UX._SY._UY_.jpg",
+            "https://m.media-amazon.com/images/I/71FFlMGPg2L._AC_SY879._SX._UX._SY._UY_.jpg",
+            "https://m.media-amazon.com/images/I/81pEvmB3uEL._AC_SY879._SX._UX._SY._UY_.jpg"
         ],
         "inStock": true,
         "prices": [
@@ -43,7 +43,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 96.46
+                "amount": 50.46
             },
             {
                 "__typename": "Price",
@@ -91,6 +91,17 @@ const itemsObj = [
                 "amount": 7294.5
             }
         ],
+        "description": `<p>Material: 97% Polyester</p>
+        <p>3% Elastane</p>
+        <p>Origin: Imported</p>
+        <p>Closure: Pull On</p>
+        <p>Care: Machine Wash</p>
+        <p>Tips: S=US 4-6, M=US 8-10, L=US 12-14, XL=US 16-18, XXL=US 20-22.</p>
+        <p>SUPERIOR FABRIC: This midi dress is made of high-quality polyester fabric that is soft, lightweight, and comfortable to touch and wear. The fabric does not stretch, but the smocked design makes it stretchy, making it a beautiful option for a maternity dress as well.</p>
+        <p>EYE-CATCHING DESIGNS: This dress features long puff sleeves, a floral print design, a casual square neck, a bodycon silhouette, a tight fitted style, a sexy backless design, an elegant mermaid cut, and ruffle details. It is also suitable as gender reveal or baby shower maternity dress.</p>
+        <p>MATCHING STYLE: Pair this women's square neck dress with beautiful jewelry, necklaces, and earrings. Dress it up with high heels, wedges, or ankle boots for a sexy and fabulous look, or dress it down with sandals for a casual style.</p>
+        <p>WOMENS ELEGANT MERMAID DRESS! The mermaid dress showcases long lantern sleeves, a square neck, a ruffle hem, and a midi length. The fitted dress perfectly highlights your body curves, accentuating your fascinating figure. The vintage floral print adds to its femininity. The midi bodycon dress is the perfect length to showcase your slender calves. Wear it to cocktail parties, weddings, dates, homecoming events, evening parties, work, or office, and let the elegant atmosphere shine.</p>
+        <p>A VARIETY OF CHOICE: Choose from options such as a blue knee-length bodycon dress, blue purple puff sleeve dress for women, black orange boho floral dress, khaki casual dress for women, red semi-formal dress, green shirred dress for women, white yellow long sleeve dress, blue white bohemian dress, red floral ruffle hem dress, white purple midi dress for women, and blue leopard casual outfits for women.</p>`,
         "category": "dresses",
         "attributes": [
             {
@@ -167,13 +178,14 @@ const itemsObj = [
     },
     {
         "__typename": "Product",
-        "id": "teal-silk-dress",
-        "name": "Teal Silk Dress",
+        "id": "one-shoulder-cocktail-dress",
+        "name": "One Shoulder Cocktail Dress",
         "brand": "Caty",
         "gallery": [
-            "https://m.media-amazon.com/images/I/51zWVtdUbSS._AC_SX679._SX._UX._SY._UY_.jpg",
-            "https://m.media-amazon.com/images/I/41s0MQMGbQS._AC._SX._UX._SY._UY_.jpg",
-            "https://m.media-amazon.com/images/I/51Nepe2juBS._AC._SX._UX._SY._UY_.jpg"
+            "https://m.media-amazon.com/images/I/61UyrpAENXL._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/71wZT0Q9iHL._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/71vJ6pJkUxL._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/71bVKY9AbnL._AC_UY879_.jpg"
         ],
         "inStock": true,
         "prices": [
@@ -184,7 +196,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 66.32
+                "amount": 60.99
             },
             {
                 "__typename": "Price",
@@ -232,6 +244,18 @@ const itemsObj = [
                 "amount": 5014.97
             }
         ],
+        "description": `<p>Material: 97% Polyester</p>
+        <p>3% Elastane</p>
+        <p>Origin: Imported</p>
+        <p>Lining: Polyester lining</p>
+        <p>Closure: Pull On</p>
+        <p>Care: Machine Wash</p>
+        <p>Size Guide: S=US 4-6, M=US 8-10，L=US 12-14，XL=US 16-18</p>
+        <p>This women's ruched bodycon dress is made of lightweight and comfortable fabric, which is friendly to the skin. It has a textured appearance and offers a pleasant wearing experience, perfect for the summer season.</p>
+        <p>FASHION DESIGN: This dress features a one-shoulder design, ruched bodycon style, sleeveless midi length, sexy cutout details, asymmetrical wrap design, split hem, and a fitted silhouette. It is a trendy and fashionable choice for parties, cocktails, and summer events in 2023.</p>
+        <p>TRENDY FEATURES: The midi dress showcases a one-shoulder design, accentuating your delicate shoulders. The ruched bodycon style flatters your figure and highlights your curves. The cutout style adds a touch of femininity, while the asymmetrical wrap design with a slit hem creates a slender leg look. The sleeveless fitted dress exudes elegance and class.</p>
+        <p>CHIC RUCHED BODYCON DRESS! This fitted dress is available in various colors, including black for a wedding guest look, green for a homecoming dress, dark royal blue for a semi-formal occasion, wine red for a slit dress, red for an irregular hem midi dress, army green for a ruched wrap dress, navy for an evening party, dark green for a sleeveless summer dress, deep purple for a one-shoulder prom dress, and rose red for a cutout bodycon dress.</p>
+        <p>ELEGANT MIDI DRESSES FOR YOU! Pair this ruched bodycon dress with high heels to create a stunning look. It is ideal for parties, daily wear, cocktails, formal events, weddings, dating, holidays, travel, prom, and more.</p>`,
         "category": "dresses",
         "attributes": [
             {
@@ -308,15 +332,14 @@ const itemsObj = [
     },
     {
         "__typename": "Product",
-        "id": "relaxed-dress",
-        "name": "Relaxed Dress",
+        "id": "summer-maxi-dress",
+        "name": "Summer Maxi Dress",
         "brand": "Guppi",
         "gallery": [
-            "https://m.media-amazon.com/images/I/71oGZQ8Uz5L._AC_UY879_.jpg",
-            "https://m.media-amazon.com/images/I/71UD0caWruL._AC_UX569_.jpg",
-            "https://m.media-amazon.com/images/I/817AYYmIIHL._AC_UX569_.jpg",
-            "https://m.media-amazon.com/images/I/81sGgUYUQUL._AC_UY741_.jpg",
-            "https://m.media-amazon.com/images/I/81TXKrza+ZL._AC_UY741_.jpg"
+            "https://m.media-amazon.com/images/I/61GVIWVvrnL._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/71hJSTRZp7L._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/7189URm3w0L._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/81ldzFmxDEL._AC_UY879_.jpg"
         ],
         "inStock": true,
         "prices": [
@@ -327,7 +350,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 90.43
+                "amount": 80.80
             },
             {
                 "__typename": "Price",
@@ -375,6 +398,14 @@ const itemsObj = [
                 "amount": 6838.6
             }
         ],
+        "description": `<p>Material: 100% Polyester</p>
+        <p>Origin: Imported</p>
+        <p>Closure: Pull On</p>
+        <p>Care: Machine Wash</p>
+        <p>MATERIAL: This beach maxi dress is made of high-quality, soft, lightweight polyester material, providing a cool and comfortable wearing experience, especially in hot summer!</p>
+        <p>FEATURES: The maxi beach dress features adjustable spaghetti straps, a cami sun dress style, a shirred stretchy bodice, solid color, stretchy elastic high waist, tiered dress design, and flared ruffle flowy skirts. It is ankle-length, embodying a casual boho style.</p>
+        <p>OCCASIONS: This maxi beach dress for women is perfect for beach vacations, wedding guests, parties, cocktails, clubs, holidays, and casual daily wear. Pair it with sandals, slippers, or high heels to achieve a casual or feminine look.</p>
+        <p>WASH INSTRUCTION: To care for this beach maxi dress, it is machine washable with cold water recommended. Please avoid using bleach and ironing, and instead hang or line dry. For accurate sizing, please refer to our Size Chart in the provided Image or Product Description section below.</p>`,
         "category": "dresses",
         "attributes": [
             {
@@ -414,15 +445,13 @@ const itemsObj = [
     {
         "__typename": "Product",
         "id": "pink-casual-dress",
-        "name": "Pink Casual Dress",
+        "name": "Pink Dress",
         "brand": "Guppi",
         "gallery": [
-            "https://m.media-amazon.com/images/I/71eIBJPwb7L._AC_SX569._SX._UX._SY._UY_.jpg",
-            "https://m.media-amazon.com/images/I/71+7daxyWvL._AC_SX569._SX._UX._SY._UY_.jpg",
-            "https://m.media-amazon.com/images/I/91vYh6yLbIL._AC_SX569._SX._UX._SY._UY_.jpg",
-            "https://m.media-amazon.com/images/I/91vYh6yLbIL._AC_SX569._SX._UX._SY._UY_.jpg",
-            "https://m.media-amazon.com/images/I/61ctKppNaYL._AC_SX569._SX._UX._SY._UY_.jpg",
-            "https://m.media-amazon.com/images/I/81Wvl78GfOL._AC_SY741._SX._UX._SY._UY_.jpg"
+            "https://m.media-amazon.com/images/I/71eWo7wh0YL._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/71Dfl4+myvL._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/71f1+qu5q3L._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/71dv+SAcLzL._AC_UY879_.jpg"
         ],
         "inStock": true,
         "prices": [
@@ -481,6 +510,16 @@ const itemsObj = [
                 "amount": 4741.43
             }
         ],
+        "description": `<p>Material: 97% Polyester, 3% Elastane</p>
+        <p>Origin: Imported</p>
+        <p>Lining: Polyester lining</p>
+        <p>Closure: Pull On</p>
+        <p>Care: Machine Wash</p>
+        <p>Size Attention: S=US 4-6, M=US 8-10, L=US 12-14, XL=US 16-18.</p>
+        <p>Experience ultimate comfort with this square neck dress made of high-quality polyester fabric. It is soft, lightweight, and has the perfect thickness, ensuring a pleasant wearing experience for various occasions. Rest assured, it is not see-through.</p>
+        <p>Make a statement with the eye-catching designs of this dress. It features short puffy sleeves, a square neck, and a ruched bust with an empire waist. The dress can be worn in different styles: pull it down for a sexy off-shoulder look or wear it as a casual square neck dress. The delicate ruffles and A-line silhouette enhance your body curves, adding elegance and femininity to this short dress.</p>
+        <p>This versatile dress can be paired with accessories such as necklaces, handbags, heels, boots, or sandals to create a fashionable and chic look. Dress it down with flats for a casual style or elevate it with heels for a night out. You'll love wearing this dress on various occasions.</p>
+        <p>Choose from a wide range of colors and styles. Options include bean green for a sexy look, black for a party, blue for homecoming, pink for casual outings, shrimp pink for a babydoll style, sky blue for beach outfits, white for graduation, and wine red for a romantic touch.</p>`,
         "category": "dresses",
         "attributes": [
             {
@@ -519,15 +558,14 @@ const itemsObj = [
     },
     {
         "__typename": "Product",
-        "id": "neck-tiered-dress",
-        "name": "Neck Tiered Dress",
+        "id": "summer-midi-puff-dress",
+        "name": "Summer Midi Puff Dress",
         "brand": "Lasio",
         "gallery": [
-            "https://m.media-amazon.com/images/I/81VHA1oRgCS._AC_UY879_.jpg",
-            "https://m.media-amazon.com/images/I/81bvrae6d1S._AC_UX569_.jpg",
-            "https://m.media-amazon.com/images/I/91fAmqJZ9YS._AC_UX569_.jpg",
-            "https://m.media-amazon.com/images/I/81eVAufhAdS._AC_UX569_.jpg",
-            "https://m.media-amazon.com/images/I/A1KgjH-OiqS._AC_UY741_.jpg"
+            "https://m.media-amazon.com/images/I/61Gm5oBtjDL._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/616Bs65KJ6L._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/611RoAUUzJL._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/7165z3tHLEL._AC_UY879_.jpg"
         ],
         "inStock": true,
         "prices": [
@@ -538,7 +576,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 71.14
+                "amount": 70.50
             },
             {
                 "__typename": "Price",
@@ -586,6 +624,17 @@ const itemsObj = [
                 "amount": 5379.7
             }
         ],
+        "description": `<p>80% Polyester and 20% Cotton composition</p>
+        <p>Imported origin</p>
+        <p>Lined with polyester</p>
+        <p>Convenient pull-on closure</p>
+        <p>Machine Washable</p>
+        <p>Useful Tips: Sizing guide - S=US 4-6, M=US 8-10, L=US 12-14, XL=US 16-18, XXL=US 20-22.</p>
+        <p>COMFORTABLE FABRIC: Crafted from a soft and lightweight material, this shirt offers a pleasant wearing experience throughout the day. The fabric provides coverage without being see-through, and it is recommended to wear light-colored underwear with the white dress. Embrace this stunning dress as your go-to outfit for the scorching summer days.</p>
+        <p>EYE-CATCHING STYLES: Explore the captivating designs of this dress, featuring puffy sleeves, short sleeves, tiered layers, and a flattering midi A-line silhouette. The dress showcases ruffle details, a square neckline, open back, and trendy cold shoulder accents.</p>
+        <p>VERSATILE MATCHING: Elevate your look by pairing this midi dress with sandals, heels, flats, wedges, and accessorize it with jewelry and hats. Suitable for various occasions such as beach trips, work, parties, weddings, nightclubs, travel, vacations, and romantic dates. This dress is a beautiful addition to your wardrobe.</p>
+        <p>EXUDE CHARM: This women's fit and flare dress flatters all body shapes, enhancing your neckline and bust area with its smocked square neck design. The mid-length cut adds a touch of elegance, making it suitable for petite women as well. The puffy sleeves add a cute and fashionable element, while the open back design keeps you on-trend this summer.</p>
+        <p>PLETHORA OF OPTIONS: Discover a wide range of choices, including an army green summer midi dress, black short sleeve dresses for women, blue tiered dress, dark green wedding guest dresses, light blue vacation beach dress, pink party dresses, red date night dresses, and white graduation dresses.</p>`,
         "category": "dresses",
         "attributes": [
             {
@@ -628,11 +677,10 @@ const itemsObj = [
         "name": "Maxi Dress",
         "brand": "Guppi",
         "gallery": [
-            "https://m.media-amazon.com/images/I/91c4PZcpTGL._AC_UY741_.jpg",
-            "https://m.media-amazon.com/images/I/813dw4g0pLL._AC_UY741_.jpg",
-            "https://m.media-amazon.com/images/I/81fo0dE9UmL._AC_UY741_.jpg",
-            "https://m.media-amazon.com/images/I/81eWqNrdsIL._AC_UY741_.jpg",
-            "https://m.media-amazon.com/images/I/81H4XuXFD+L._AC_UY741_.jpg"
+            "https://m.media-amazon.com/images/I/71iiyTWa-GL._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/810colaJGbL._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/81SMidXPIwL._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/71YAMbRPZNL._AC_UY879_.jpg"
         ],
         "inStock": true,
         "prices": [
@@ -691,6 +739,15 @@ const itemsObj = [
                 "amount": 4103.16
             }
         ],
+        "description": `<p>100% Polyester composition</p>
+        <p>Imported origin</p>
+        <p>Convenient pull-on closure</p>
+        <p>Hand Wash Only</p>
+        <p>SIZE TIPS: Sizing guide - S=US 4-6, M=US 8-10, L=US 12-14, XL=US 16-18, XXL=US 20-22. This maxi dress is crafted from lightweight and comfortable polyester, ensuring a cool and cozy wearing experience. It is designed to be light and breathable, even in hot weather. The short sleeve swing dress is a perfect addition to your summer wardrobe.</p>
+        <p>UNIQUE DESIGN: Explore the unique features of this printed maxi dress for women, including short sleeves, a boho-inspired ruffled hem, high waist, wrap V-neckline, tiered flowy silhouette, and a matching belt. This dress is suitable for various occasions, such as casual outings, beach trips, or as a summer dress.</p>
+        <p>GRACEFUL RUFFLE MAXI DRESS! This elegant tiered boho dress is a must-have item in every woman's wardrobe. It comes in a variety of colors, including pink, light blue, yellow, wine red, black, dark blue, green, blue, and red. The dress is designed to flatter your figure and highlight your femininity.</p>
+        <p>DELICATE BOHEMIAN DRESS FOR WOMEN! The maxi dress is made from soft and skin-friendly fabric, providing a pleasant touch on your skin. The chic print adds a touch of charm to the dress, and you can choose between floral and polka dot patterns. The cross V-neckline enhances your clavicle, and the A-line silhouette can be adjusted with the belt for a comfortable fit.</p>
+        <p>A MUST FOR ANY OCCASIONS! The printed tiered maxi dress can be styled with high heels, boots, or sandals for a trendy look. Add a brimmed hat to complete a stylish and generous outfit. This flare bohemian dress is versatile and suitable for daily wear, dating, shopping, office, beach trips, vacations, parties, and more.</p>`,
         "category": "dresses",
         "attributes": [
             {
@@ -731,14 +788,12 @@ const itemsObj = [
         "__typename": "Product",
         "id": "silky-v-neck-dress",
         "name": "Silky V-Neck Dress",
-        "brand": "Gracie",
+        "brand": "Olivia",
         "gallery": [
-            "https://m.media-amazon.com/images/I/71f-dYQ2lcL._AC_UY879_.jpg",
-            "https://m.media-amazon.com/images/I/719-KClPYGL._AC_UX569_.jpg",
-            "https://m.media-amazon.com/images/I/91uiqSfKe2L._AC_UX569_.jpg",
-            "https://m.media-amazon.com/images/I/71lTA41475L._AC_UX569_.jpg",
-            "https://m.media-amazon.com/images/I/71MHKEbqVtL._AC_UX569_.jpg",
-            "https://m.media-amazon.com/images/I/71+HQ0prccL._AC_UY741_.jpg"
+            "https://m.media-amazon.com/images/I/61haHwpHRwL._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/71WfilCS0JL._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/61k0x3ZRk4L._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/61U4KLftiSL._AC_UY879_.jpg"
         ],
         "inStock": true,
         "prices": [
@@ -797,6 +852,16 @@ const itemsObj = [
                 "amount": 6929.78
             }
         ],
+        "description": `<p>58% Viscose, 34% Polyamide, 8% Elastane composition</p>
+        <p>Imported origin</p>
+        <p>Polyester lining</p>
+        <p>Pull On closure</p>
+        <p>Machine Wash</p>
+        <p>SIZE TIPS: Sizing guide - S=US 4-6, M=US 8-10, L=US 12-14, XL=US 16-18. The ruched bodycon dress is crafted from soft and comfortable fabric that is friendly to the skin. It offers a slight stretch for the ultimate cozy wearing experience.</p>
+        <p>UNIQUE FEATURES: Explore the unique features of this long sleeve bodycon dress, including a V-neckline, ruched details, draped front, solid color design, slim fit silhouette, split pencil skirt, and an asymmetrical hem. This elegant party dress is a versatile addition to your wardrobe.</p>
+        <p>TRENDY DESIGN: This midi bodycon dress showcases a draped front that perfectly hides your belly. The ruched details on the pencil dress add style and class. The fitted silhouette accentuates your curves and femininity. The irregular hem design adds a touch of elegance and uniqueness. The wrap V-neckline highlights your neckline, making you look stunning and flattering.</p>
+        <p>ELEGANT RUCHED BODYCON DRESS! This wrap dress is available in a variety of solid colors, including green, pink, royal blue, black, blue, brick red, wine red, and purple red. Each color option brings its own charm and style.</p>
+        <p>A MUST-HAVE WRAP DRESS! The women's ruched midi bodycon dress is a versatile choice for various occasions, such as dating, parties, cocktails, work, daily wear, night outs, travel, vacations, and weddings. Pair this fitted pencil dress with high heels and a necklace to create a graceful and fashionable look.</p>`,
         "category": "dresses",
         "attributes": [
             {
@@ -839,10 +904,10 @@ const itemsObj = [
         "name": "Swing Midi Dress",
         "brand": "Guppi",
         "gallery": [
-            "https://m.media-amazon.com/images/I/61LshhuLcvL._AC_UX569_.jpg",
-            "https://m.media-amazon.com/images/I/6172jvSgYYL._AC_UX569_.jpg",
-            "https://m.media-amazon.com/images/I/81-ecThLtyL._AC_UY741_.jpg",
-            "https://m.media-amazon.com/images/I/71y3zGU4bpL._AC_UY741_.jpg"
+            "https://m.media-amazon.com/images/I/61DgvomHoPL._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/71bVsFKlZVL._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/71EJzQCRrSL._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/71ICGZCQlIL._AC_UY879_.jpg"
         ],
         "inStock": true,
         "prices": [
@@ -901,6 +966,16 @@ const itemsObj = [
                 "amount": 4832.61
             }
         ],
+        "description": `<p>Satin Fabric, Silky To Touch and Comfy To Wear</p>
+        <p>Imported origin</p>
+        <p>Polyester lining</p>
+        <p>Pull On closure</p>
+        <p>Machine Wash</p>
+        <p>Size Guide: S=US 4-6, M=US 8-10，L=US 12-14，XL=US 16-18. The women's satin dress is made of high-quality satin fabric, which feels silky smooth and is comfortable to wear. It is more friendly and gentle on your skin. The pleated midi dress offers a pleasant wearing experience.</p>
+        <p>STYLISH DESIGN: Explore the stylish design elements of this satin dress, including its pleated midi length, cutout details, A-line silhouette, short sleeves, deep V-neckline, fit and flare style, asymmetrical hem, tie front, and its versatility as a summer and party dress. It is also suitable for holiday occasions.</p>
+        <p>UNIQUE FEATURES: The midi dress features a tie front design that can be styled as a pretty bow tie on the V-neck, adding an eye-catching element. The cutout details on the women's satin dress exude elegance. The pleated A-line dress is designed to flatter and enhance your curves, catering to various body types. The irregular flowy hem adds a chic and trendy touch that never goes out of fashion. The high waist swing dress with an elastic waistband ensures all-day comfort.</p>
+        <p>CLASSY SATIN SUMMER DRESS! Choose from a variety of colors for this A-line dress, including black, green, dark blue, wine red, light green, red, light blue, and rose red. Each color option offers its own charm and style.</p>
+        <p>WOMEN SWING MIDI DRESS! Pair this ladies satin dress with high heels, sandals, or boots to create a stunning and fashionable look. The pleated A-line dress is a great choice for daily wear, parties, cocktails, weddings, dating, travel, vacations, holidays, and evening occasions in summer.</p>`,
         "category": "dresses",
         "attributes": [
             {
@@ -1004,6 +1079,7 @@ const itemsObj = [
                 "amount": 3647.25
             }
         ],
+        "description": "<p>Soft and Breathable Fabric: Very smooth satin tatting material, with little stretch, makes this a close fitting bodycon dress, also rather comfortable to wear, durable enough for your daily wearing.</p> <p>Scoop Neck, Spaghrtti Strap, Sleeveless, halter design, back lace-up, A-line style, below the knee midi length, solid sparkly color.</p> <p>Wonderful Bodycon Partywear: Very stylish and fashionable design. There is no doubt that once wearing this dress, you will be the sparkliest and shiniest one in the crowd.</p> <p>Attention: Please refer to detailed size chart info before buying</p>",
         "category": "dresses",
         "attributes": [
             {
@@ -1060,7 +1136,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 66.32
+                "amount": 60.99
             },
             {
                 "__typename": "Price",
@@ -1108,6 +1184,7 @@ const itemsObj = [
                 "amount": 5014.97
             }
         ],
+        "description": "<p>Soft and Breathable Fabric: Very smooth satin tatting material, with little stretch, makes this a close fitting bodycon dress, also rather comfortable to wear, durable enough for your daily wearing.</p> <p>Scoop Neck, Spaghrtti Strap, Sleeveless, halter design, back lace-up, A-line style, below the knee midi length, solid sparkly color.</p> <p>Wonderful Bodycon Partywear: Very stylish and fashionable design. There is no doubt that once wearing this dress, you will be the sparkliest and shiniest one in the crowd.</p> <p>Attention: Please refer to detailed size chart info before buying</p>",
         "category": "dresses",
         "attributes": [
             {
@@ -1148,7 +1225,7 @@ const itemsObj = [
         "__typename": "Product",
         "id": "mini-taliah-dress",
         "name": "Mini Taliah Dress",
-        "brand": "Gracie",
+        "brand": "Olivia",
         "gallery": [
             "https://m.media-amazon.com/images/I/61IPIo8kZjL._AC_UY879_.jpg",
             "https://m.media-amazon.com/images/I/61AkHRB2s5L._AC_UY741_.jpg",
@@ -1166,7 +1243,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 66.32
+                "amount": 60.99
             },
             {
                 "__typename": "Price",
@@ -1214,6 +1291,7 @@ const itemsObj = [
                 "amount": 5014.97
             }
         ],
+        "description": "<p>67% Polyester, 27% Rayon, 6% Spandex</p> <p>Zipper closure</p> <p>Dry Clean Only</p> <p>With Likely, you're most #Likelyto win best dressed, nail the group-shot, dance all night, and then do it all again next weekend. </p> <p>rom form-fitting and flowy dresses we've got you (and your wallet!) covered so you never have to worry about what you'll wear to your next RSVP.</p> <p>Likely's coveted fabric- Favorite Stretch fits to perfection everytime always slimming and hugging your body in all the right places</p>",
         "category": "dresses",
         "attributes": [
             {
@@ -1307,7 +1385,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 66.32
+                "amount": 60.99
             },
             {
                 "__typename": "Price",
@@ -1355,6 +1433,7 @@ const itemsObj = [
                 "amount": 5014.97
             }
         ],
+        "description": "<p>100% Polyester</p> <p>Imported</p> <p>Zipper closure</p> <p>Hand Wash Only</p> <p>This is a beaded gown with sweetheart neckline and short flutter sleeves</p> <p>Patterned beaded mesh embellishment</p><p>Sweetheart neckline</p> <p>Short flutter sleeves</p> <p>Soft skirt silhouette</p>",
         "category": "dresses",
         "attributes": [
             {
@@ -1409,7 +1488,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 66.32
+                "amount": 60.99
             },
             {
                 "__typename": "Price",
@@ -1457,6 +1536,7 @@ const itemsObj = [
                 "amount": 5014.97
             }
         ],
+        "description": "<p>95% Polyester, 5% Spandex</p> <p>Pull On closure</p> <p>Machine Wash</p> <p>Stretch jersey</p> <p>3/4 length sleeves</p> <p>Off the shoulder</p><p>Fishtail hem</p> <p>Wrinkle free</p>",
         "category": "dresses",
         "attributes": [
             {
@@ -1497,7 +1577,7 @@ const itemsObj = [
         "__typename": "Product",
         "id": "gillian-dress",
         "name": "Gillian Dress",
-        "brand": "Gracie",
+        "brand": "Olivia",
         "gallery": [
             "https://m.media-amazon.com/images/I/719OV+Mm8KL._AC_UY879_.jpg",
             "https://m.media-amazon.com/images/I/61tteboPb2L._AC_UX569_.jpg"
@@ -1511,7 +1591,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 66.32
+                "amount": 60.99
             },
             {
                 "__typename": "Price",
@@ -1559,6 +1639,7 @@ const itemsObj = [
                 "amount": 5014.97
             }
         ],
+        "description": "<p>67% Polyester, 27% Rayon, 6% Spandex</p> <p>Imported</p> <p>Zipper closure</p> <p>Dry Clean Only</p> <p>With Likely, you're most #Likelyto win best dressed, nail the group-shot, dance all night, and then do it all again next weekend. </p> <p>We're your partner-in-crime for any and every occasion.</p><p>From form-fitting and flowy dresses we've got you (and your wallet!) covered so you never have to worry about what you'll wear to your next RSVP.</p>",
         "category": "dresses",
         "attributes": [
             {
@@ -1615,7 +1696,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 66.32
+                "amount": 60.99
             },
             {
                 "__typename": "Price",
@@ -1663,6 +1744,7 @@ const itemsObj = [
                 "amount": 5014.97
             }
         ],
+        "description": "<p>Soft and Breathable Fabric: Very smooth satin tatting material, with little stretch, makes this a close fitting bodycon dress, also rather comfortable to wear, durable enough for your daily wearing.</p> <p>Scoop Neck, Spaghrtti Strap, Sleeveless, halter design, back lace-up, A-line style, below the knee midi length, solid sparkly color.</p> <p>Wonderful Bodycon Partywear: Very stylish and fashionable design. There is no doubt that once wearing this dress, you will be the sparkliest and shiniest one in the crowd.</p> <p>Attention: Please refer to detailed size chart info before buying</p>",
         "category": "dresses",
         "attributes": [
             {
@@ -1741,7 +1823,7 @@ const itemsObj = [
         "__typename": "Product",
         "id": "picnic-ready-dress",
         "name": "Picnic Ready Dress",
-        "brand": "Gracie",
+        "brand": "Olivia",
         "gallery": [
             "https://m.media-amazon.com/images/I/81LoGS3GLHL._AC_UY879_.jpg",
             "https://m.media-amazon.com/images/I/812FCJqRdCL._AC_UY741_.jpg",
@@ -1759,7 +1841,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 66.32
+                "amount": 60.99
             },
             {
                 "__typename": "Price",
@@ -1807,6 +1889,7 @@ const itemsObj = [
                 "amount": 5014.97
             }
         ],
+        "description": "<p>80% Polyester, 20% Rayon</p> <p>Imported</p> <p>HAND WASH COLD SEPARATELY, DO NOT BLEACH, LAY FLAT TO DRY, LOW IRON IF NECESSARY, OR DRY CLEAN</p> <p>The Picnic Ready Dress is a textured gingham tiered mini</p> <p>It has puff sleeves and a subtle ruffle detail at the neckline</p> <pItem Package Weight: 0.3 kilograms></p>",
         "category": "dresses",
         "attributes": [
             {
@@ -1847,7 +1930,7 @@ const itemsObj = [
         "__typename": "Product",
         "id": "midi-cocktail-dress",
         "name": "Midi Cocktail Dress",
-        "brand": "Gracie",
+        "brand": "Olivia",
         "gallery": [
             "https://m.media-amazon.com/images/I/819HjEqtEZS._AC_UY879_.jpg",
             "https://m.media-amazon.com/images/I/81W9ZvPB8MS._AC_UY741_.jpg",
@@ -1864,7 +1947,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 96.46
+                "amount": 50.46
             },
             {
                 "__typename": "Price",
@@ -1912,6 +1995,7 @@ const itemsObj = [
                 "amount": 7294.5
             }
         ],
+        "description": "<p>97% Polyester, 3% Spandex</p> <p>Imported</p> <p>Zipper closure</p> <p>Machine Wash</p> <p>Special Size Type: Standard</p> <p>Weave Type: Woven</p>",
         "category": "dresses",
         "attributes": []
     },
@@ -1933,7 +2017,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 66.32
+                "amount": 60.99
             },
             {
                 "__typename": "Price",
@@ -1981,6 +2065,7 @@ const itemsObj = [
                 "amount": 5014.97
             }
         ],
+        "description": "<p>Nice Summer Dress For Many Occasions</p> <p>Made Of 100% Viscose, Lightweight Flowing Soft Fabric</p><p>With All-Over Patterned, Each Part Is Unique</p> <p>Tie-Self High Halter Neck Connect With Keyhole</p> <p>Relaxed Cut Sleeveless Aline Dress With a Fixed Elastic Band At The Waist</p> <p>With The Same Patterned Belt, Can Be Tied According To Your Needs</p> <p>Nice Summer Dress For Many Occasions</p> <p>Wide Swinging Skirt With Flounces And Ruffles</p>",
         "category": "dresses",
         "attributes": [
             {
@@ -2039,7 +2124,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 66.32
+                "amount": 60.99
             },
             {
                 "__typename": "Price",
@@ -2087,6 +2172,7 @@ const itemsObj = [
                 "amount": 5014.97
             }
         ],
+        "description": "<p>Delicate Chiffon Fabric, Soft And Lightweight</p> <p>Classic Solid Color With beautiful details</p> <p>Relaxed Fit with A-Line Shape Fit For All The Body Shape</p> <p>Above Knee Length Visually Highlight Your Long Legs</p>",
         "category": "dresses",
         "attributes": [
             {
@@ -2142,7 +2228,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 66.32
+                "amount": 60.99
             },
             {
                 "__typename": "Price",
@@ -2190,6 +2276,7 @@ const itemsObj = [
                 "amount": 5014.97
             }
         ],
+        "description": "<p>Soft and Breathable Fabric: Very smooth satin tatting material, with little stretch, makes this a close fitting bodycon dress, also rather comfortable to wear, durable enough for your daily wearing.</p> <p>Scoop Neck, Spaghrtti Strap, Sleeveless, halter design, back lace-up, A-line style, below the knee midi length, solid sparkly color.</p> <p>Wonderful Bodycon Partywear: Very stylish and fashionable design. There is no doubt that once wearing this dress, you will be the sparkliest and shiniest one in the crowd.</p> <p>Attention: Please refer to detailed size chart info before buying</p>",
         "category": "dresses",
         "attributes": [
             {
@@ -2246,7 +2333,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 66.32
+                "amount": 60.99
             },
             {
                 "__typename": "Price",
@@ -2294,6 +2381,7 @@ const itemsObj = [
                 "amount": 5014.97
             }
         ],
+        "description": "<p>55% Linen, 45% Cotton</p> <p>Pull On closure</p> <p>Machine Wash</p> <p>This versatile and figure-flattering dress transitions easily from day to night</p> <p>With short sleeves</p> <p>From our hand-selected fabrics to our wide range of fits, you can rely on Goodthreads to be effortless, stylish, and crafted with care</p> <p>Imported</p> ",
         "category": "dresses",
         "attributes": [
             {
@@ -2389,7 +2477,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 66.32
+                "amount": 60.99
             },
             {
                 "__typename": "Price",
@@ -2437,6 +2525,7 @@ const itemsObj = [
                 "amount": 5014.97
             }
         ],
+        "description": "<p>95% rayon , 5% spandex</p> <p>Imported</p> <p>Wrap closure</p> <p>Machine Wash</p> <p>Fabric: 95% Rayon + 5% Spandex, Super soft, Classy high quality fabric, very flowy soft</p> <p>Features: Floor length summer floral print Maxi dress, you will look vibrant and alive, stylish and elegant in it. Cross v neck, ruffle cap sleeves, short sleeves, elastic waistband. Slim fit will show off your shapely curves well. Irregular high low hemline, as if the lotus leaf is swaying, wearing it will want to start a romantic journey.</p> <p>You can pair a High heels and Stylish bag with it, a different beautiful look will occur. Perfect dress for casual, wedding, party, vacation, streetwear, cocktail, daily life.</p>",
         "category": "dresses",
         "attributes": [
             {
@@ -2477,7 +2566,7 @@ const itemsObj = [
         "__typename": "Product",
         "id": "chiffon-a-line-dress",
         "name": "Chiffon A-Line Dress",
-        "brand": "Gracie",
+        "brand": "Olivia",
         "gallery": [
             "https://m.media-amazon.com/images/I/81WiDnudBqS._AC_UY879_.jpg",
             "https://m.media-amazon.com/images/I/71O28lJeErS._AC_UX569_.jpg",
@@ -2495,7 +2584,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 66.32
+                "amount": 60.99
             },
             {
                 "__typename": "Price",
@@ -2543,6 +2632,7 @@ const itemsObj = [
                 "amount": 5014.97
             }
         ],
+        "description": "<p>95% Polyester, 5% Elastane</p> <p>Imported</p> <p>Machine Wash</p> <p>Staples by The Drop</p> <p>Model is 5'10`/178 cm and wearing a size S</p>",
         "category": "dresses",
         "attributes": [
             {
@@ -2601,7 +2691,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 66.32
+                "amount": 60.99
             },
             {
                 "__typename": "Price",
@@ -2649,6 +2739,7 @@ const itemsObj = [
                 "amount": 5014.97
             }
         ],
+        "description": "<p>95% Polyester,5% Spandex</p> <p>Zipper closure</p> <p>Hand Wash Only</p> <p>This cute swing midi dress features Sleeveless, Sweetheart neck, smocked top, A-line silhouette, Concealed zipper at side, Adjustable strap</p> <p>The elastic ribbing in the back and bust, giving so much extra stretch to fit most bust. </p> <p>The A-line shape design perfectly accentuates your waist to show off your curves</p> <p>Adjustable strap design could make you feel breathable and comfortable all day</p>",
         "category": "dresses",
         "attributes": [
             {
@@ -2727,7 +2818,7 @@ const itemsObj = [
         "__typename": "Product",
         "id": "green-dress",
         "name": "Green Dress",
-        "brand": "Gracie",
+        "brand": "Olivia",
         "gallery": [
             "https://m.media-amazon.com/images/I/61uNo+tr3QS._AC_SX679._SX._UX._SY._UY_.jpg",
             "https://m.media-amazon.com/images/I/61lJ1esNJCS._AC_SX679._SX._UX._SY._UY_.jpg",
@@ -2746,7 +2837,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 66.32
+                "amount": 60.99
             },
             {
                 "__typename": "Price",
@@ -2794,6 +2885,7 @@ const itemsObj = [
                 "amount": 5014.97
             }
         ],
+        "description": "<p>67% Polyester, 27% Rayon, 6% Spandex</p> <p>Zipper closure</p> <p>Dry Clean Only</p> <p>With Likely, you're most #Likelyto win best dressed, nail the group-shot, dance all night, and then do it all again next weekend. </p> <p>rom form-fitting and flowy dresses we've got you (and your wallet!) covered so you never have to worry about what you'll wear to your next RSVP.</p> <p>Likely's coveted fabric- Favorite Stretch fits to perfection everytime always slimming and hugging your body in all the right places</p>",
         "category": "dresses",
         "attributes": [
             {
@@ -2851,7 +2943,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 66.32
+                "amount": 60.99
             },
             {
                 "__typename": "Price",
@@ -2899,6 +2991,7 @@ const itemsObj = [
                 "amount": 5014.97
             }
         ],
+        "description": "<p>100% Polyester</p> <p>Imported</p> <p>Zipper closure</p> <p>Hand Wash Only</p> <p>This is a beaded gown with sweetheart neckline and short flutter sleeves</p> <p>Patterned beaded mesh embellishment</p><p>Sweetheart neckline</p> <p>Short flutter sleeves</p> <p>Soft skirt silhouette</p>",
         "category": "dresses",
         "attributes": [
             {
@@ -2955,7 +3048,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 66.32
+                "amount": 60.99
             },
             {
                 "__typename": "Price",
@@ -3003,6 +3096,7 @@ const itemsObj = [
                 "amount": 5014.97
             }
         ],
+        "description": "<p>95% Polyester, 5% Spandex</p> <p>Pull On closure</p> <p>Machine Wash</p> <p>Stretch jersey</p> <p>3/4 length sleeves</p> <p>Off the shoulder</p><p>Fishtail hem</p> <p>Wrinkle free</p>",
         "category": "dresses",
         "attributes": [
             {
@@ -3096,7 +3190,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 66.32
+                "amount": 60.99
             },
             {
                 "__typename": "Price",
@@ -3144,6 +3238,7 @@ const itemsObj = [
                 "amount": 5014.97
             }
         ],
+        "description": "<p>Soft and Breathable Fabric: Very smooth satin tatting material, with little stretch, makes this a close fitting bodycon dress, also rather comfortable to wear, durable enough for your daily wearing.</p> <p>Scoop Neck, Spaghrtti Strap, Sleeveless, halter design, back lace-up, A-line style, below the knee midi length, solid sparkly color.</p> <p>Wonderful Bodycon Partywear: Very stylish and fashionable design. There is no doubt that once wearing this dress, you will be the sparkliest and shiniest one in the crowd.</p> <p>Attention: Please refer to detailed size chart info before buying</p>",
         "category": "dresses",
         "attributes": [
             {
@@ -3184,7 +3279,7 @@ const itemsObj = [
         "__typename": "Product",
         "id": "scrunch-dress",
         "name": "Scrunch Dress",
-        "brand": "Gracie",
+        "brand": "Olivia",
         "gallery": [
             "https://m.media-amazon.com/images/I/71FoAafEHwL._AC_UY741_.jpg",
             "https://m.media-amazon.com/images/I/61gVqBAe43L._AC_UY879_.jpg",
@@ -3201,7 +3296,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 66.32
+                "amount": 60.99
             },
             {
                 "__typename": "Price",
@@ -3249,6 +3344,7 @@ const itemsObj = [
                 "amount": 5014.97
             }
         ],
+        "description": "<p>67% Polyester, 27% Rayon, 6% Spandex</p> <p>Imported</p> <p>Zipper closure</p> <p>Dry Clean Only</p> <p>With Likely, you're most #Likelyto win best dressed, nail the group-shot, dance all night, and then do it all again next weekend. </p> <p>We're your partner-in-crime for any and every occasion.</p><p>From form-fitting and flowy dresses we've got you (and your wallet!) covered so you never have to worry about what you'll wear to your next RSVP.</p>",
         "category": "dresses",
         "attributes": [
             {
@@ -3305,7 +3401,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 66.32
+                "amount": 60.99
             },
             {
                 "__typename": "Price",
@@ -3353,6 +3449,7 @@ const itemsObj = [
                 "amount": 5014.97
             }
         ],
+        "description": "<p>Soft and Breathable Fabric: Very smooth satin tatting material, with little stretch, makes this a close fitting bodycon dress, also rather comfortable to wear, durable enough for your daily wearing.</p> <p>Scoop Neck, Spaghrtti Strap, Sleeveless, halter design, back lace-up, A-line style, below the knee midi length, solid sparkly color.</p> <p>Wonderful Bodycon Partywear: Very stylish and fashionable design. There is no doubt that once wearing this dress, you will be the sparkliest and shiniest one in the crowd.</p> <p>Attention: Please refer to detailed size chart info before buying</p>",
         "category": "dresses",
         "attributes": [
             {
@@ -3393,7 +3490,7 @@ const itemsObj = [
         "__typename": "Product",
         "id": "nature-girl-dress",
         "name": "Nature Girl Dress",
-        "brand": "Gracie",
+        "brand": "Olivia",
         "gallery": [
             "https://m.media-amazon.com/images/I/81B14emrsKL._AC_SY741._SX._UX._SY._UY_.jpg",
             "https://m.media-amazon.com/images/I/71AHsmcWPuL._AC_SY741._SX._UX._SY._UY_.jpg",
@@ -3410,7 +3507,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 66.32
+                "amount": 60.99
             },
             {
                 "__typename": "Price",
@@ -3458,6 +3555,7 @@ const itemsObj = [
                 "amount": 5014.97
             }
         ],
+        "description": "<p>80% Polyester, 20% Rayon</p> <p>Imported</p> <p>HAND WASH COLD SEPARATELY, DO NOT BLEACH, LAY FLAT TO DRY, LOW IRON IF NECESSARY, OR DRY CLEAN</p> <p>The Picnic Ready Dress is a textured gingham tiered mini</p> <p>It has puff sleeves and a subtle ruffle detail at the neckline</p> <pItem Package Weight: 0.3 kilograms></p>",
         "category": "dresses",
         "attributes": [
             {
@@ -3553,7 +3651,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 66.32
+                "amount": 60.99
             },
             {
                 "__typename": "Price",
@@ -3601,6 +3699,7 @@ const itemsObj = [
                 "amount": 5014.97
             }
         ],
+        "description": "<p>55% Linen, 45% Cotton</p> <p>Pull On closure</p> <p>Machine Wash</p> <p>This versatile and figure-flattering dress transitions easily from day to night</p> <p>With short sleeves</p> <p>From our hand-selected fabrics to our wide range of fits, you can rely on Goodthreads to be effortless, stylish, and crafted with care</p> <p>Imported</p> ",
         "category": "dresses",
         "attributes": [
             {
@@ -3658,7 +3757,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 66.32
+                "amount": 60.99
             },
             {
                 "__typename": "Price",
@@ -3706,6 +3805,7 @@ const itemsObj = [
                 "amount": 5014.97
             }
         ],
+        "description": "<p>95% rayon , 5% spandex</p> <p>Imported</p> <p>Wrap closure</p> <p>Machine Wash</p> <p>Fabric: 95% Rayon + 5% Spandex, Super soft, Classy high quality fabric, very flowy soft</p> <p>Features: Floor length summer floral print Maxi dress, you will look vibrant and alive, stylish and elegant in it. Cross v neck, ruffle cap sleeves, short sleeves, elastic waistband. Slim fit will show off your shapely curves well. Irregular high low hemline, as if the lotus leaf is swaying, wearing it will want to start a romantic journey.</p> <p>You can pair a High heels and Stylish bag with it, a different beautiful look will occur. Perfect dress for casual, wedding, party, vacation, streetwear, cocktail, daily life.</p>",
         "category": "dresses",
         "attributes": [
             {
@@ -3809,6 +3909,7 @@ const itemsObj = [
                 "amount": 4650.25
             }
         ],
+        "description": "<p>Soft and Breathable Fabric: Very smooth satin tatting material, with little stretch, makes this a close fitting bodycon dress, also rather comfortable to wear, durable enough for your daily wearing.</p> <p>Scoop Neck, Spaghrtti Strap, Sleeveless, halter design, back lace-up, A-line style, below the knee midi length, solid sparkly color.</p> <p>Wonderful Bodycon Partywear: Very stylish and fashionable design. There is no doubt that once wearing this dress, you will be the sparkliest and shiniest one in the crowd.</p> <p>Attention: Please refer to detailed size chart info before buying</p>",
         "category": "dresses",
         "attributes": [
             {
@@ -3849,7 +3950,7 @@ const itemsObj = [
         "__typename": "Product",
         "id": "rosie-dress",
         "name": "Rosie Dress",
-        "brand": "Gracie",
+        "brand": "Olivia",
         "gallery": [
             "https://m.media-amazon.com/images/I/61JqCOT0n+L._AC_SX569._SX._UX._SY._UY_.jpg",
             "https://m.media-amazon.com/images/I/71L78h5oH2L._AC_SX569._SX._UX._SY._UY_.jpg",
@@ -3867,7 +3968,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 66.32
+                "amount": 60.99
             },
             {
                 "__typename": "Price",
@@ -3915,6 +4016,7 @@ const itemsObj = [
                 "amount": 5014.97
             }
         ],
+        "description": "<p>95% Polyester, 5% Elastane</p> <p>Imported</p> <p>Machine Wash</p> <p>Staples by The Drop</p> <p>Model is 5'10`/178 cm and wearing a size S</p>",
         "category": "dresses",
         "attributes": [
             {
@@ -3972,7 +4074,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 66.32
+                "amount": 60.99
             },
             {
                 "__typename": "Price",
@@ -4020,6 +4122,7 @@ const itemsObj = [
                 "amount": 5014.97
             }
         ],
+        "description": "<p>95% Polyester,5% Spandex</p> <p>Zipper closure</p> <p>Hand Wash Only</p> <p>This cute swing midi dress features Sleeveless, Sweetheart neck, smocked top, A-line silhouette, Concealed zipper at side, Adjustable strap</p> <p>The elastic ribbing in the back and bust, giving so much extra stretch to fit most bust. </p> <p>The A-line shape design perfectly accentuates your waist to show off your curves</p> <p>Adjustable strap design could make you feel breathable and comfortable all day</p>",
         "category": "dresses",
         "attributes": [
             {
@@ -4060,7 +4163,7 @@ const itemsObj = [
         "__typename": "Product",
         "id": "navy-girl-dress",
         "name": "Navy Girl Dress",
-        "brand": "Gracie",
+        "brand": "Olivia",
         "gallery": [
             "https://m.media-amazon.com/images/I/71ZRVauML+L._AC_SX569._SX._UX._SY._UY_.jpg",
             "https://m.media-amazon.com/images/I/71tB3NhKYjL._AC_SX569._SX._UX._SY._UY_.jpg",
@@ -4078,7 +4181,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 66.32
+                "amount": 60.99
             },
             {
                 "__typename": "Price",
@@ -4126,6 +4229,7 @@ const itemsObj = [
                 "amount": 5014.97
             }
         ],
+        "description": "<p>67% Polyester, 27% Rayon, 6% Spandex</p> <p>Zipper closure</p> <p>Dry Clean Only</p> <p>With Likely, you're most #Likelyto win best dressed, nail the group-shot, dance all night, and then do it all again next weekend. </p> <p>rom form-fitting and flowy dresses we've got you (and your wallet!) covered so you never have to worry about what you'll wear to your next RSVP.</p> <p>Likely's coveted fabric- Favorite Stretch fits to perfection everytime always slimming and hugging your body in all the right places</p>",
         "category": "dresses",
         "attributes": [
             {
@@ -4182,7 +4286,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 66.32
+                "amount": 60.99
             },
             {
                 "__typename": "Price",
@@ -4230,6 +4334,7 @@ const itemsObj = [
                 "amount": 5014.97
             }
         ],
+        "description": "<p>100% Polyester</p> <p>Imported</p> <p>Zipper closure</p> <p>Hand Wash Only</p> <p>This is a beaded gown with sweetheart neckline and short flutter sleeves</p> <p>Patterned beaded mesh embellishment</p><p>Sweetheart neckline</p> <p>Short flutter sleeves</p> <p>Soft skirt silhouette</p>",
         "category": "dresses",
         "attributes": [
             {
@@ -4334,6 +4439,7 @@ const itemsObj = [
                 "amount": 5926.78
             }
         ],
+        "description": "<p>95% Polyester, 5% Spandex</p> <p>Pull On closure</p> <p>Machine Wash</p> <p>Stretch jersey</p> <p>3/4 length sleeves</p> <p>Off the shoulder</p><p>Fishtail hem</p> <p>Wrinkle free</p>",
         "category": "dresses",
         "attributes": [
             {
@@ -4374,7 +4480,7 @@ const itemsObj = [
         "__typename": "Product",
         "id": "bodycon-night-dress",
         "name": "Bodycon Night Dress",
-        "brand": "Gracie",
+        "brand": "Olivia",
         "gallery": [
             "https://m.media-amazon.com/images/I/71ETbc-Sa9L._AC_SX569._SX._UX._SY._UY_.jpg",
             "https://m.media-amazon.com/images/I/61Rw5JoRMIL._AC_SX569._SX._UX._SY._UY_.jpg",
@@ -4390,7 +4496,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 66.32
+                "amount": 60.99
             },
             {
                 "__typename": "Price",
@@ -4438,6 +4544,7 @@ const itemsObj = [
                 "amount": 5014.97
             }
         ],
+        "description": "<p>67% Polyester, 27% Rayon, 6% Spandex</p> <p>Imported</p> <p>Zipper closure</p> <p>Dry Clean Only</p> <p>With Likely, you're most #Likelyto win best dressed, nail the group-shot, dance all night, and then do it all again next weekend. </p> <p>We're your partner-in-crime for any and every occasion.</p><p>From form-fitting and flowy dresses we've got you (and your wallet!) covered so you never have to worry about what you'll wear to your next RSVP.</p>",
         "category": "dresses",
         "attributes": [
             {
@@ -4478,7 +4585,7 @@ const itemsObj = [
         "__typename": "Product",
         "id": "sleeved-yellow-dress",
         "name": "Sleeved Yellow Dress",
-        "brand": "Gracie",
+        "brand": "Olivia",
         "gallery": [
             "https://m.media-amazon.com/images/I/71MFiQlLwUL._AC_SX569._SX._UX._SY._UY_.jpg",
             "https://m.media-amazon.com/images/I/71Vv-HpEX6L._AC_SX569._SX._UX._SY._UY_.jpg",
@@ -4495,7 +4602,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 66.32
+                "amount": 60.99
             },
             {
                 "__typename": "Price",
@@ -4543,6 +4650,7 @@ const itemsObj = [
                 "amount": 5014.97
             }
         ],
+        "description": "<p>80% Polyester, 20% Rayon</p> <p>Imported</p> <p>HAND WASH COLD SEPARATELY, DO NOT BLEACH, LAY FLAT TO DRY, LOW IRON IF NECESSARY, OR DRY CLEAN</p> <p>The Picnic Ready Dress is a textured gingham tiered mini</p> <p>It has puff sleeves and a subtle ruffle detail at the neckline</p> <pItem Package Weight: 0.3 kilograms></p>",
         "category": "dresses",
         "attributes": [
             {
@@ -4599,7 +4707,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 66.32
+                "amount": 60.99
             },
             {
                 "__typename": "Price",
@@ -4647,6 +4755,7 @@ const itemsObj = [
                 "amount": 5014.97
             }
         ],
+        "description": "<p>Soft and Breathable Fabric: Very smooth satin tatting material, with little stretch, makes this a close fitting bodycon dress, also rather comfortable to wear, durable enough for your daily wearing.</p> <p>Scoop Neck, Spaghrtti Strap, Sleeveless, halter design, back lace-up, A-line style, below the knee midi length, solid sparkly color.</p> <p>Wonderful Bodycon Partywear: Very stylish and fashionable design. There is no doubt that once wearing this dress, you will be the sparkliest and shiniest one in the crowd.</p> <p>Attention: Please refer to detailed size chart info before buying</p>",
         "category": "dresses",
         "attributes": [
             {
@@ -4685,13 +4794,14 @@ const itemsObj = [
     },
     {
         "__typename": "Product",
-        "id": "strap-top",
-        "name": "Strap Top",
+        "id": "boho-floral-tank",
+        "name": "Boho Floral Tank",
         "brand": "Noisy",
         "gallery": [
-            "https://m.media-amazon.com/images/I/81SnSIRLCuL._AC_UY879_.jpg",
-            "https://m.media-amazon.com/images/I/817W21M16cL._AC_UX569_.jpg",
-            "https://m.media-amazon.com/images/I/81KnP2OMtrL._AC_UY741_.jpg"
+            "https://m.media-amazon.com/images/I/81ZZRYthnlL._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/71E5VRxQurL._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/71hheJ2zclL._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/71mrpqWh9gL._AC_UY879_.jpg"
         ],
         "inStock": true,
         "prices": [
@@ -4702,7 +4812,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 89.22
+                "amount": 80.99
             },
             {
                 "__typename": "Price",
@@ -4750,6 +4860,16 @@ const itemsObj = [
                 "amount": 6747.42
             }
         ],
+        "description": `<p>100% Polyester</p>
+        <p>Imported origin</p>
+        <p>Pull On closure</p>
+        <p>Machine Wash</p>
+        <p>Size Guide: S=US 4-6, M=US 8-10，L=US 12-14，XL=US 16-18, XXL=US 20. Dressing Tips: NO1 - It is recommended to pair light-colored items with light-colored underwear. NO2 - Please refer to our Size Chart before ordering, which can be found in the last image posted on the Product Description, rather than the Amazon Size Chart here.</p>
+        <p>SOFT FABRIC: This Disty Floral Print Women's Blouse for Summer 2023 is made of soft and lightweight fabric, providing excellent permeability and a skin-friendly feeling. It offers a greatly comfortable experience. This sleeveless floral blouse is the new trendy fashion for women in summer 2023.</p>
+        <p>FEATURES: Explore the features of this women's tank top, including square neck design, floral print, casual sleeveless style, shirred straps, pleated details, shirred shoulder, boho style, pleated smocked tank top, lightweight chiffon fabric, ruffle details, and versatility for casual and dressy occasions.</p>
+        <p>EASY TO MATCH: This cute summer top for women can be styled in a dressy casual or a laid-back manner. It pairs well with jeans, skirts, denim shorts, and classic jeans. It can be worn as street clothing, offering a casual and fashionable look. It is suitable for teen girls, ladies, and even as a comfy maternity tank top.</p>
+        <p>ADDITIONAL COLORS: In addition to the mentioned features, this collection also includes floral print black crop tops for women, white shirred sleeveless going out tops for women, green women's tank tops with a square neck, and blue tank tops for women with pleated details.</p>
+        <p>2023 NEW FASHION: Embrace the latest fashion trends with red floral cute tops for women, olive green summer tops, sky blue and white flower tank tops for women, and royal blue sleeveless tops for women.</p>`,
         "category": "blouses",
         "attributes": [
             {
@@ -4826,12 +4946,14 @@ const itemsObj = [
     },
     {
         "__typename": "Product",
-        "id": "tulip-sleeve-casual-top",
-        "name": "Tulip Sleeve Casual Top",
+        "id": "women-chiffon-blouse",
+        "name": "Women's Chiffon Blouse",
         "brand": "D&D",
         "gallery": [
-            "https://m.media-amazon.com/images/I/91bp3rhKK8L._AC_UX569_.jpg",
-            "https://m.media-amazon.com/images/I/81O6PHz2MlL._AC_UX569_.jpg"
+            "https://m.media-amazon.com/images/I/71CsRK8TqsL._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/71LxZ15XRTL._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/71jmSI2pI5L._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/71ec6KWlnRL._AC_UY879_.jpg"
         ],
         "inStock": false,
         "prices": [
@@ -4842,7 +4964,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 56.67
+                "amount": 51.55
             },
             {
                 "__typename": "Price",
@@ -4890,6 +5012,15 @@ const itemsObj = [
                 "amount": 4285.52
             }
         ],
+        "description": `<p>100% Polyester</p>
+        <p>Imported origin</p>
+        <p>Button closure</p>
+        <p>Machine Wash</p>
+        <p>SIZE TIPS: S=US 4-6, M=US 8-10，L=US 12-14，XL=US 16-18, XXL=US 20-22. This Button Down Blouse is made of lightweight and breathable polyester fabric, providing a great touch and comfortable wearing experience. The solid color shirt is lined inside, eliminating concerns about see-through issues. This chiffon blouse is versatile and perfectly suits spring and fall seasons.</p>
+        <p>TRENDY DESIGN: Explore the trendy design of this women's long sleeve blouse, including button-down style, solid color, collared shirts, chiffon fabric, elegant curved hem, jacquard pattern, chest pocket, tunic tops, and a beach blouse for women. It can be worn as a work shirt for the office or for various occasions.</p>
+        <p>ELEGANT &amp; CHIC CHIFFON BLOUSE! This graceful tunic top is available in five solid colors: white curved hem blouse tops, yellow long sleeve shirts for women, purple jacquard chiffon tunic blouse, black stylish button-up shirt tops, and brown lightweight tops and blouse with a pocket.</p>
+        <p>UNIQUE DETAILS: The long sleeves are designed with a mesh surface, adding style and uniqueness to the blouse. The blouse has an inner lining in the middle to ensure it is not see-through. The jacquard fabric provides a sense of exquisiteness and delicateness. The chiffon blouse tops feature a chest pocket, adding a touch of sophistication. The cuffs are adorned with buttons, allowing you to roll them up to your desired length.</p>
+        <p>FALL ESSENTIAL BLOUSE TOPS! This classy button-up shirt is highly versatile and can be paired with jeans, skirts, skinny leggings, shorts, and more to create stylish looks. The long sleeve blouse is a great choice for daily wear, dating, work office, beach, vacation, parties, shopping, and other occasions in spring and fall.</p>`,
         "category": "blouses",
         "attributes": [
             {
@@ -4966,13 +5097,14 @@ const itemsObj = [
     },
     {
         "__typename": "Product",
-        "id": "sleeveless-blouse",
-        "name": "Sleeveless Blouse",
+        "id": "floral-ruffled-tunic",
+        "name": "Floral Ruffled Tunic",
         "brand": "Petite",
         "gallery": [
-            "https://m.media-amazon.com/images/I/51IEXtTMwtL._AC_UX679_.jpg",
-            "https://m.media-amazon.com/images/I/51YoKQOK-GL._AC_UX569_.jpg",
-            "https://m.media-amazon.com/images/I/61iQI6eNiKL._AC_UX569_.jpg"
+            "https://m.media-amazon.com/images/I/81QUnJXe19L._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/71WY+z6ap9L._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/71FqTjPQNYL._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/71oPGrpP0JL._AC_UY879_.jpg"
         ],
         "inStock": true,
         "prices": [
@@ -4983,7 +5115,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 74.76
+                "amount": 76.87
             },
             {
                 "__typename": "Price",
@@ -5031,6 +5163,15 @@ const itemsObj = [
                 "amount": 5653.24
             }
         ],
+        "description": `<p>100% Viscose</p>
+        <p>Imported origin</p>
+        <p>Drawstring closure</p>
+        <p>Machine Wash</p>
+        <p>SIZE TIPS: S=US 4-6, M=US 8-10，L=US 12-14，XL=US 16-18. The Long Sleeve Blouse Tops are crafted from comfy and cozy viscose fabric, providing a comfortable and skin-friendly wearing experience. The tunic peplum tops are lightweight and offer the ultimate comfort. This floral blouse shirt is perfect for both spring and fall seasons.</p>
+        <p>UNIQUE DESIGN: Discover the unique design of this women's long sleeve blouse, featuring a tie V-neck tunic top, ditsy floral peplum tops, ruffled babydoll tunic tops, lantern sleeves, swing blouse, workout shirts, casual loose blouse, elegant blouse, and bow-tie blouse for women. These cute babydoll tunic tops come in four colors to choose from: pink, blue, green, and black.</p>
+        <p>CUTE BABYDOLL TUNIC TOPS! This graceful peplum top is a great addition to women's wardrobes. The tunic blouse shirt is available in four colors: pink long sleeve tunic blouse tops, blue tie V-neck flowy shirts, green ditsy floral blouse for women, and black cute pleated peplum tops.</p>
+        <p>CLASSIC STYLE: The stylish tie V-neck is the highlight of this tunic blouse. You can create a cute and trendy style by making a bow tie. The shape of the babydoll tops gives a youthful and lovely look with a relaxed feel. The floral print adds vibrancy and colorfulness to the peplum tops, avoiding monotony. The ruffle design adds a touch of elegance and enhances the loose fit.</p>
+        <p>A MUST-HAVE ITEM IN FALL! This floral blouse can be paired with jeans, shorts, skirts, leggings, and more for a fashionable look. The long sleeve tunic tops are perfect for daily wear, work, office, dates, parties, vacations, beaches, workouts, holidays, shopping, and other occasions in fall or spring.</p>`,
         "category": "blouses",
         "attributes": [
             {
@@ -5069,12 +5210,14 @@ const itemsObj = [
     },
     {
         "__typename": "Product",
-        "id": "long-sleeve-white-blouse",
-        "name": "Long Sleeve White Blouse",
+        "id": "deep-v-neck-blouse",
+        "name": "Deep V Neck Blouse",
         "brand": "Petite",
         "gallery": [
-            "https://m.media-amazon.com/images/I/51jfpd0FzJL._AC_UX679_.jpg",
-            "https://m.media-amazon.com/images/I/51Fk4ia0WdL._AC_UX569_.jpg"
+            "https://m.media-amazon.com/images/I/71JV6fyAaUL._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/81BZmz+CyoL._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/81z2UGhdmOL._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/91JBZuRO6vL._AC_UY879_.jpg"
         ],
         "inStock": true,
         "prices": [
@@ -5085,7 +5228,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 100.08
+                "amount": 90.00
             },
             {
                 "__typename": "Price",
@@ -5133,6 +5276,15 @@ const itemsObj = [
                 "amount": 7568.05
             }
         ],
+        "description": `<p>50% Viscose, 28% Nylon, 22% Polyester</p>
+        <p>Imported origin</p>
+        <p>Pull On closure</p>
+        <p>Machine Wash</p>
+        <p>MATERIAL: This long sleeve cropped sweater for women is made of lightweight knitted sweater fabric. It is stretchy, soft, and comfortable to wear. The fabric provides warmth while allowing you to show off your sexy body curve.</p>
+        <p>FEATURES: The sweater features ruched details, ribbed knit tunic pullover, a chic V neck cropped design, off-shoulder knitted pullover, long sleeves, ribbed crop tops, and a lightweight construction. It is a versatile piece that can be worn as a fall sweater in 2022. Perfect for a dressy or casual look.</p>
+        <p>OBSESSED with This Cute Sweater for Women: This long sleeve sweater has a sweetheart V neckline, solid color, shirred front, and ribbed cuffs and hem with elasticity. It has a slim fit and a slightly revealing belly design. The pleated design on the front chest adds a cute and elegant touch to the knit top.</p>
+        <p>CUTE & ELEGANT DESIGN: This rib-knit sweater is a must-have for spring and autumn. The deep V neckline highlights the elegant lines of the collarbone. The pleated design on the chest adds to your charming taste. The slightly revealing waistline with a touch of sexiness accentuates your body curves. The high-quality knitted fabric ensures softness and maximum comfort, making you look delicate and gentle.</p>
+        <p>EASY MATCHING & OCCASIONS: This V neck sweater pairs perfectly with jeans, leggings, and casual pants. It is suitable for various outdoor and indoor activities such as shopping, dating, parties, office wear, club events, staying at home, and daily life. Complete the exquisite look with a metal necklace, and you will be beautiful and charming when you wear it.</p>`,
         "category": "blouses",
         "attributes": [
             {
@@ -5209,12 +5361,15 @@ const itemsObj = [
     },
     {
         "__typename": "Product",
-        "id": "floral-blouse",
-        "name": "Floral Blouse",
+        "id": "satin-loose-blouse",
+        "name": "Satin Loose Blouse",
         "brand": "Daisy",
         "gallery": [
-            "https://m.media-amazon.com/images/I/81bqNwbjTmL._AC_UY879_.jpg",
-            "https://m.media-amazon.com/images/I/916pQoRXi-L._AC_UX569_.jpg"
+            "https://m.media-amazon.com/images/I/71qEKw3lP2L._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/71hUAnGyXkL._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/61TILPoaAdL._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/61FN7z4oG-L._AC_UY879_.jpg"
+
         ],
         "inStock": true,
         "prices": [
@@ -5225,7 +5380,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 90.43
+                "amount": 80.80
             },
             {
                 "__typename": "Price",
@@ -5273,6 +5428,15 @@ const itemsObj = [
                 "amount": 6838.6
             }
         ],
+        "description": `<p>95% Polyester, 5% Elastane</p>
+        <p>Imported origin</p>
+        <p>Pull On closure</p>
+        <p>Machine Wash</p>
+        <p>MATERIAL: This women's top dressy casual is made of high-quality satin silk fabric. It is super smooth, soft, and comfortable to wear. The fabric is not see-through and does not have stretch. Size guide: S=US 4-6, M=US 8-10, L=US 12-14, XL=US 16-18.</p>
+        <p>FEATURES: The summer top for women features satin fabric, a basic crew neckline, puff ruched sleeves, short sleeves, a loose fit tunic style, vibrant solid color options, a keyhole back, and a standard length. It is a versatile blouse that can be dressed up or down for various occasions.</p>
+        <p>STYLE: This top is suitable for summer and spring wear. It can be worn as a dressy casual top for women. It is also a great choice for casual spring outfits. It falls into the category of ladies' tops and blouses. It is suitable for casual summer looks and can be worn as business casual tops for women. The tunic style adds to its versatility.</p>
+        <p>MATCHES: The stylish puff sleeves and satin fabric of this women's blouse allow it to be dressed up for a professional look. The loose fit and length make it suitable for tucking in or leaving untucked for a casual look. It can be paired with jeans, pants, shorts, or skirts. It can also be layered under jackets or cardigans in summer, spring, fall, or winter.</p>
+        <p>OCCASIONS: This blouse is suitable for various formal or informal occasions, such as casual outings, parties, business events, cocktails, dressy occasions, work, office wear, concerts, dates, going out, travel, holidays, and school. Its versatile design makes it suitable for a wide range of settings.</p>`,
         "category": "blouses",
         "attributes": [
             {
@@ -5311,15 +5475,14 @@ const itemsObj = [
     },
     {
         "__typename": "Product",
-        "id": "obsession-top",
-        "name": "Obsession Top",
+        "id": "round-neck-top",
+        "name": "Round Neck Top",
         "brand": "Candy",
         "gallery": [
-            "https://m.media-amazon.com/images/I/81EK-f-CV6L._AC_UY879_.jpg",
-            "https://m.media-amazon.com/images/I/81dbiI0n0ML._AC_UY741_.jpg",
-            "https://m.media-amazon.com/images/I/812mNGxKW5L._AC_UY741_.jpg",
-            "https://m.media-amazon.com/images/I/71AF7gW7UbL._AC_UY741_.jpg",
-            "https://m.media-amazon.com/images/I/91d9Dng1ddL._AC_UY741_.jpg"
+            "https://m.media-amazon.com/images/I/61kpXaC7j+L._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/7154+BJlQhL._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/71kJYX6Cg7L._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/71pKMuXmgjL._AC_UY879_.jpg"
         ],
         "inStock": true,
         "prices": [
@@ -5330,7 +5493,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -5378,6 +5541,12 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": `<p>MATERIAL: The long sleeve tops for women are crafted from lightweight, soft, draped, and wrinkle-free polyester fabric, ensuring a comfortable and smooth feel. The fabric has no stretch.</p>
+        <p>FEATURES: These women's tops showcase various design elements, including a basic round neck, crew neck, solid color, ruffle trim on the cold shoulder, cut-out shoulder, and lantern sleeves with elastic cuffs. They are versatile and can be worn as long sleeve tops or blouses, off the shoulder tops, and business casual tops for women. The relaxed fit offers both a sexy and elegant look.</p>
+        <p>DESIGNS: Made from lightweight and comfortable material, this women's long sleeve blouse is suitable for all seasons. The cut-out shoulder design flatters any woman and can be dressed up or down effortlessly. The ruffle trim on the cold shoulder adds a feminine and cute touch.</p>
+        <p>STYLE: These ruffle sleeve tops for women are easy to style with jeans, shorts, leggings, skirts, or cardigans, creating a trendy and fashionable look. The sexy casual style is perfect for spring, hot summer, or fall.</p>
+        <p>OCCASIONS: These off the shoulder tops for women are ideal for a variety of occasions, including business casual settings, daily casual wear, nights out, dates, work, office attire, street fashion, travel, holidays, leisure activities, and parties.</p>
+        `,
         "category": "blouses",
         "attributes": [
             {
@@ -5432,7 +5601,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 96.46
+                "amount": 50.46
             },
             {
                 "__typename": "Price",
@@ -5480,6 +5649,7 @@ const itemsObj = [
                 "amount": 7294.5
             }
         ],
+        "description": "<p>100% Silk</p> <p>Made in the USA and imported</p> <p>Button closure</p> <p>Hand wash or dry clean</p> ",
         "category": "blouses",
         "attributes": [
             {
@@ -5582,6 +5752,7 @@ const itemsObj = [
                 "amount": 1823.63
             }
         ],
+        "description": "<p>51% Viscose, 49% Polyamide</p> <p>Imported</p><p>Pull On closure</p><p>Dry Clean Only</p><p>Semi-sheer floral lace.</p>",
         "category": "blouses",
         "attributes": [
             {
@@ -5684,6 +5855,7 @@ const itemsObj = [
                 "amount": 4559.06
             }
         ],
+        "description": "<p>100% Silk</p><p>Imported</p><p>Button closure</p><p>Dry Clean Only</p><p>Timeless and innovative</p> <p>The collection excudes discreet sexiness in the form of luxe fabrics and unexpected details found in modern silhouettes</p> ",
         "category": "blouses",
         "attributes": [
             {
@@ -5789,6 +5961,7 @@ const itemsObj = [
                 "amount": 6382.69
             }
         ],
+        "description": "<p>82% Rayon, 18% Silk</p> <p>Made in the USA and imported</p> <p>Button closure</p> <p>Dry clean only</p><p>Lined bodice</p>",
         "category": "blouses",
         "attributes": [
             {
@@ -5929,6 +6102,7 @@ const itemsObj = [
                 "amount": 4194.34
             }
         ],
+        "description": "<p>100% Silk</p> <p>Imported</p><p>Button closure</p><p>Dry clean only</p><p>Fits true to size</p><p>Timeless and innovative</p> <p>The collection excudes discreet sexiness in the form of luxe fabrics and unexpected details found in modern silhouettes</p>",
         "category": "blouses",
         "attributes": [
             {
@@ -5987,7 +6161,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 89.22
+                "amount": 80.99
             },
             {
                 "__typename": "Price",
@@ -6035,6 +6209,7 @@ const itemsObj = [
                 "amount": 6747.42
             }
         ],
+        "description": "<p>100% Cotton</p> <p>Imported</p> <p>Pull On closure</p> <p>Machine Wash</p> <p>The elastic around the top has ruffle detailing to add extra to the dress</p> <p>Easy top for warmer weather and pairs great with denim</p> ",
         "category": "blouses",
         "attributes": [
             {
@@ -6127,7 +6302,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 56.67
+                "amount": 51.55
             },
             {
                 "__typename": "Price",
@@ -6175,6 +6350,7 @@ const itemsObj = [
                 "amount": 4285.52
             }
         ],
+        "description": "<ul> <li><span> 92% Polyester, 8% Spandex  </span></li>  <li><span > Made in the USA and Imported  </span></li> <li><span > Pull On closure  </span></li> <li><span > Machine Wash  </span></li> <li><span > Soft silky knit fabric, 92% Polyester, 8% Spandex  </span></li>  <li><span > Features tulip ruffle sleeve design  </span></li>  <li><span > Update to your favorite tee shirt  </span></li></ul>",
         "category": "blouses",
         "attributes": [
             {
@@ -6315,6 +6491,7 @@ const itemsObj = [
                 "amount": 3647.25
             }
         ],
+        "description": "<p>100% Polyester</p> <p>Imported</p> <p>front closure</p> <p>Dry Clean Only</p> <p>Designed to fit and flatter 5'4` and under frame</p>  <p>Mock-neck, back keyhole and button closure</p> <p>Ruffle at neckline and center front</p>",
         "category": "blouses",
         "attributes": [
             {
@@ -6370,7 +6547,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 100.08
+                "amount": 90.00
             },
             {
                 "__typename": "Price",
@@ -6418,6 +6595,7 @@ const itemsObj = [
                 "amount": 7568.05
             }
         ],
+        "description": "<p>100% Silk</p> <p>Imported</p> <p>Pull On closure    </p> <p>Dry Clean Only    </p> <p>A cascading placket from the collar band accentuate the easy drape of our satin crepe long sleeve blouse.    </p> <p>Front tie closure.      </p> <p>Agoya button cuffs.      </p> <p>Fits true to size      </p>",
         "category": "blouses",
         "attributes": [
             {
@@ -6510,7 +6688,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 90.43
+                "amount": 80.80
             },
             {
                 "__typename": "Price",
@@ -6558,6 +6736,7 @@ const itemsObj = [
                 "amount": 6838.6
             }
         ],
+        "description": "<p>100% Silk</p> <p>Imported</p> <p>Pull On closure</p> <p>Hand wash cold. Line dry. Or dry clean.</p> <p>Slips on. Agoya button cuff. Back yoke.</p>",
         "category": "blouses",
         "attributes": [
             {
@@ -6612,7 +6791,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -6660,6 +6839,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>82% Rayon, 18% Silk</p> <p>Made in the USA and imported</p> <p>Button closure</p> <p>Dry clean only</p> <p>Devore velvet</p> <p>Lined bodice</p>",
         "category": "blouses",
         "attributes": [
             {
@@ -6714,7 +6894,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -6762,6 +6942,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>100% Silk</p> <p>Made in the USA and imported</p> <p>Button closure</p> <p>Hand wash or dry clean</p> ",
         "category": "blouses",
         "attributes": [
             {
@@ -6816,7 +6997,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -6864,6 +7045,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>51% Viscose, 49% Polyamide</p> <p>Imported</p><p>Pull On closure</p><p>Dry Clean Only</p><p>Semi-sheer floral lace.</p>",
         "category": "blouses",
         "attributes": [
             {
@@ -6918,7 +7100,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -6966,6 +7148,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>100% Silk</p><p>Imported</p><p>Button closure</p><p>Dry Clean Only</p><p>Timeless and innovative</p> <p>The collection excudes discreet sexiness in the form of luxe fabrics and unexpected details found in modern silhouettes</p> ",
         "category": "blouses",
         "attributes": [
             {
@@ -7020,7 +7203,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -7068,6 +7251,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>82% Rayon, 18% Silk</p> <p>Made in the USA and imported</p> <p>Button closure</p> <p>Dry clean only</p><p>Lined bodice</p>",
         "category": "blouses",
         "attributes": [
             {
@@ -7122,7 +7306,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -7170,6 +7354,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>100% Silk</p> <p>Imported</p><p>Button closure</p><p>Dry clean only</p><p>Fits true to size</p><p>Timeless and innovative</p> <p>The collection excudes discreet sexiness in the form of luxe fabrics and unexpected details found in modern silhouettes</p>",
         "category": "blouses",
         "attributes": [
             {
@@ -7224,7 +7409,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -7272,6 +7457,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>82% Rayon, 18% Silk</p> <p>Made in the USA and imported</p> <p>Button closure</p> <p>Dry clean only</p><p>Lined bodice</p>",
         "category": "blouses",
         "attributes": [
             {
@@ -7326,7 +7512,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -7374,6 +7560,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>100% Silk</p> <p>Imported</p><p>Button closure</p><p>Dry clean only</p><p>Fits true to size</p><p>Timeless and innovative</p> <p>The collection excudes discreet sexiness in the form of luxe fabrics and unexpected details found in modern silhouettes</p>",
         "category": "blouses",
         "attributes": [
             {
@@ -7428,7 +7615,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 89.22
+                "amount": 80.99
             },
             {
                 "__typename": "Price",
@@ -7476,6 +7663,7 @@ const itemsObj = [
                 "amount": 6747.42
             }
         ],
+        "description": "<p>100% Cotton</p> <p>Imported</p> <p>Pull On closure</p> <p>Machine Wash</p> <p>The elastic around the top has ruffle detailing to add extra to the dress</p> <p>Easy top for warmer weather and pairs great with denim</p> ",
         "category": "blouses",
         "attributes": [
             {
@@ -7568,7 +7756,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 56.67
+                "amount": 51.55
             },
             {
                 "__typename": "Price",
@@ -7616,6 +7804,7 @@ const itemsObj = [
                 "amount": 4285.52
             }
         ],
+        "description": "<ul> <li><span> 92% Polyester, 8% Spandex  </span></li>  <li><span > Made in the USA and Imported  </span></li> <li><span > Pull On closure  </span></li> <li><span > Machine Wash  </span></li> <li><span > Soft silky knit fabric, 92% Polyester, 8% Spandex  </span></li>  <li><span > Features tulip ruffle sleeve design  </span></li>  <li><span > Update to your favorite tee shirt  </span></li></ul>",
         "category": "blouses",
         "attributes": [
             {
@@ -7711,7 +7900,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 74.76
+                "amount": 76.87
             },
             {
                 "__typename": "Price",
@@ -7759,6 +7948,7 @@ const itemsObj = [
                 "amount": 5653.24
             }
         ],
+        "description": "<p>100% Polyester</p> <p>Imported</p> <p>front closure</p> <p>Dry Clean Only</p> <p>Designed to fit and flatter 5'4` and under frame</p>  <p>Mock-neck, back keyhole and button closure</p> <p>Ruffle at neckline and center front</p>",
         "category": "blouses",
         "attributes": [
             {
@@ -7813,7 +8003,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 100.08
+                "amount": 90.00
             },
             {
                 "__typename": "Price",
@@ -7861,6 +8051,7 @@ const itemsObj = [
                 "amount": 7568.05
             }
         ],
+        "description": "<p>100% Silk</p> <p>Imported</p> <p>Pull On closure    </p> <p>Dry Clean Only    </p> <p>A cascading placket from the collar band accentuate the easy drape of our satin crepe long sleeve blouse.    </p> <p>Front tie closure.      </p> <p>Agoya button cuffs.      </p> <p>Fits true to size      </p>",
         "category": "blouses",
         "attributes": [
             {
@@ -7956,7 +8147,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 90.43
+                "amount": 80.80
             },
             {
                 "__typename": "Price",
@@ -8004,6 +8195,7 @@ const itemsObj = [
                 "amount": 6838.6
             }
         ],
+        "description": "<p>100% Silk</p> <p>Imported</p> <p>Pull On closure</p> <p>Hand wash cold. Line dry. Or dry clean.</p> <p>Slips on. Agoya button cuff. Back yoke.</p>",
         "category": "blouses",
         "attributes": [
             {
@@ -8100,7 +8292,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -8148,6 +8340,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>82% Rayon, 18% Silk</p> <p>Made in the USA and imported</p> <p>Button closure</p> <p>Dry clean only</p> <p>Devore velvet</p> <p>Lined bodice</p>",
         "category": "blouses",
         "attributes": [
             {
@@ -8202,7 +8395,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -8250,6 +8443,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>100% Silk</p> <p>Made in the USA and imported</p> <p>Button closure</p> <p>Hand wash or dry clean</p> ",
         "category": "blouses",
         "attributes": [
             {
@@ -8304,7 +8498,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -8352,6 +8546,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>51% Viscose, 49% Polyamide</p> <p>Imported</p><p>Pull On closure</p><p>Dry Clean Only</p><p>Semi-sheer floral lace.</p>",
         "category": "blouses",
         "attributes": [
             {
@@ -8406,7 +8601,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -8454,6 +8649,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>100% Silk</p><p>Imported</p><p>Button closure</p><p>Dry Clean Only</p><p>Timeless and innovative</p> <p>The collection excudes discreet sexiness in the form of luxe fabrics and unexpected details found in modern silhouettes</p> ",
         "category": "blouses",
         "attributes": [
             {
@@ -8508,7 +8704,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -8556,6 +8752,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>82% Rayon, 18% Silk</p> <p>Made in the USA and imported</p> <p>Button closure</p> <p>Dry clean only</p><p>Lined bodice</p>",
         "category": "blouses",
         "attributes": [
             {
@@ -8611,7 +8808,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -8659,6 +8856,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>100% Silk</p> <p>Imported</p><p>Button closure</p><p>Dry clean only</p><p>Fits true to size</p><p>Timeless and innovative</p> <p>The collection excudes discreet sexiness in the form of luxe fabrics and unexpected details found in modern silhouettes</p>",
         "category": "blouses",
         "attributes": [
             {
@@ -8751,7 +8949,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -8799,6 +8997,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>100% Silk</p> <p>Imported</p><p>Button closure</p><p>Dry clean only</p><p>Fits true to size</p><p>Timeless and innovative</p> <p>The collection excudes discreet sexiness in the form of luxe fabrics and unexpected details found in modern silhouettes</p>",
         "category": "blouses",
         "attributes": [
             {
@@ -8901,6 +9100,7 @@ const itemsObj = [
                 "amount": 3647.25
             }
         ],
+        "description": "<p>100% Cotton</p> <p>Made in the USA and imported</p> <p>Button closure</p> <p>Machine Wash</p>   <p>Slim through hip and thigh</p> <p>Perfect rise</p> <p>Boot cut</p>",
         "category": "jeans",
         "attributes": [
             {
@@ -9003,6 +9203,7 @@ const itemsObj = [
                 "amount": 4559.06
             }
         ],
+        "description": "<p>Button closure</p> <p>68% Cotton/23% Polyester/8% Viscose/1% Elastane</p> <p>Imported</p> <p>Wash And Dry Inside Out With Like Colors, Liquid Detergent Is Recommended</p>   <p>Midrise skinny jean with five-pocket styling and button closure</p> <p>Slim through hip and thigh</p>",
         "category": "jeans",
         "attributes": [
             {
@@ -9106,6 +9307,7 @@ const itemsObj = [
                 "amount": 6382.69
             }
         ],
+        "description": "<p>Drawstring closure</p> <p>Machine Wash</p> <p>CLOSURE TYPE: Elastic, Drawstring</p> <p>FIT: Athletic, RISE: Low Rise, INSEAM: 27` Inches</p>   <p>2 Front Slip Pockets, 2 Back Slip Pockets</p> <p>75% Cotton, 22% Polyester, 3% Rayon</p> <p>Machine Wash, Tumble Dry</p>",
         "category": "jeans",
         "attributes": [
             {
@@ -9212,6 +9414,7 @@ const itemsObj = [
                 "amount": 4103.16
             }
         ],
+        "description": "<p>99% cotton, 1% spandex</p> <p>Imported</p> <p>Dry Clean Only</p><p>Mid-weight stretch denim</p><p>Raw cuffs</p><p>Rise: 11in / 28cm</p><p>Inseam: 26.5in / 67cm</p><p>Leg opening: 15.75in / 40cm</p>",
         "category": "jeans",
         "attributes": [
             {
@@ -9315,6 +9518,7 @@ const itemsObj = [
                 "amount": 7385.69
             }
         ],
+        "description": "<p>70% Cotton, 28% Polyester, 2% Elastane</p> <p>Imported</p> <p>Zipper closure</p><p>Machine Wash</p><p>Mid rise, slim through hip and thigh with a super skinny leg</p><p>Zip fly and button closure, 5-pockets + belt loops</p><p>Updated j-stitch constructio</p>",
         "category": "jeans",
         "attributes": [
             {
@@ -9419,6 +9623,7 @@ const itemsObj = [
                 "amount": 3829.61
             }
         ],
+        "description": "<p>98% Cotton, 2% Spandex</p> <p>Imported</p> <p>Zipper closure</p><p>Machine Wash</p><p>Environmental friendly washing procedures with biodegradable fabric content to protect our planet.</p><p>Fashionable designer jeans that makes you look and feels amazing.</p><p>Soft and comfortable high quality hand feel.</p><p>Fashionable destruction and wash designs with professional workmanship.</p> ",
         "category": "jeans",
         "attributes": [
             {
@@ -9521,6 +9726,7 @@ const itemsObj = [
                 "amount": 3647.25
             }
         ],
+        "description": "<p>58% Cotton, 20.2% Rayon, 13.4% Modal, 6% T400, 2.4% Lycra</p> <p>Imported</p> <p>Snap closure</p><p>28` Inseam, Mid-rise</p>9-1/2` Front rise, 9-3/4` Leg opening for size <p></p><p>UV Protection</p><p>Set-in waistband with loops</p><p>Faux zipper with working button</p>",
         "category": "jeans",
         "attributes": [
             {
@@ -9623,6 +9829,7 @@ const itemsObj = [
                 "amount": 5926.78
             }
         ],
+        "description": "<p>93% COTTON , 5% POLYESTER , 2% SPANDEX</p> <p>Imported</p> <p>Zipper closure</p><p>Machine Wash</p><p>paige vintage</p><p>high rise</p><p>wide leg</p>",
         "category": "jeans",
         "attributes": [
             {
@@ -9677,7 +9884,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 71.14
+                "amount": 70.50
             },
             {
                 "__typename": "Price",
@@ -9725,6 +9932,7 @@ const itemsObj = [
                 "amount": 5379.7
             }
         ],
+        "description": "<p>100% Cotton</p> <p>Made in the USA and imported</p> <p>Button closure</p> <p>Machine Wash</p>   <p>Slim through hip and thigh</p> <p>Perfect rise</p> <p>Boot cut</p>",
         "category": "jeans",
         "attributes": [
             {
@@ -9781,7 +9989,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -9829,6 +10037,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>Button closure</p> <p>68% Cotton/23% Polyester/8% Viscose/1% Elastane</p> <p>Imported</p> <p>Wash And Dry Inside Out With Like Colors, Liquid Detergent Is Recommended</p>   <p>Midrise skinny jean with five-pocket styling and button closure</p> <p>Slim through hip and thigh</p>",
         "category": "jeans",
         "attributes": [
             {
@@ -9935,6 +10144,7 @@ const itemsObj = [
                 "amount": 3647.25
             }
         ],
+        "description": "<p>Drawstring closure</p> <p>Machine Wash</p> <p>CLOSURE TYPE: Elastic, Drawstring</p> <p>FIT: Athletic, RISE: Low Rise, INSEAM: 27` Inches</p>   <p>2 Front Slip Pockets, 2 Back Slip Pockets</p> <p>75% Cotton, 22% Polyester, 3% Rayon</p> <p>Machine Wash, Tumble Dry</p>",
         "category": "jeans",
         "attributes": [
             {
@@ -10042,6 +10252,7 @@ const itemsObj = [
                 "amount": 5470.88
             }
         ],
+        "description": "<p>99% cotton, 1% spandex</p> <p>Imported</p> <p>Dry Clean Only</p><p>Mid-weight stretch denim</p><p>Raw cuffs</p><p>Rise: 11in / 28cm</p><p>Inseam: 26.5in / 67cm</p><p>Leg opening: 15.75in / 40cm</p>",
         "category": "jeans",
         "attributes": [
             {
@@ -10097,7 +10308,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 66.32
+                "amount": 60.99
             },
             {
                 "__typename": "Price",
@@ -10145,6 +10356,7 @@ const itemsObj = [
                 "amount": 5014.97
             }
         ],
+        "description": "<p>70% Cotton, 28% Polyester, 2% Elastane</p> <p>Imported</p> <p>Zipper closure</p><p>Machine Wash</p><p>Mid rise, slim through hip and thigh with a super skinny leg</p><p>Zip fly and button closure, 5-pockets + belt loops</p><p>Updated j-stitch constructio</p>",
         "category": "jeans",
         "attributes": [
             {
@@ -10249,6 +10461,7 @@ const itemsObj = [
                 "amount": 7750.41
             }
         ],
+        "description": "<p>98% Cotton, 2% Spandex</p> <p>Imported</p> <p>Zipper closure</p><p>Machine Wash</p><p>Environmental friendly washing procedures with biodegradable fabric content to protect our planet.</p><p>Fashionable designer jeans that makes you look and feels amazing.</p><p>Soft and comfortable high quality hand feel.</p><p>Fashionable destruction and wash designs with professional workmanship.</p> ",
         "category": "jeans",
         "attributes": [
             {
@@ -10353,6 +10566,7 @@ const itemsObj = [
                 "amount": 4011.98
             }
         ],
+        "description": "<p>58% Cotton, 20.2% Rayon, 13.4% Modal, 6% T400, 2.4% Lycra</p> <p>Imported</p> <p>Snap closure</p><p>28` Inseam, Mid-rise</p>9-1/2` Front rise, 9-3/4` Leg opening for size <p></p><p>UV Protection</p><p>Set-in waistband with loops</p><p>Faux zipper with working button</p>",
         "category": "jeans",
         "attributes": [
             {
@@ -10458,6 +10672,7 @@ const itemsObj = [
                 "amount": 3647.25
             }
         ],
+        "description": "<p>93% COTTON , 5% POLYESTER , 2% SPANDEX</p> <p>Imported</p> <p>Zipper closure</p><p>Machine Wash</p><p>paige vintage</p><p>high rise</p><p>wide leg</p>",
         "category": "jeans",
         "attributes": [
             {
@@ -10515,7 +10730,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -10563,6 +10778,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>100% Cotton</p> <p>Made in the USA and imported</p> <p>Button closure</p> <p>Machine Wash</p>   <p>Slim through hip and thigh</p> <p>Perfect rise</p> <p>Boot cut</p>",
         "category": "jeans",
         "attributes": [
             {
@@ -10668,6 +10884,7 @@ const itemsObj = [
                 "amount": 7750.41
             }
         ],
+        "description": "<p>Button closure</p> <p>68% Cotton/23% Polyester/8% Viscose/1% Elastane</p> <p>Imported</p> <p>Wash And Dry Inside Out With Like Colors, Liquid Detergent Is Recommended</p>   <p>Midrise skinny jean with five-pocket styling and button closure</p> <p>Slim through hip and thigh</p>",
         "category": "jeans",
         "attributes": [
             {
@@ -10725,7 +10942,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -10773,6 +10990,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>Drawstring closure</p> <p>Machine Wash</p> <p>CLOSURE TYPE: Elastic, Drawstring</p> <p>FIT: Athletic, RISE: Low Rise, INSEAM: 27` Inches</p>   <p>2 Front Slip Pockets, 2 Back Slip Pockets</p> <p>75% Cotton, 22% Polyester, 3% Rayon</p> <p>Machine Wash, Tumble Dry</p>",
         "category": "jeans",
         "attributes": [
             {
@@ -10878,6 +11096,7 @@ const itemsObj = [
                 "amount": 7750.41
             }
         ],
+        "description": "<p>99% cotton, 1% spandex</p> <p>Imported</p> <p>Dry Clean Only</p><p>Mid-weight stretch denim</p><p>Raw cuffs</p><p>Rise: 11in / 28cm</p><p>Inseam: 26.5in / 67cm</p><p>Leg opening: 15.75in / 40cm</p>",
         "category": "jeans",
         "attributes": [
             {
@@ -10935,7 +11154,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -10983,6 +11202,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>70% Cotton, 28% Polyester, 2% Elastane</p> <p>Imported</p> <p>Zipper closure</p><p>Machine Wash</p><p>Mid rise, slim through hip and thigh with a super skinny leg</p><p>Zip fly and button closure, 5-pockets + belt loops</p><p>Updated j-stitch constructio</p>",
         "category": "jeans",
         "attributes": [
             {
@@ -11037,7 +11257,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -11085,6 +11305,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>98% Cotton, 2% Spandex</p> <p>Imported</p> <p>Zipper closure</p><p>Machine Wash</p><p>Environmental friendly washing procedures with biodegradable fabric content to protect our planet.</p><p>Fashionable designer jeans that makes you look and feels amazing.</p><p>Soft and comfortable high quality hand feel.</p><p>Fashionable destruction and wash designs with professional workmanship.</p> ",
         "category": "jeans",
         "attributes": [
             {
@@ -11139,7 +11360,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -11187,6 +11408,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>100% Cotton</p> <p>Imported</p> <p>Snap closure</p><p>28` Inseam, Mid-rise</p>9-1/2` Front rise, 9-3/4` Leg opening for size <p></p><p>UV Protection</p><p>Set-in waistband with loops</p><p>Faux zipper with working button</p>",
         "category": "jeans",
         "attributes": [
             {
@@ -11292,6 +11514,7 @@ const itemsObj = [
                 "amount": 5890.31
             }
         ],
+        "description": "<p>93% COTTON , 5% POLYESTER , 2% SPANDEX</p> <p>Imported</p> <p>Zipper closure</p><p>Machine Wash</p><p>paige vintage</p><p>high rise</p><p>wide leg</p>",
         "category": "jeans",
         "attributes": [
             {
@@ -11348,7 +11571,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -11396,6 +11619,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>100% Cotton</p> <p>Made in the USA and imported</p> <p>Button closure</p> <p>Machine Wash</p>   <p>Slim through hip and thigh</p> <p>Perfect rise</p> <p>Boot cut</p>",
         "category": "jeans",
         "attributes": [
             {
@@ -11450,7 +11674,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -11498,6 +11722,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>Button closure</p> <p>68% Cotton/23% Polyester/8% Viscose/1% Elastane</p> <p>Imported</p> <p>Wash And Dry Inside Out With Like Colors, Liquid Detergent Is Recommended</p>   <p>Midrise skinny jean with five-pocket styling and button closure</p> <p>Slim through hip and thigh</p>",
         "category": "jeans",
         "attributes": [
             {
@@ -11552,7 +11777,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -11600,6 +11825,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>Drawstring closure</p> <p>Machine Wash</p> <p>CLOSURE TYPE: Elastic, Drawstring</p> <p>FIT: Athletic, RISE: Low Rise, INSEAM: 27` Inches</p>   <p>2 Front Slip Pockets, 2 Back Slip Pockets</p> <p>75% Cotton, 22% Polyester, 3% Rayon</p> <p>Machine Wash, Tumble Dry</p>",
         "category": "jeans",
         "attributes": [
             {
@@ -11656,7 +11882,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -11704,6 +11930,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>99% cotton, 1% spandex</p> <p>Imported</p> <p>Dry Clean Only</p><p>Mid-weight stretch denim</p><p>Raw cuffs</p><p>Rise: 11in / 28cm</p><p>Inseam: 26.5in / 67cm</p><p>Leg opening: 15.75in / 40cm</p>",
         "category": "jeans",
         "attributes": [
             {
@@ -11806,6 +12033,7 @@ const itemsObj = [
                 "amount": 5890.31
             }
         ],
+        "description": "<p>70% Cotton, 28% Polyester, 2% Elastane</p> <p>Imported</p> <p>Zipper closure</p><p>Machine Wash</p><p>Mid rise, slim through hip and thigh with a super skinny leg</p><p>Zip fly and button closure, 5-pockets + belt loops</p><p>Updated j-stitch constructio</p>",
         "category": "jeans",
         "attributes": [
             {
@@ -11860,7 +12088,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -11908,6 +12136,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>98% Cotton, 2% Spandex</p> <p>Imported</p> <p>Zipper closure</p><p>Machine Wash</p><p>Environmental friendly washing procedures with biodegradable fabric content to protect our planet.</p><p>Fashionable designer jeans that makes you look and feels amazing.</p><p>Soft and comfortable high quality hand feel.</p><p>Fashionable destruction and wash designs with professional workmanship.</p> ",
         "category": "jeans",
         "attributes": [
             {
@@ -11964,7 +12193,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -12012,6 +12241,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>58% Cotton, 20.2% Rayon, 13.4% Modal, 6% T400, 2.4% Lycra</p> <p>Imported</p> <p>Snap closure</p><p>28` Inseam, Mid-rise</p>9-1/2` Front rise, 9-3/4` Leg opening for size <p></p><p>UV Protection</p><p>Set-in waistband with loops</p><p>Faux zipper with working button</p>",
         "category": "jeans",
         "attributes": [
             {
@@ -12070,7 +12300,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -12118,6 +12348,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>93% COTTON , 5% POLYESTER , 2% SPANDEX</p> <p>Imported</p> <p>Zipper closure</p><p>Machine Wash</p><p>paige vintage</p><p>high rise</p><p>wide leg</p>",
         "category": "jeans",
         "attributes": [
             {
@@ -12223,6 +12454,7 @@ const itemsObj = [
                 "amount": 4923.79
             }
         ],
+        "description": "<p>100% Synthetic</p> <p>Imported</p>  <p>Leather sole</p>  <p>Heeled Sandal</p>  <p>Stilleto Heel</p>  <p>Square Toe</p>  <p>Thin Strappy Upper</p>",
         "category": "shoes",
         "attributes": [
             {
@@ -12334,6 +12566,7 @@ const itemsObj = [
                 "amount": 4194.34
             }
         ],
+        "description": "<p>100% Synthetic</p> <p>Imported</p>  <p>Leather sole</p>  <p>Heeled Sandal</p>  <p>Stilleto Heel</p>  <p>Square Toe</p>  <p>Thin Strappy Upper</p>",
         "category": "shoes",
         "attributes": [
             {
@@ -12444,6 +12677,7 @@ const itemsObj = [
                 "amount": 5106.15
             }
         ],
+        "description": "<p>Made in USA and Imported</p> <p>Lightweight and lifted. Perfect boost in height and these are wearable all day long.  </p><p>Ultra lightweight design featuring a buckle enclosure to perfectly hug your feet.</p>  <p>Featuring a cute strap that hug your ankle for custom support and provides a comfort throughout wear. </p>  <p>Classic design that is sure to compliment every modern woman's wardrobe</p>  <p>Heel 2.75”. Runs true to size</p>",
         "category": "shoes",
         "attributes": [
             {
@@ -12556,6 +12790,7 @@ const itemsObj = [
                 "amount": 5890.31
             }
         ],
+        "description": "<p>Imported</p> <p>Synthetic sole</p>  <p>Heel measures approximately 3.9` inches</p>  <p>Synthetic Material</p>  <p>Pump - Evening</p>  <p>Buckle Closure</p> ",
         "category": "shoes",
         "attributes": [
             {
@@ -12667,6 +12902,7 @@ const itemsObj = [
                 "amount": 3556.07
             }
         ],
+        "description": "<p>100% Synthetic</p> <p>Imported</p>  <p>Man Made sole</p>  <p>Platform measures approximately 0.5 inches inches inches</p>  <p>Vegan</p>  <p>Canvas Sock Liner</p>",
         "category": "shoes",
         "attributes": [
             {
@@ -12779,6 +13015,7 @@ const itemsObj = [
                 "amount": 6382.69
             }
         ],
+        "description": "<p>100% Cotton</p> <p>Imported</p>  <p>Thermoplastic Rubber sole</p>  <p>Heel measures approximately 4.5`</p>  <p>Chunky braided straps</p>  <p>Embellished straps</p>  <p>Slip on Style</p>  <p>Square Open Toe</p>",
         "category": "shoes",
         "attributes": [
             {
@@ -12891,6 +13128,7 @@ const itemsObj = [
                 "amount": 4923.79
             }
         ],
+        "description": "<p>Faux Suede</p> <p>Imported</p>  <p>Suede sole</p>  <p>Heel measures approximately 3.91 inches</p>  <p>Faux Suede Material</p>  <p>Sandal - Heeled</p>  <p>Elastic Closure</p>",
         "category": "shoes",
         "attributes": [
             {
@@ -12954,7 +13192,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -13002,6 +13240,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>Imported</p> <p>Thermoplastic Rubber sole</p>  <p>Heeled Slide Sandal</p>  <p>Thin Double Toe Straps</p>  <p>Square Open Toe</p>  <p>Angled Block Heel</p>",
         "category": "shoes",
         "attributes": [
             {
@@ -13112,6 +13351,7 @@ const itemsObj = [
                 "amount": 53796.97
             }
         ],
+        "description": "<p>Made in USA and Imported</p> <p>Lightweight and lifted. Perfect boost in height and these are wearable all day long.  </p><p>Ultra lightweight design featuring a buckle enclosure to perfectly hug your feet.</p>  <p>Featuring a cute strap that hug your ankle for custom support and provides a comfort throughout wear. </p>  <p>Classic design that is sure to compliment every modern woman's wardrobe</p>  <p>Heel 2.75”. Runs true to size</p>",
         "category": "shoes",
         "attributes": [
             {
@@ -13223,6 +13463,7 @@ const itemsObj = [
                 "amount": 6200.33
             }
         ],
+        "description": "<p>Faux Suede</p> <p>Imported</p>  <p>Suede sole</p>  <p>Heel measures approximately 3.91 inches</p>  <p>Faux Suede Material</p>  <p>Sandal - Heeled</p>  <p>Elastic Closure</p>",
         "category": "shoes",
         "attributes": [
             {
@@ -13333,6 +13574,7 @@ const itemsObj = [
                 "amount": 5562.06
             }
         ],
+        "description": "<p>100% Synthetic</p> <p>Imported</p>  <p>Leather sole</p>  <p>Heeled Sandal</p>  <p>Stilleto Heel</p>  <p>Square Toe</p>  <p>Thin Strappy Upper</p>",
         "category": "shoes",
         "attributes": [
             {
@@ -13396,7 +13638,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -13444,6 +13686,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>100% Synthetic</p> <p>Imported</p>  <p>Leather sole</p>  <p>Heeled Sandal</p>  <p>Stilleto Heel</p>  <p>Square Toe</p>  <p>Thin Strappy Upper</p>",
         "category": "shoes",
         "attributes": [
             {
@@ -13555,6 +13798,7 @@ const itemsObj = [
                 "amount": 7112.14
             }
         ],
+        "description": "<p>Made in USA and Imported</p> <p>Lightweight and lifted. Perfect boost in height and these are wearable all day long.  </p><p>Ultra lightweight design featuring a buckle enclosure to perfectly hug your feet.</p>  <p>Featuring a cute strap that hug your ankle for custom support and provides a comfort throughout wear. </p>  <p>Classic design that is sure to compliment every modern woman's wardrobe</p>  <p>Heel 2.75”. Runs true to size</p>",
         "category": "shoes",
         "attributes": [
             {
@@ -13666,6 +13910,7 @@ const itemsObj = [
                 "amount": 4923.79
             }
         ],
+        "description": "<p>Imported</p> <p>Synthetic sole</p>  <p>Heel measures approximately 3.9` inches</p>  <p>Synthetic Material</p>  <p>Pump - Evening</p>  <p>Buckle Closure</p> ",
         "category": "shoes",
         "attributes": [
             {
@@ -13729,7 +13974,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -13777,6 +14022,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>100% Synthetic</p> <p>Imported</p>  <p>Man Made sole</p>  <p>Platform measures approximately 0.5 inches inches inches</p>  <p>Vegan</p>  <p>Canvas Sock Liner</p>",
         "category": "shoes",
         "attributes": [
             {
@@ -13839,7 +14085,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -13887,6 +14133,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>100% Cotton</p> <p>Imported</p>  <p>Thermoplastic Rubber sole</p>  <p>Heel measures approximately 4.5`</p>  <p>Chunky braided straps</p>  <p>Embellished straps</p>  <p>Slip on Style</p>  <p>Square Open Toe</p>",
         "category": "shoes",
         "attributes": [
             {
@@ -13950,7 +14197,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 89.22
+                "amount": 80.99
             },
             {
                 "__typename": "Price",
@@ -13998,6 +14245,7 @@ const itemsObj = [
                 "amount": 6747.42
             }
         ],
+        "description": "<p>Faux Suede</p> <p>Imported</p>  <p>Suede sole</p>  <p>Heel measures approximately 3.91 inches</p>  <p>Faux Suede Material</p>  <p>Sandal - Heeled</p>  <p>Elastic Closure</p>",
         "category": "shoes",
         "attributes": [
             {
@@ -14109,6 +14357,7 @@ const itemsObj = [
                 "amount": 5562.06
             }
         ],
+        "description": "<p>Imported</p> <p>Thermoplastic Rubber sole</p>  <p>Heeled Slide Sandal</p>  <p>Thin Double Toe Straps</p>  <p>Square Open Toe</p>  <p>Angled Block Heel</p>",
         "category": "shoes",
         "attributes": [
             {
@@ -14172,7 +14421,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -14220,6 +14469,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>Made in USA and Imported</p> <p>Lightweight and lifted. Perfect boost in height and these are wearable all day long.  </p><p>Ultra lightweight design featuring a buckle enclosure to perfectly hug your feet.</p>  <p>Featuring a cute strap that hug your ankle for custom support and provides a comfort throughout wear. </p>  <p>Classic design that is sure to compliment every modern woman's wardrobe</p>  <p>Heel 2.75”. Runs true to size</p>",
         "category": "shoes",
         "attributes": [
             {
@@ -14283,7 +14533,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -14331,6 +14581,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>Faux Suede</p> <p>Imported</p>  <p>Suede sole</p>  <p>Heel measures approximately 3.91 inches</p>  <p>Faux Suede Material</p>  <p>Sandal - Heeled</p>  <p>Elastic Closure</p>",
         "category": "shoes",
         "attributes": [
             {
@@ -14394,7 +14645,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -14442,6 +14693,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>100% Synthetic</p> <p>Imported</p>  <p>Leather sole</p>  <p>Heeled Sandal</p>  <p>Stilleto Heel</p>  <p>Square Toe</p>  <p>Thin Strappy Upper</p>",
         "category": "shoes",
         "attributes": [
             {
@@ -14505,7 +14757,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -14553,6 +14805,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>100% Synthetic</p> <p>Imported</p>  <p>Leather sole</p>  <p>Heeled Sandal</p>  <p>Stilleto Heel</p>  <p>Square Toe</p>  <p>Thin Strappy Upper</p>",
         "category": "shoes",
         "attributes": [
             {
@@ -14664,6 +14917,7 @@ const itemsObj = [
                 "amount": 4923.79
             }
         ],
+        "description": "<p>Made in USA and Imported</p> <p>Lightweight and lifted. Perfect boost in height and these are wearable all day long.  </p><p>Ultra lightweight design featuring a buckle enclosure to perfectly hug your feet.</p>  <p>Featuring a cute strap that hug your ankle for custom support and provides a comfort throughout wear. </p>  <p>Classic design that is sure to compliment every modern woman's wardrobe</p>  <p>Heel 2.75”. Runs true to size</p>",
         "category": "shoes",
         "attributes": [
             {
@@ -14725,7 +14979,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -14773,6 +15027,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>Imported</p> <p>Synthetic sole</p>  <p>Heel measures approximately 3.9` inches</p>  <p>Synthetic Material</p>  <p>Pump - Evening</p>  <p>Buckle Closure</p> ",
         "category": "shoes",
         "attributes": [
             {
@@ -14836,7 +15091,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -14884,6 +15139,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>100% Synthetic</p> <p>Imported</p>  <p>Man Made sole</p>  <p>Platform measures approximately 0.5 inches inches inches</p>  <p>Vegan</p>  <p>Canvas Sock Liner</p>",
         "category": "shoes",
         "attributes": [
             {
@@ -14995,6 +15251,7 @@ const itemsObj = [
                 "amount": 5197.33
             }
         ],
+        "description": "<p>100% Cotton</p> <p>Imported</p>  <p>Thermoplastic Rubber sole</p>  <p>Heel measures approximately 4.5`</p>  <p>Chunky braided straps</p>  <p>Embellished straps</p>  <p>Slip on Style</p>  <p>Square Open Toe</p>",
         "category": "shoes",
         "attributes": [
             {
@@ -15056,7 +15313,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -15104,6 +15361,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>Faux Suede</p> <p>Imported</p>  <p>Suede sole</p>  <p>Heel measures approximately 3.91 inches</p>  <p>Faux Suede Material</p>  <p>Sandal - Heeled</p>  <p>Elastic Closure</p>",
         "category": "shoes",
         "attributes": [
             {
@@ -15214,6 +15472,7 @@ const itemsObj = [
                 "amount": 5562.06
             }
         ],
+        "description": "<p>Imported</p> <p>Thermoplastic Rubber sole</p>  <p>Heeled Slide Sandal</p>  <p>Thin Double Toe Straps</p>  <p>Square Open Toe</p>  <p>Angled Block Heel</p>",
         "category": "shoes",
         "attributes": [
             {
@@ -15325,6 +15584,7 @@ const itemsObj = [
                 "amount": 5197.33
             }
         ],
+        "description": "<p>Made in USA and Imported</p> <p>Lightweight and lifted. Perfect boost in height and these are wearable all day long.  </p><p>Ultra lightweight design featuring a buckle enclosure to perfectly hug your feet.</p>  <p>Featuring a cute strap that hug your ankle for custom support and provides a comfort throughout wear. </p>  <p>Classic design that is sure to compliment every modern woman's wardrobe</p>  <p>Heel 2.75”. Runs true to size</p>",
         "category": "shoes",
         "attributes": [
             {
@@ -15387,7 +15647,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -15435,6 +15695,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>Faux Suede</p> <p>Imported</p>  <p>Suede sole</p>  <p>Heel measures approximately 3.91 inches</p>  <p>Faux Suede Material</p>  <p>Sandal - Heeled</p>  <p>Elastic Closure</p>",
         "category": "shoes",
         "attributes": [
             {
@@ -15497,7 +15758,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -15545,6 +15806,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>100% Synthetic</p> <p>Imported</p>  <p>Leather sole</p>  <p>Heeled Sandal</p>  <p>Stilleto Heel</p>  <p>Square Toe</p>  <p>Thin Strappy Upper</p>",
         "category": "shoes",
         "attributes": [
             {
@@ -15608,7 +15870,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -15656,6 +15918,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>100% Synthetic</p> <p>Imported</p>  <p>Leather sole</p>  <p>Heeled Sandal</p>  <p>Stilleto Heel</p>  <p>Square Toe</p>  <p>Thin Strappy Upper</p>",
         "category": "shoes",
         "attributes": [
             {
@@ -15766,6 +16029,7 @@ const itemsObj = [
                 "amount": 5197.33
             }
         ],
+        "description": "<p>Made in USA and Imported</p> <p>Lightweight and lifted. Perfect boost in height and these are wearable all day long.  </p><p>Ultra lightweight design featuring a buckle enclosure to perfectly hug your feet.</p>  <p>Featuring a cute strap that hug your ankle for custom support and provides a comfort throughout wear. </p>  <p>Classic design that is sure to compliment every modern woman's wardrobe</p>  <p>Heel 2.75”. Runs true to size</p>",
         "category": "shoes",
         "attributes": [
             {
@@ -15829,7 +16093,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -15877,6 +16141,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>Imported</p> <p>Synthetic sole</p>  <p>Heel measures approximately 3.9` inches</p>  <p>Synthetic Material</p>  <p>Pump - Evening</p>  <p>Buckle Closure</p> ",
         "category": "shoes",
         "attributes": [
             {
@@ -15987,6 +16252,7 @@ const itemsObj = [
                 "amount": 5197.33
             }
         ],
+        "description": "<p>100% Synthetic</p> <p>Imported</p>  <p>Man Made sole</p>  <p>Platform measures approximately 0.5 inches inches inches</p>  <p>Vegan</p>  <p>Canvas Sock Liner</p>",
         "category": "shoes",
         "attributes": [
             {
@@ -16097,6 +16363,7 @@ const itemsObj = [
                 "amount": 5562.06
             }
         ],
+        "description": "<p>100% Cotton</p> <p>Imported</p>  <p>Thermoplastic Rubber sole</p>  <p>Heel measures approximately 4.5`</p>  <p>Chunky braided straps</p>  <p>Embellished straps</p>  <p>Slip on Style</p>  <p>Square Open Toe</p>",
         "category": "shoes",
         "attributes": [
             {
@@ -16160,7 +16427,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -16208,6 +16475,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>Faux Suede</p> <p>Imported</p>  <p>Suede sole</p>  <p>Heel measures approximately 3.91 inches</p>  <p>Faux Suede Material</p>  <p>Sandal - Heeled</p>  <p>Elastic Closure</p>",
         "category": "shoes",
         "attributes": [
             {
@@ -16270,7 +16538,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -16318,6 +16586,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>Imported</p> <p>Thermoplastic Rubber sole</p>  <p>Heeled Slide Sandal</p>  <p>Thin Double Toe Straps</p>  <p>Square Open Toe</p>  <p>Angled Block Heel</p>",
         "category": "shoes",
         "attributes": [
             {
@@ -16429,6 +16698,7 @@ const itemsObj = [
                 "amount": 5197.33
             }
         ],
+        "description": "<p>Made in USA and Imported</p>\n      <p>Lightweight and lifted. Perfect boost in height and these are wearable all day long.</p>\n      <p>Ultra lightweight design featuring a buckle enclosure to perfectly hug your feet.</p>\n      <p>Featuring a cute strap that hug your ankle for custom support and provides a comfort throughout wear.</p>\n      <p>Classic design that is sure to compliment every modern woman's wardrobe</p>\n      <p>Heel 2.75”. Runs true to size</p>",
         "category": "shoes",
         "attributes": [
             {
@@ -16492,7 +16762,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 120.57
+                "amount": 110.90
             },
             {
                 "__typename": "Price",
@@ -16540,6 +16810,7 @@ const itemsObj = [
                 "amount": 9118.13
             }
         ],
+        "description": "<p>Faux Suede</p><p>Imported</p>  <p>Suede sole</p>  <p>Heel measures approximately 3.91 inches</p>  <p>Faux Suede Material</p>  <p>Sandal - Heeled</p>  <p>Elastic Closure</p>",
         "category": "shoes",
         "attributes": [
             {

@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
+
 :root {
-  --font-raleway: "Raleway", sans-serif;
+  --font-raleway: "Poppins", sans-serif;
   --font-roboto: "Roboto", sans-serif;
   --sans-pro: "Source Sans Pro", sans-serif;
   --c-text: #1d1f22;
@@ -184,8 +185,8 @@ header {
   top: 90%;
   color: var(--c-text);
   font-family: var(--font-raleway);
-  text-transform: uppercase;
-  font-size: 4rem;
+  text-transform: capitalize;
+  font-size: 3.5rem;
   letter-spacing: 1px;
 }
 
