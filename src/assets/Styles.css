@@ -276,8 +276,8 @@ header ul a {
 }
 .active-category-link li {
   /* color: var(--c-primary); */
-  /* color: rgb(240, 97, 97); */
-  color: var(--c-white);
+  color: rgb(240, 97, 97);
+  /* color: var(--c-white); */
 }
 .inactive-category-link li {
   color: var(--c-text);
@@ -286,7 +286,7 @@ header ul a {
   content: "";
   position: absolute;
   height: 0.125rem;
-  background-color: var(--c-white);
+  background-color: rgb(240, 97, 97);
   width: max-content;
   padding-left: 1rem;
   padding-right: 1rem;
