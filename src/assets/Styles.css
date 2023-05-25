@@ -223,11 +223,11 @@ header {
 }
 
 .single-product-hero {
-  min-height: 35rem;
+  min-height: 25rem;
   height: 100%;
-  background-image: linear-gradient(to bottom, transparent, #ffffff), url("../images/singleProductHero.jpeg");
+  /* background-image: linear-gradient(to bottom, transparent, #ffffff); */
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   position: relative;
   display: flex;

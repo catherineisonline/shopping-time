@@ -284,10 +284,11 @@ export default class App extends React.Component {
     this.setState({ taxes: ((totalPayment * 21) / 100).toFixed(2) });
   }
   componentDidMount() {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
     this.getCategories();
     this.GetProducts(this.state.activeCategory);
     this.getCurrencies();
-    console.log()
+
   }
 
   shouldComponentUpdate(nextProps, nextState) {

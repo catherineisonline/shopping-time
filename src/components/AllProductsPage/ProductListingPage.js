@@ -8,6 +8,9 @@ import CategoryJeansHero from '../../images/product-listing-images/category-jean
 
 
 export default class ProductListingPage extends React.Component {
+  componentDidMount() {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  }
   render() {
     const {
       allProducts,
@@ -19,7 +22,6 @@ export default class ProductListingPage extends React.Component {
       removeQuickAddToCart,
       productId,
     } = this.props;
-
     return (
       <article className="category-page">
         <article className="products-hero">

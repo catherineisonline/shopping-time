@@ -1,6 +1,6 @@
 .single-product {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin: 0 auto;
   width: 90%;
   margin-bottom: 3.5rem;
@@ -11,7 +11,7 @@
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  margin-top: 20%;
+  margin-top: 8rem;
 }
 .single-product-category {
   text-transform: uppercase;
@@ -20,13 +20,13 @@
 
 .product-showcase {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   align-items: start;
 }
 .product-showcase img {
   max-width: 80%;
-  height: 70%;
-  /* object-fit: contain; */
+  height: 100%;
+  object-fit: cover;
 }
 .single-product-data {
   flex-direction: column;

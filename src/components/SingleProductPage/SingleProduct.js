@@ -26,6 +26,7 @@ export default class SingleProduct extends React.Component {
       products: [],
       priceAmount: "",
       selectedCurrency: "$",
+      coverImage: ''
     };
     this.handleSelectedAttributes = this.handleSelectedAttributes.bind(this);
     this.handleAllAttributesAreSelected =
@@ -49,6 +50,7 @@ export default class SingleProduct extends React.Component {
       const targetItem = (Object.values(item).filter(item => item === uniqueId)[0])
       if (item.id === targetItem) {
         targetproduct = item;
+        this.setState({ coverImage: item.gallery[0] })
         this.setState({ singleProduct: item });
       }
 
@@ -98,6 +100,7 @@ export default class SingleProduct extends React.Component {
   componentDidMount() {
     ///Need to change url like store/category/id
     this.GetProductById(window.location.pathname.toString().substring(1));
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
   }
   shouldComponentUpdate(nextProps, nextState) {
     if (this.props.selectedCurrency !== nextProps.selectedCurrency) {
@@ -122,13 +125,13 @@ export default class SingleProduct extends React.Component {
       allAttributesAreSelected,
       priceAmount,
       selectedCurrency,
+      coverImage
     } = this.state;
     return (
       <main className="single-profuct-main">
-        <article className="single-product-hero">
-          {" "}
-          <ProductTitles singleProduct={singleProduct} />
-        </article>
+        {/* <article className="single-product-hero" > */}
+        <ProductTitles singleProduct={singleProduct} />
+        {/* </article> */}
 
         <section className="single-product">
           <ProductShowcase singleProduct={singleProduct} />
