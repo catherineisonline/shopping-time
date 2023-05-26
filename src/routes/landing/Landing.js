@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import HeroVideo from '../../assets/images/landing-images/hero-video.mp4'
 
-export default class LandingPage extends React.Component {
+export default class Landing extends React.Component {
   render() {
     const { changeCategory } = this.props;
     return (

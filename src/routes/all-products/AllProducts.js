@@ -7,7 +7,7 @@ import CategoryShoesHero from '../../assets/images/product-listing-images/catego
 import CategoryJeansHero from '../../assets/images/product-listing-images/category-jeans-hero.mp4'
 
 
-export default class ProductListingPage extends React.Component {
+export default class AllProducts extends React.Component {
   componentDidMount() {
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
   }

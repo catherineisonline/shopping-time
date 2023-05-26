@@ -1,7 +1,8 @@
 import React from "react";
 import SelectedAttributes from "../../attributes/SelectedAttributes";
+// import CartPricing from "../routes/Cart/CartPricing";
+import CartPricing from '../../'
 import CartProductInteraction from "../../CartProductInteraction";
-import CartPricing from "../../../routes/cart/CartPricing";
 
 export default class CartOverlayItem extends React.Component {
   constructor(props) {

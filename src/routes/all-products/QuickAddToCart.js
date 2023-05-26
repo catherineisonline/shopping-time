@@ -1,5 +1,5 @@
 import React from "react";
-import Attribute from "../../components/Attributes/Attribute";
+import Attribute from "../../components/attributes/Attribute";
 import AddToCartButton from "../../components/AddToCartButton";
 
 export default class QuickAddToCart extends React.Component {

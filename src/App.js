@@ -4,11 +4,10 @@ import {
   currenciesObj, itemsObj, categoriesObj
 } from "./prodcuts-data";
 import Header from "./components/Header/Header.js";
-import ProductListingPage from "./routes/AllProductsPage/ProductListingPage";
-import SingleProduct from "./routes/SingleProductPage/SingleProduct";
-// import Cart from "./components/Cart/Cart.js";
-import Cart from './routes/Cart/Cart'
-import LandingPage from "./routes/LandingPage/LandingPage.js";
+import AllProducts from "./routes/all-products/AllProducts";
+import SingleProduct from "./routes/single-product/SingleProduct";
+import Cart from './routes/cart/Cart'
+import Landing from "./routes/landing/Landing.js";
 
 
 
@@ -338,12 +337,12 @@ export default class App extends React.Component {
         <Routes>
           <Route
             path="/"
-            element={<LandingPage changeCategory={this.changeCategory} />}
+            element={<Landing changeCategory={this.changeCategory} />}
           />
           <Route
             path={`/store/${activeCategory}`}
             element={
-              <ProductListingPage
+              <AllProducts
                 allProducts={allProducts}
                 activeCategory={activeCategory}
                 selectedCurrency={selectedCurrency}
@@ -382,7 +381,6 @@ export default class App extends React.Component {
             }
           />
         </Routes>
-        {/* <Footer /> */}
       </BrowserRouter>
     );
   }
