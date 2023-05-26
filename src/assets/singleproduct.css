@@ -32,6 +32,18 @@
   flex-direction: column;
   gap: 2rem;
 }
+.product-listing-page {
+  margin-top: 3rem;
+}
+.product-listing-page h3 {
+  text-align: center;
+  color: var(--c-text);
+  font-family: var(--font-raleway);
+  text-transform: capitalize;
+  font-size: 3.5rem;
+  letter-spacing: 1px;
+  padding: 2rem;
+}
 
 .single-product-brand {
   font-weight: 600;

@@ -10,8 +10,6 @@
 .cart-hero {
   min-height: 25rem;
   height: 100%;
-  background-image: linear-gradient(to bottom, transparent, #ffffff),
-    url("../images/cartHero.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

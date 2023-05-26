@@ -75,7 +75,7 @@ li {
 header,
 header ul,
 .dropdown-section,
-.product-listing-page,
+.landing-page,
 .initial-currency,
 .currency-switcher,
 .product,
@@ -211,7 +211,7 @@ header {
   z-index: 2;
 }
 
-.product-listing-page h3 {
+.landing-page h3 {
   text-align: center;
   /* position: absolute; */
   /* top: 90%; */
@@ -387,23 +387,23 @@ main {
 }
 .div1 {
   grid-area: 1 / 1 / 2 / 4;
-  background-image: url("../images/gridOne.jpeg");
+  background-image: url("../images/landing-images/gridOne.jpeg");
 }
 .div2 {
   grid-area: 1 / 4 / 2 / 6;
-  background-image: url("../images/gridTwo.jpeg");
+  background-image: url("../images/landing-images/gridTwo.jpeg");
 }
 .div3 {
   grid-area: 2 / 1 / 3 / 3;
-  background-image: url("../images/gridThree.jpeg");
+  background-image: url("../images/landing-images/gridThree.jpeg");
 }
 .div4 {
   grid-area: 2 / 3 / 3 / 6;
-  background-image: url("../images/gridFour.jpeg");
+  background-image: url("../images/landing-images/gridFour.jpeg");
 }
 .div5 {
   grid-area: 3 / 1 / 4 / 6;
-  background-image: url("../images/gridFive.jpeg");
+  background-image: url("../images/landing-images/gridFive.jpeg");
 }
 .div1 .grid-button {
   top: 85%;
@@ -518,7 +518,7 @@ main {
 
 /* PRODUCT LISTING PAGE */
 /********************************/
-.product-listing-page {
+.landing-page {
   flex-direction: column;
   gap: 6.5rem;
   width: 86.11111111111111%;
@@ -527,7 +527,7 @@ main {
   position: relative;
 }
 
-.product-listing-page h2 {
+.landing-page h2 {
   font-weight: 400;
   font-size: 2.625rem;
   font-family: var(--font-raleway);

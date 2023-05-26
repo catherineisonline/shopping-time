@@ -1031,7 +1031,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 48.23
+                "amount": 77.90
             },
             {
                 "__typename": "Price",
@@ -5807,7 +5807,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 60.29
+                "amount": 43.90
             },
             {
                 "__typename": "Price",
@@ -5913,7 +5913,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 84.4
+                "amount": 76.80
             },
             {
                 "__typename": "Price",
@@ -6443,7 +6443,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 48.23
+                "amount": 77.90
             },
             {
                 "__typename": "Price",
@@ -9040,8 +9040,10 @@ const itemsObj = [
         "name": "Boot Cut Jeans",
         "brand": "Arian",
         "gallery": [
-            "https://m.media-amazon.com/images/I/71TM45pZkOL._AC_UX679_.jpg",
-            "https://m.media-amazon.com/images/I/71aOovHJIaL._AC_UX679_.jpg"
+            "https://m.media-amazon.com/images/I/81WqWc+lF8L._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/81YoIw+QqyL._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/81luXaDpiaL._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/71d8ndSHciL._AC_UY879_.jpg"
         ],
         "inStock": true,
         "prices": [
@@ -9052,7 +9054,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 48.23
+                "amount": 77.90
             },
             {
                 "__typename": "Price",
@@ -9100,7 +9102,14 @@ const itemsObj = [
                 "amount": 3647.25
             }
         ],
-        "description": "<p>100% Cotton</p> <p>Made in the USA and imported</p> <p>Button closure</p> <p>Machine Wash</p>   <p>Slim through hip and thigh</p> <p>Perfect rise</p> <p>Boot cut</p>",
+        "description": `<p>MATERIAL: These women's jeans are made of a premium blend of 72% cotton, 26% polyester, and 2% spandex. The fabric composition ensures comfort, breathability, and stretchability. It retains its shape and color even after multiple washes.</p>
+        <p>Button closure</p>
+        <p>👚Note: Please check the size chart before making a purchase. You can also watch the video for more details about this product.</p>
+        <p>❤️Why Us? Better Fabric: We have used high-quality cotton fabric that offers superior comfort and breathability compared to regular fabric. The added spandex provides stretch, ensuring a perfect fit. The fabric is also resistant to fading and maintains its shape over time. It is free from unpleasant odors.</p>
+        <p>❤️Special Cutting: Our jeans feature a special curvy mid-rise waist design that eliminates any gap at the waist. The back design hugs your curves nicely and enhances your booty. The leg shape widens from the knee to the bottom, providing great coverage and creating a straight and elongated leg look. The retro flared style adds a fashionable and stylish touch.</p>
+        <p>👖Features: These women's totally shaping curvy bootcut jeans come with a classic five-pocket design and can be tumble dried. They are imported and available in different inseam lengths: Short=29.5", Medium=31.5", Long=33.5".</p>
+        <p>💣Best Service: We are committed to providing the best customer service. If you are not satisfied with the women's jeans within 90 days, we offer a hassle-free exchange or refund policy. Your satisfaction is our top priority. Feel free to contact us through Amazon for any assistance you may need.</p>
+        `,
         "category": "jeans",
         "attributes": [
             {
@@ -9143,8 +9152,10 @@ const itemsObj = [
         "name": "Ankle Skinny Jeans",
         "brand": "Bonnie",
         "gallery": [
-            "https://m.media-amazon.com/images/I/71OlvIHA2bL._AC_UX679_.jpg",
-            "https://m.media-amazon.com/images/I/716b1pRRARL._AC_UX679_.jpg"
+            "https://m.media-amazon.com/images/I/51v4Mq1e-DL._AC_UX679_.jpg",
+            "https://m.media-amazon.com/images/I/51lfsTn9BVL._AC_UX679_.jpg",
+            "https://m.media-amazon.com/images/I/51myadJjc7L._AC_UX679_.jpg",
+            "https://m.media-amazon.com/images/I/61Jy3eOhquL._AC_UX679_.jpg"
         ],
         "inStock": true,
         "prices": [
@@ -9155,7 +9166,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 60.29
+                "amount": 43.90
             },
             {
                 "__typename": "Price",
@@ -9203,7 +9214,14 @@ const itemsObj = [
                 "amount": 4559.06
             }
         ],
-        "description": "<p>Button closure</p> <p>68% Cotton/23% Polyester/8% Viscose/1% Elastane</p> <p>Imported</p> <p>Wash And Dry Inside Out With Like Colors, Liquid Detergent Is Recommended</p>   <p>Midrise skinny jean with five-pocket styling and button closure</p> <p>Slim through hip and thigh</p>",
+        "description": `<p>MATERIAL: These jeans are crafted from a blend of 92% cotton, 6% polyester, and 2% elastane. The fabric offers a mid stretch, ensuring a comfortable fit while retaining its shape. It combines the natural feel of cotton with the added durability and flexibility of polyester and elastane.</p>
+        <p>Imported</p>
+        <p>Zipper closure</p>
+        <p>Machine Wash</p>
+        <p>DESIGN: These jeans feature a skinny leg and a slim fit through the hip and thigh, creating a flattering silhouette. With a high-rise waist, they sit above the waistline for a stylish look.</p>
+        <p>Inseam: 27"</p>
+        <p>Front Rise: 10"; Back Rise: 14"</p>
+        `,
         "category": "jeans",
         "attributes": [
             {
@@ -9246,9 +9264,10 @@ const itemsObj = [
         "name": "Denim Joggers",
         "brand": "Arian",
         "gallery": [
-            "https://m.media-amazon.com/images/I/5135OuYRbrL._AC_UY879_.jpg",
-            "https://m.media-amazon.com/images/I/51426JTjUEL._AC_UY741_.jpg",
-            "https://m.media-amazon.com/images/I/51nclohjxcL._AC_UY741_.jpg"
+            "https://m.media-amazon.com/images/I/61v+d3RsdbL._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/61hhZRIiufL._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/51xoqC-rs7L._AC_UY879_.jpg",
+            "https://m.media-amazon.com/images/I/61p7du-0KYL._AC_UX679_.jpg"
         ],
         "inStock": true,
         "prices": [
@@ -9259,7 +9278,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 84.4
+                "amount": 76.80
             },
             {
                 "__typename": "Price",
@@ -9307,7 +9326,14 @@ const itemsObj = [
                 "amount": 6382.69
             }
         ],
-        "description": "<p>Drawstring closure</p> <p>Machine Wash</p> <p>CLOSURE TYPE: Elastic, Drawstring</p> <p>FIT: Athletic, RISE: Low Rise, INSEAM: 27` Inches</p>   <p>2 Front Slip Pockets, 2 Back Slip Pockets</p> <p>75% Cotton, 22% Polyester, 3% Rayon</p> <p>Machine Wash, Tumble Dry</p>",
+        "description": `<p>Imported</p>
+        <p>Drawstring closure</p>
+        <p>MATERIAL: These denim joggers for women are made of a blend of 73% cotton, 11% polyester, 2% spandex, and 14% rayon. This polycotton blend offers a comfortable and stretchy fabric that combines the softness of cotton with the durability and flexibility of polyester, spandex, and rayon.</p>
+        <p>Denim joggers for women with Basic five pockets</p>
+        <p>It is perfect to wear these women's denim jogger pants with most blouses and tops, creating versatile outfit options.</p>
+        <p>Women jean joggers and Loose Denim Pants show a fashionable casual look, providing both comfort and style.</p>
+        <p>This drawstring jeans for women feature good elasticity, ensuring a comfortable fit and easy adjustment with the drawstring closure.</p>
+        `,
         "category": "jeans",
         "attributes": [
             {
@@ -9678,7 +9704,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 48.23
+                "amount": 77.90
             },
             {
                 "__typename": "Price",
@@ -10096,7 +10122,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 48.23
+                "amount": 77.90
             },
             {
                 "__typename": "Price",
@@ -10624,7 +10650,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 48.23
+                "amount": 77.90
             },
             {
                 "__typename": "Price",
@@ -12967,7 +12993,7 @@ const itemsObj = [
                     "label": "USD",
                     "symbol": "$"
                 },
-                "amount": 84.4
+                "amount": 76.80
             },
             {
                 "__typename": "Price",
