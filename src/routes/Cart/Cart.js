@@ -1,6 +1,7 @@
 import React from "react";
 import CartItem from "./CartItem.js";
 import CartTotals from "./CartTotals.js";
+import "./cart.css";
 
 export default class Cart extends React.Component {
   render() {
