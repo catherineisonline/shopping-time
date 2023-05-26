@@ -1,6 +1,6 @@
 import React from "react";
 // import Currency from "./Currency.js";
-export default class CurrencySwitcher extends React.Component {
+export default class CurrencyOverlay extends React.Component {
   render() {
     const { allCurrencies, changeCurrency } = this.props;
     return (

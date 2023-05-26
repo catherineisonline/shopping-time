@@ -1,5 +1,5 @@
 import React from "react";
-import CurrencySwitcher from "./CurrencySwitcher";
+import CurrencyOverlay from "./CurrencyOverlay";
 export default class CurrencyMenu extends React.Component {
   handleOutsideClick = (e) => {
     if (!this.node.contains(e.target)) this.toggleCurrencyMenu();
@@ -33,7 +33,7 @@ export default class CurrencyMenu extends React.Component {
           </span>
         </p>
         {dropdownMenu && (
-          <CurrencySwitcher
+          <CurrencyOverlay
             allCurrencies={allCurrencies}
             changeCurrency={changeCurrency}
             dropdownMenu={dropdownMenu}
