@@ -5,6 +5,7 @@
 .quick-attribute .buttons {
     flex-direction: row;
     gap: 0.6rem;
+    align-items: center;
 }
 .cart-attr .buttons {
     flex-direction: row;
@@ -17,7 +18,7 @@
     gap: 1rem;
 }
 
-.quick-attribute h3 {
+.quick-attribute .buttons h3 {
     font-weight: 700;
     font-size: 1rem;
     color: var(--c-text);
