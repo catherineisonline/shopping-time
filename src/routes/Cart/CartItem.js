@@ -1,8 +1,8 @@
 import React from "react";
-import SelectedAttributes from "../Attributes/SelectedAttributes";
+import SelectedAttributes from "../../components/Attributes/SelectedAttributes";
 import CartPricing from "./CartPricing.js";
 import SimpleImageSlider from "react-simple-image-slider";
-import CartProductInteraction from "../CartProductInteraction";
+import CartProductInteraction from "../../components/CartProductInteraction";
 export default class CartItem extends React.Component {
   constructor(props) {
     super(props);

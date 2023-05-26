@@ -1,7 +1,7 @@
 import React from "react";
 import Attribute from "../../components/Attributes/Attribute";
 import AddToCartButton from "../../components/AddToCartButton";
-import CartPricing from "../../components/Cart/CartPricing";
+import CartPricing from "../Cart/CartPricing";
 import ProductShowcase from "./ProductShowcase";
 import ProductTitles from "./ProductTitles";
 import {

@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import CartIcon from "./Cart/CartIcon";
+import CartIcon from "./cart-overlay/CartIcon";
 import Alert from "../Alert.js";
 
 import CategoryMenu from "./Category/CategoryMenu.js";
