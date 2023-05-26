@@ -1,6 +1,6 @@
 import React from "react";
 import Attribute from "../../components/attributes/Attribute.js";
-import AddToCartButton from "../../components/AddToCartButto.js";
+import AddToCartButton from "../../components/AddToCartButton.js";
 import CartPricing from "../cart/CartPricing.js";
 import ProductShowcase from "./ProductShowcase.js";
 import ProductTitles from "./ProductTitles.js";
