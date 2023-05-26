@@ -57,7 +57,7 @@ main {
 .cartoverlay-products h4,
 .cartoverlay-products .empty-cart,
 .cartoverlay-item-pricing .product-price,
-.cartoverlay-payment-block button,
+.cartoverlay .payment button,
 .cart-overlay-item-attr h3,
 .cart h2,
 .cart-products-single .cart-data h2,
@@ -92,7 +92,7 @@ header ul,
 .quick-addtocart .active-add-to-cart,
 .quick-addtocart .inactive-add-to-cart,
 .quick-attribute .attribute-button,
-.quick-attribute .attr-button-container,
+.quick-attribute .buttons,
 .active-add-to-cart,
 .inactive-add-to-cart,
 .product-showcase,
@@ -100,33 +100,33 @@ header ul,
 .single-product .data,
 .single-product-price,
 .single-product .attribute,
-.single-product .attribute .attr-button-container,
+.single-product .attribute .buttons,
 .pricing-section,
-.single-product .attribute .attr-button-container,
+.single-product .attribute .buttons,
 .single-product .attribute .attribute-button,
 .single-product .description,
 .cartoverlay,
 .cartoverlay-products,
-.cartoverlay-item-grid,
+.cartoverlay-grid,
 .cartoverlay-product,
 .cartoverlay-product-details,
 .cartoverlay-product-button,
 .cartoverlay-products-single,
 .cart-overlay-item-data,
 .cart-overlay-item,
-.cart-overlay-total-price,
-.cartoverlay-payment-block,
+.cartoverlay .totals,
+.cartoverlay .payment,
 .cart-overlay-item-attr,
 .cart-overlay-item-attr .selected-attr-box,
 .cart-overlay-item-attr .unselected-attr-box,
 .cart-overlay-item-attr .selected-color-box-section,
-.cart-overlay-item-attr .attr-button-container,
+.cart-overlay-item-attr .buttons,
 .cartoverlay-product-interaction,
 .cart-overlay-item,
 .cart-overlay-item-data,
 .cart-overlay-buttons,
 .bag-count,
-.cart-overlay-total-price,
+.cartoverlay .totals,
 .bag-and-checkout-buttons,
 .cart,
 .cart-products-single,
@@ -135,7 +135,7 @@ header ul,
 .cart-attr .selected-attr-box,
 .cart-attr .unselected-attr-box,
 .cart-attr .selected-color-box-section,
-.cart-attr .attr-button-container,
+.cart-attr .buttons,
 .cart-content,
 .cart-product-interaction,
 .cart-product-button,
@@ -243,58 +243,6 @@ header ul a {
   align-items: center;
 }
 
-.initial-currency {
-  flex-direction: row;
-  cursor: pointer;
-  align-items: center;
-  font-family: var(--font-raleway);
-  justify-content: center;
-  padding: 0 0.625rem;
-  gap: 0.75rem;
-  color: var(--c-text);
-  font-size: 1.6rem;
-}
-.initial-currency p {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 0.5rem;
-}
-.currency-switcher {
-  position: absolute;
-  top: 100%;
-  flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.693);
-  backdrop-filter: blur(2px);
-  width: max-content;
-  box-shadow: var(--product-card-box-shadow);
-  -webkit-box-shadow: var(--product-card-box-shadow);
-  -moz-box-shadow: var(--product-card-box-shadow);
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  color: white;
-}
-.arrow-icon {
-  font-size: 1.2rem;
-}
-
-.single-currency {
-  cursor: pointer;
-  font-family: var(--font-raleway);
-  font-weight: 500;
-  font-size: 1rem;
-  padding: 1.2rem;
-}
-
-.single-currency p {
-  padding: 1.25rem;
-  width: 100%;
-}
-.single-currency:hover {
-  background-color: #111111;
-}
-
 .titles-block {
   flex-direction: column;
   align-items: flex-start;
@@ -306,58 +254,6 @@ header ul a {
   color: var(--c-text);
   font-weight: 300;
   font-size: 1rem;
-}
-/* CART ICON  */
-.cart-icon-section {
-  cursor: pointer;
-  position: relative;
-}
-.cart-icon-section img {
-  max-width: 2rem;
-  height: 2%;
-}
-.cart-quantity {
-  display: inline-block;
-  position: absolute;
-  top: -10%;
-  right: -20%;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 50px;
-  box-shadow: 0 0 2px #888;
-  padding: 0.01em 0.3em;
-  background-color: var(--c-white);
-  color: var(--c-text);
-  font-size: 1rem;
-  font-weight: 500;
-  font-family: var(--font-raleway);
-}
-
-.quick-attribute .attribute-button {
-  flex-direction: row;
-  align-items: flex-start;
-  cursor: pointer;
-  width: 3.938rem;
-  height: 2.813rem;
-  font-weight: 400;
-  font-size: 1rem;
-  color: var(--c-text);
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(255, 255, 255, 0.2);
-  border: 1px solid var(--c-text);
-}
-.quick-attribute .attr-button-container {
-  flex-direction: row;
-  gap: 0.6rem;
-}
-.quick-attribute .attr-title {
-  font-weight: 700;
-  font-size: 1rem;
-  color: var(--c-text);
-  font-family: var(--font-roboto);
-  text-transform: uppercase;
 }
 
 /* ADD TO CART BUTTON */

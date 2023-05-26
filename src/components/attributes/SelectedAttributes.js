@@ -45,7 +45,7 @@ export default class SelectedAttributes extends React.Component {
     return (
       <section className={className}>
         <h3>{attribute.id}:</h3>
-        <section className="attr-button-container">
+        <section className="buttons">
           {attribute?.items?.map((item) => (
             <section
               key={item.id}

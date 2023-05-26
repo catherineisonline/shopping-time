@@ -1,6 +1,8 @@
 import React from "react";
 import CurrencyOverlay from "./CurrencyOverlay.js";
-export default class CurrencyMenu extends React.Component {
+import "./currency-overlay.css"
+
+export default class CurrencyIcon extends React.Component {
   handleOutsideClick = (e) => {
     if (!this.node.contains(e.target)) this.toggleCurrencyMenu();
   };

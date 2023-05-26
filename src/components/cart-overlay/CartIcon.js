@@ -43,12 +43,11 @@ export default class CartIcon extends React.Component {
     const { isVisible } = this.state;
     return (
       <section
-        className="cart-icon"
         ref={(node) => {
           this.node = node;
         }}
       >
-        <section className="cart-icon-section" onClick={this.ToggleCartOverlay}>
+        <section className="cart-icon" onClick={this.ToggleCartOverlay}>
           <img src={EmptyCart} alt="empty cart" />
           {productsQuantity > 0 ? (
             <p className="cart-quantity">{productsQuantity}</p>

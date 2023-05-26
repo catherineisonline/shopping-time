@@ -4,7 +4,6 @@ import App from "./App.js";
 import "./core-ui/styles.css";
 import "./core-ui/hovers.css";
 import "./core-ui/responsive.css";
-import "./assets/cartoverlay.css";
 import "./routes/single-product/single-product.css";
 
 import reportWebVitals from "./reportWebVitals";

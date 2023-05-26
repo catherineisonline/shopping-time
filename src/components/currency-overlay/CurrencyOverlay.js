@@ -1,6 +1,5 @@
 import React from "react";
 
-
 export default class CurrencyOverlay extends React.Component {
   render() {
     const { allCurrencies, changeCurrency } = this.props;

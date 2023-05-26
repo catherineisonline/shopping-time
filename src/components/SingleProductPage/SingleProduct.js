@@ -1,8 +1,9 @@
 import React from "react";
-import Attribute from "../../components/attributes/Attributes.js";
-import AddToCartButton from "../../components/AddToCartButton.js";
-import ProductShowcase from "./ProductShowcase.js";
-import ProductTitles from "./ProductTitles.js";
+import Attribute from "../attributes/Attributes";
+import AddToCartButton from "../../components/AddToCartButton";
+import CartPricing from "../../components/Cart/CartPricing";
+import ProductShowcase from "./ProductShowcase";
+import ProductTitles from "./ProductTitles";
 import {
   itemsObj
 } from "../../prodcuts-data";
@@ -55,7 +56,7 @@ export default class SingleProduct extends React.Component {
 
     })
     this.setState({ captureNoAttributes: targetproduct.attributes });
-    document.querySelector(".description").innerHTML =
+    document.querySelector(".product-description").innerHTML =
       targetproduct.description;
     this.filterCurrency(targetproduct, this.props.selectedCurrency);
     if (targetproduct.attributes.length === 0) {
@@ -123,31 +124,35 @@ export default class SingleProduct extends React.Component {
       selectedAttributes,
       allAttributesAreSelected,
       priceAmount,
-      selectedCurrency
+      selectedCurrency,
+      coverImage
     } = this.state;
     return (
-      <main>
+      <main className="single-profuct-main">
+        {/* <article className="single-product-hero" > */}
         <ProductTitles singleProduct={singleProduct} />
+        {/* </article> */}
+
         <section className="single-product">
           <ProductShowcase singleProduct={singleProduct} />
-          <section className="data">
+          <section className="single-product-data">
             {singleProduct?.attributes?.map((attribute) => (
               <Attribute
-                className="attribute"
+                className="single-product-attribute"
                 key={attribute.id}
                 attribute={attribute}
                 handleSelectedAttributes={this.handleSelectedAttributes}
                 selectedAttributes={selectedAttributes}
               />
             ))}
+
             <section className="pricing-section">
               <h3 className="price-title"> Price:</h3>
-              <div className="single-product-pricing">
-                <p className="product-price">
-                  {selectedCurrency}
-                  {priceAmount}
-                </p>
-              </div>
+              <CartPricing
+                className="single-product-pricing"
+                pricingCurrencySymbol={selectedCurrency}
+                pricingAmount={priceAmount}
+              />
             </section>
             <AddToCartButton
               className="addtocart"
@@ -159,7 +164,7 @@ export default class SingleProduct extends React.Component {
               selectedAttributes={selectedAttributes}
               toggleQuickAddToCart={this.toggleQuickAddToCart}
             />
-            <section className="description"></section>
+            <section className="product-description"></section>
           </section>
         </section>
       </main>

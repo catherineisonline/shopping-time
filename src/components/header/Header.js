@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import CartIcon from "../cart-overlay/CartIcon.js";
 import Alert from "../Alert.js";
 import CategoryMenu from "./CategoryMenu.js";
-import CurrencyMenu from "../currency-overlay/CurrencyMenu.js";
+import CurrencyIcon from "../currency-overlay/CurrencyIcon.js";
 
 export default class Navigation extends React.Component {
   constructor(props) {
@@ -58,7 +58,7 @@ export default class Navigation extends React.Component {
             activeCategory={activeCategory}
           />
           <section className="dropdown-section">
-            <CurrencyMenu
+            <CurrencyIcon
               toggleCurrencyMenu={this.toggleCurrencyMenu}
               dropdownMenu={dropdownMenu}
               selectedCurrency={selectedCurrency}

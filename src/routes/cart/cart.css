@@ -119,33 +119,11 @@ div.rsis-container {
   cursor: not-allowed;
 }
 
-.cart-attr .selected-color-box-section {
-  border-width: 2px;
-  border-style: solid;
-  border-color: rgb(157, 156, 156);
-  width: 1.5rem;
-  height: 1.5rem;
-
-  align-items: center;
-  justify-content: center;
-}
-
-.cart-attr .unselected-color-box-section {
-  border-width: 1px;
-  border-style: solid;
-  border-color: var(--c-white);
-}
-
 .cart-attr h3 {
   font-family: var(--font-roboto);
   font-weight: 700;
   font-size: 1.125rem;
   text-transform: uppercase;
-}
-.cart-attr .attr-button-container {
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 0.313rem;
 }
 
 .cart-content {

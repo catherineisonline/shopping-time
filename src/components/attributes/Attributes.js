@@ -1,6 +1,7 @@
 import React from "react";
+import "./attributes.css"
 
-export default class Attribute extends React.Component {
+export default class Attributes extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -14,8 +15,8 @@ export default class Attribute extends React.Component {
 
     return (
       <section className={className}>
-        <section className="attr-button-container">
-          <h3 className="attr-title">{attribute.id}:</h3>
+        <section className="buttons">
+          <h3>{attribute.id}:</h3>
           {attribute?.items?.map((item) => (
             <section
               style={

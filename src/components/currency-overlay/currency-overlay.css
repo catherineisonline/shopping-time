@@ -1,0 +1,54 @@
+.initial-currency {
+    flex-direction: row;
+    cursor: pointer;
+    align-items: center;
+    font-family: var(--font-raleway);
+    justify-content: center;
+    padding: 0 0.625rem;
+    gap: 0.75rem;
+    color: var(--c-text);
+    font-size: 1.6rem;
+}
+
+.initial-currency p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.arrow-icon {
+    font-size: 1.2rem;
+}
+
+.currency-switcher {
+    position: absolute;
+    top: 100%;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.693);
+    backdrop-filter: blur(2px);
+    width: max-content;
+    box-shadow: var(--product-card-box-shadow);
+    -webkit-box-shadow: var(--product-card-box-shadow);
+    -moz-box-shadow: var(--product-card-box-shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    color: white;
+}
+
+.single-currency {
+    cursor: pointer;
+    font-family: var(--font-raleway);
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 1.2rem;
+}
+
+.single-currency p {
+    padding: 1.25rem;
+    width: 100%;
+}
+.single-currency:hover {
+    background-color: #111111;
+}

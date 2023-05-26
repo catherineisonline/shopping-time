@@ -1,0 +1,100 @@
+.cart-overlay-item-attr .buttons {
+    flex-direction: row;
+    gap: 0.313rem;
+}
+.quick-attribute .buttons {
+    flex-direction: row;
+    gap: 0.6rem;
+}
+.cart-attr .buttons {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0.313rem;
+}
+
+.single-product .attribute .buttons {
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.quick-attribute h3 {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--c-text);
+    font-family: var(--font-roboto);
+    text-transform: uppercase;
+}
+
+.single-product .attribute h3 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--c-text);
+    font-family: var(--font-roboto);
+}
+
+.quick-attribute .attribute-button {
+    flex-direction: row;
+    align-items: flex-start;
+    cursor: pointer;
+    width: 3.938rem;
+    height: 2.813rem;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--c-text);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid var(--c-text);
+}
+
+.single-product .attribute .attribute-button {
+    flex-direction: row;
+    align-items: flex-start;
+    cursor: pointer;
+    padding: 0.2rem 0.8rem;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--c-text);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(157, 156, 156);
+    border-radius: 5px;
+}
+.single-product .attribute .attribute-button:hover {
+    opacity: 0.8;
+}
+
+.cart-attr .selected-color-box-section {
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(157, 156, 156);
+    width: 1.5rem;
+    height: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-attr .unselected-color-box-section {
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--c-white);
+}
+
+.cart-overlay-item-attr .selected-color-box-section {
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    width: 1.125rem;
+    height: 1.125rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-overlay-item-attr .unselected-color-box-section {
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+}
