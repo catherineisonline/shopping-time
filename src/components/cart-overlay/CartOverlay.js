@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import CartOverlayItem from "./CartOverlayItem";
+import CartOverlayItem from "./CartOverlayItem.js";
 
 export default class CartOverlay extends React.Component {
   render() {

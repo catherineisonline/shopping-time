@@ -4,8 +4,8 @@ import {
   currenciesObj, itemsObj, categoriesObj
 } from "./prodcuts-data";
 import Header from "./components/header/Header.js";
-import AllProducts from "./routes/all-products/AllProducts";
-import SingleProduct from "./routes/single-product/SingleProduct";
+import AllProducts from "./routes/all-products/AllProducts.js";
+import SingleProduct from "./routes/single-product/SingleProduct.js";
 import Cart from "./routes/cart/Cart.js"
 import Landing from "./routes/landing/Landing.js";
 

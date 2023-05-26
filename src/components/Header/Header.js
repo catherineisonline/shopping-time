@@ -1,9 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import CartIcon from "../cart-overlay/CartIcon";
+import CartIcon from "../cart-overlay/CartIcon.js";
 import Alert from "../Alert.js";
-import CategoryMenu from "./CategoryMenu";
-import CurrencyMenu from "../currency-overlay/CurrencyMenu";
+import CategoryMenu from "./CategoryMenu.js";
+import CurrencyMenu from "../currency-overlay/CurrencyMenu.js";
 
 export default class Navigation extends React.Component {
   constructor(props) {

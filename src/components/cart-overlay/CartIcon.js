@@ -1,6 +1,6 @@
 import React from "react";
 import EmptyCart from "../../assets/images/cart-icon.png";
-import CartOverlay from "./CartOverlay";
+import CartOverlay from "./CartOverlay.js";
 
 export default class CartIcon extends React.Component {
   constructor(props) {

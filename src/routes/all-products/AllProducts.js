@@ -1,5 +1,5 @@
 import React from "react";
-import Product from "./Product";
+import Product from "./Product.js";
 import CategoryAllHero from '../../assets/images/product-listing-images/category-all-hero.mp4'
 import CategoryDressesHero from '../../assets/images/product-listing-images/category-dresses-hero.mp4'
 import CategoryBlousesHero from '../../assets/images/product-listing-images/category-blouses-hero.mp4'

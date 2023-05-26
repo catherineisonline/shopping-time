@@ -1,9 +1,9 @@
 import React from "react";
-import Attribute from "../../components/attributes/Attribute";
-import AddToCartButton from "../../components/AddToCartButton";
-import CartPricing from "../cart/CartPricing";
-import ProductShowcase from "./ProductShowcase";
-import ProductTitles from "./ProductTitles";
+import Attribute from "../../components/attributes/Attribute.js";
+import AddToCartButton from "../../components/AddToCartButto.js";
+import CartPricing from "../cart/CartPricing.js";
+import ProductShowcase from "./ProductShowcase.js";
+import ProductTitles from "./ProductTitles.js";
 import {
   itemsObj
 } from "../../prodcuts-data";
