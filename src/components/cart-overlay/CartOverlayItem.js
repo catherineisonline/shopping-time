@@ -1,7 +1,6 @@
 import React from "react";
 import SelectedAttributes from "../attributes/SelectedAttributes.js";
 import CartProductInteraction from "../CartProductInteraction.js";
-import CartPricing from "../../routes/cart/CartPricing.js";
 
 export default class CartOverlayItem extends React.Component {
   constructor(props) {
@@ -61,12 +60,12 @@ export default class CartOverlayItem extends React.Component {
             <section className="titles-block">
               <h4>{singleProduct.brand}</h4>
               <h4>{singleProduct.name}</h4>
-
-              <CartPricing
-                className="cartoverlay-item-pricing"
-                pricingCurrencySymbol={pricing?.currency?.symbol}
-                pricingAmount={priceAmount}
-              />
+              <div className="cartoverlay-item-pricing">
+                <p className="product-price">
+                  {pricing?.currency?.symbol}
+                  {priceAmount}
+                </p>
+              </div>
             </section>
 
             {singleProduct?.attributes?.map((attribute) => (

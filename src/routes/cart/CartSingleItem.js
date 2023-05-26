@@ -2,7 +2,6 @@ import React from "react";
 import SelectedAttributes from "../../components/attributes/SelectedAttributes.js";
 import SimpleImageSlider from "react-simple-image-slider";
 import CartProductInteraction from "../../components/CartProductInteraction.js";
-import CartPricing from "./CartPricing.js";
 
 
 export default class CartSingleItem extends React.Component {
@@ -70,11 +69,13 @@ export default class CartSingleItem extends React.Component {
                 <section className="cart-data">
                     <h2 className="product-brand">{singleProduct.brand}</h2>
                     <h2 className="product-name">{singleProduct.name}</h2>
-                    <CartPricing
-                        className="cart-item-pricing"
-                        pricingCurrencySymbol={pricing?.currency?.symbol}
-                        pricingAmount={priceAmount}
-                    />
+
+                    <div className="cart-item-pricing">
+                        <p className="product-price">
+                            {pricing?.currency?.symbol}
+                            {priceAmount}
+                        </p>
+                    </div>
                     {singleProduct?.attributes?.map((attribute) => (
                         <SelectedAttributes
                             className="cart-attr"

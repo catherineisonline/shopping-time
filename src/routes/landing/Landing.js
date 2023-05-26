@@ -1,20 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import HeroVideo from '../../assets/images/landing-images/hero-video.mp4'
+import "./landing.css"
 
 export default class Landing extends React.Component {
   render() {
     const { changeCategory } = this.props;
     return (
-      <main>
-        <article className="landing-hero">
+      <main className="landing">
+        <article className="hero">
           <h2>Building a better <span>you!</span></h2>
-          <video autoPlay loop muted playsInline className="hero-video" >
+          <video autoPlay loop muted playsInline>
             <source src={HeroVideo} type="video/mp4" />
           </video>
         </article>
-        <article className="landing-grid">
-          <section className="div1">
+        <article className="grid">
+          <section className="grid-one">
             <Link
               to={`/store/blouses`}
               className="custom-btn grid-button"
@@ -25,7 +26,7 @@ export default class Landing extends React.Component {
               <span>Blouses</span>
             </Link>
           </section>
-          <section to="" className="div2">
+          <section to="" className="grid-two">
             <Link
               to={`/store/jeans`}
               onClick={() => {
@@ -36,7 +37,7 @@ export default class Landing extends React.Component {
               <span> Jeans</span>
             </Link>
           </section>
-          <section to="" className="div3">
+          <section to="" className="grid-three">
             <Link
               to={`/store/shoes`}
               onClick={() => {
@@ -47,7 +48,7 @@ export default class Landing extends React.Component {
               <span> Shoes</span>
             </Link>
           </section>
-          <section to="" className="div4">
+          <section to="" className="grid-four">
             <Link
               to={`/store/dresses`}
               onClick={() => {
@@ -58,7 +59,7 @@ export default class Landing extends React.Component {
               <span>Dresses</span>
             </Link>
           </section>
-          <section className="div5">
+          <section className="grid-five">
             <Link
               to={`/store/all`}
               onClick={() => {

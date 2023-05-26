@@ -1,0 +1,185 @@
+.landing .hero {
+    height: 100vh;
+    position: relative;
+}
+.landing .hero h2 {
+    position: absolute;
+    z-index: 3;
+    font-family: var(--font-raleway);
+    top: 40%;
+    left: 60%;
+    font-size: 4rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.landing .hero h2 span {
+    color: var(--c-primary);
+}
+.landing .hero video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.landing .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+.landing .grid .grid-one,
+.landing .grid .grid-two,
+.landing .grid .grid-three,
+.landing .grid .grid-four,
+.landing .grid .grid-five {
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 35rem;
+}
+.grid-one:hover,
+.landing .grid .grid-two:hover,
+.landing .grid .grid-three:hover,
+.landing .grid .grid-four:hover,
+.landing .grid .grid-five:hover {
+    opacity: 0.8;
+}
+
+.custom-btn {
+    letter-spacing: 1px;
+    width: 130px;
+    height: 40px;
+    color: black;
+    padding: 10px 25px;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+        4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+.grid-one {
+    grid-area: 1 / 1 / 2 / 4;
+    background-image: url("../../assets/images/landing-images/gridOne.jpeg");
+}
+.grid-two {
+    grid-area: 1 / 4 / 2 / 6;
+    background-image: url("../../assets/images/landing-images/gridTwo.jpeg");
+}
+.grid-three {
+    grid-area: 2 / 1 / 3 / 3;
+    background-image: url("../../assets/images/landing-images/gridThree.jpeg");
+}
+.grid-four {
+    grid-area: 2 / 3 / 3 / 6;
+    background-image: url("../../assets/images/landing-images/gridFour.jpeg");
+}
+.grid-five {
+    grid-area: 3 / 1 / 4 / 6;
+    background-image: url("../../assets/images/landing-images/gridFive.jpeg");
+}
+
+.grid-one .grid-button {
+    top: 85%;
+    right: -10%;
+}
+.grid-two .grid-button {
+    top: 85%;
+    right: -20%;
+}
+.grid-three .grid-button {
+    top: 85%;
+    left: 10%;
+}
+.grid-four .grid-button {
+    top: 85%;
+    right: -70%;
+}
+
+.grid-five .grid-button {
+    bottom: -10%;
+    right: -80%;
+}
+.grid-button {
+    background-color: rgba(255, 255, 255, 0.287);
+    backdrop-filter: blur(20px);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.287), rgb(209, 210, 210) 100%);
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+.grid-button span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.grid-button:before,
+.grid-button:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: var(--c-text);
+    transition: all 0.3s ease;
+}
+.grid-button:before {
+    height: 0%;
+    width: 2px;
+}
+.grid-button:after {
+    width: 0%;
+    height: 2px;
+}
+.grid-button:hover {
+    background: transparent;
+    box-shadow: none;
+}
+.grid-button:hover:before {
+    height: 100%;
+}
+.grid-button:hover:after {
+    width: 100%;
+}
+.grid-button span:hover {
+    color: var(--c-text);
+}
+.grid-button span:before,
+.grid-button span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: var(--c-text);
+    transition: all 0.3s ease;
+}
+.grid-button span:before {
+    width: 2px;
+    height: 0%;
+}
+.grid-button span:after {
+    width: 0%;
+    height: 2px;
+}
+.grid-button span:hover:before {
+    height: 100%;
+}
+.grid-button span:hover:after {
+    width: 100%;
+}

@@ -17,7 +17,7 @@ export default class Cart extends React.Component {
         } = this.props;
 
         return (
-            <main className="cart-main">
+            <main>
                 <article className="cart-hero">
                     <h2>Cart</h2>
                 </article>

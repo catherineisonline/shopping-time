@@ -5,6 +5,7 @@ import CategoryDressesHero from '../../assets/images/product-listing-images/cate
 import CategoryBlousesHero from '../../assets/images/product-listing-images/category-blouses-hero.mp4'
 import CategoryShoesHero from '../../assets/images/product-listing-images/category-shoes-hero.mp4'
 import CategoryJeansHero from '../../assets/images/product-listing-images/category-jeans-hero.mp4'
+import "./all-products.css";
 
 
 export default class AllProducts extends React.Component {
@@ -23,10 +24,10 @@ export default class AllProducts extends React.Component {
       productId,
     } = this.props;
     return (
-      <article className="category-page">
+      <article>
         <article className="products-hero">
           <h2>{activeCategory === 'all' ? "Boost your style sense!" : activeCategory === 'dresses' ? "Let's create your own style" : activeCategory === 'blouses' ? "The joy of dressing" : activeCategory === 'shoes' ? "Unlock your style" : activeCategory === 'jeans' ? "Fashion never sleeps" : "Boost your style sense!"}</h2>
-          <video autoPlay loop muted playsInline className="hero-video" key={activeCategory}>
+          <video autoPlay loop muted playsInline key={activeCategory}>
             <source src={activeCategory === 'all' ? CategoryAllHero : activeCategory === 'dresses' ? CategoryDressesHero : activeCategory === 'blouses' ? CategoryBlousesHero : activeCategory === 'shoes' ? CategoryShoesHero : activeCategory === 'jeans' ? CategoryJeansHero : CategoryAllHero} type="video/mp4" />
           </video>
         </article>

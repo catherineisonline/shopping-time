@@ -43,18 +43,18 @@
     transform: translate(-15%, 0);
     top: 0;
   }
-  .div1,
-  .div2,
-  .div3,
-  .div4,
-  .div5 {
+  .grid-one,
+  .grid-two,
+  .grid-three,
+  .grid-four,
+  .grid-five {
     height: 20rem;
   }
-  .div4 .grid-button {
+  .grid-four .grid-button {
     /* top: 85%; */
     right: -50%;
   }
-  .div5 .grid-button {
+  .grid-five .grid-button {
     /* bottom: -10%; */
     right: -70%;
   }

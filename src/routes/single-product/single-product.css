@@ -6,14 +6,14 @@
   margin-bottom: 3.5rem;
   justify-content: center;
 }
-.product-titles {
+.single-product-titles {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
   padding: 8rem;
 }
-.single-product-category {
+.single-product-titles .category {
   text-transform: uppercase;
   font-family: var(--font-roboto);
 }
@@ -28,28 +28,16 @@
   height: 20rem;
   object-fit: cover;
 }
-.single-product-data {
+.single-product .data {
   flex-direction: column;
   gap: 2rem;
 }
-.product-listing-page {
-  margin-top: 3rem;
-}
-.product-listing-page h3 {
-  text-align: center;
-  color: var(--c-text);
-  font-family: var(--font-raleway);
-  text-transform: capitalize;
-  font-size: 3.5rem;
-  letter-spacing: 1px;
-  padding: 2rem;
-}
 
-.single-product-brand {
+.single-product-titles .brand {
   font-weight: 600;
   font-size: 1.875rem;
 }
-.single-product-name {
+.single-product-titles .name {
   font-weight: 400;
   font-size: 1.875rem;
   line-height: 3rem;
@@ -63,13 +51,12 @@
   gap: 1rem;
 }
 
-/* SINGLE PRODUCT ATTRIBUTES */
-.single-product-attribute {
+.single-product .attribute {
   flex-direction: column;
   gap: 2rem;
 }
 
-.single-product-attribute .attr-button-container {
+.single-product .attribute .attr-button-container {
   flex-direction: row;
   gap: 1.5rem;
 }
@@ -78,25 +65,22 @@
   margin-top: 0.9rem;
   gap: 0.8rem;
 }
-.single-product-attribute .attr-button-container {
+.single-product .attribute .attr-button-container {
   flex-direction: row;
   gap: 1rem;
 }
-.single-product-attribute .attr-title,
+.single-product .attribute .attr-title,
 .pricing-section h3 {
   font-weight: 700;
   font-size: 1.5rem;
   color: var(--c-text);
   font-family: var(--font-roboto);
-  /* text-transform: uppercase; */
 }
-.single-product-attribute .attribute-button {
+.single-product .attribute .attribute-button {
   flex-direction: row;
   align-items: flex-start;
   cursor: pointer;
   padding: 0.2rem 0.8rem;
-  /* width: 3.938rem;
-  height: 2.813rem; */
   font-weight: 400;
   font-size: 1rem;
   color: var(--c-text);
@@ -107,10 +91,10 @@
   border: 1px solid rgb(157, 156, 156);
   border-radius: 5px;
 }
-.single-product-attribute .attribute-button:hover {
+.single-product .attribute .attribute-button:hover {
   opacity: 0.8;
 }
-.product-description {
+.single-product .description {
   flex-direction: column;
   font-family: var(--font-roboto);
   font-weight: 400;
@@ -118,8 +102,6 @@
   color: var(--c-text);
   line-height: 1.5rem;
 }
-
-/* SINGLE PR?DUCT PRICING */
 
 .single-product-pricing .product-price {
   font-weight: 700;

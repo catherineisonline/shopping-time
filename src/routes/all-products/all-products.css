@@ -1,0 +1,205 @@
+.products-hero {
+    height: 70vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.products-hero h2 {
+    position: absolute;
+    z-index: 3;
+    font-family: var(--font-raleway);
+    top: 50%;
+    font-size: 4rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+.products-hero video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.product-listing-page {
+    margin-top: 3rem;
+}
+.product-listing-page h3 {
+    text-align: center;
+    color: var(--c-text);
+    font-family: var(--font-raleway);
+    text-transform: capitalize;
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    padding: 2rem;
+}
+
+.store-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 10rem;
+    column-gap: 1.875rem;
+    row-gap: 6.438rem;
+}
+.product {
+    position: relative;
+    flex-direction: column;
+    height: 28.125rem;
+}
+
+.product-card {
+    flex-direction: column;
+    gap: 1.5rem;
+    min-height: 27.75rem;
+    padding: 1rem;
+}
+.product-card.product-shadow {
+    box-shadow: var(--product-card-box-shadow);
+    -webkit-box-shadow: var(--product-card-box-shadow);
+    -moz-box-shadow: var(--product-card-box-shadow);
+    background-color: var(--c-white);
+}
+
+.product-card .brand-name,
+.product-card .product-price {
+    font-family: var(--font-raleway);
+}
+.product-card .brand-name {
+    font-weight: 300;
+    font-size: 1.125rem;
+}
+.product-card .product-price {
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+.item-preview {
+    text-decoration: none;
+}
+
+.img-container {
+    display: flex;
+    width: 100%;
+    height: 21.125rem;
+    justify-content: center;
+}
+
+.img-container img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    margin: auto;
+    display: block;
+}
+
+.out-of-stock-sign {
+    position: absolute;
+    transform: (translate(50%, 50%));
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--c-gray);
+    text-transform: uppercase;
+    font-family: var(--font-raleway);
+}
+
+.item-preview-img {
+    width: 100%;
+    height: 330px;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.product-card-infromation {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 3rem;
+}
+.quick-buy {
+    right: 25%;
+    top: 50%;
+    cursor: pointer;
+    background-color: rgb(240, 97, 97);
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.8rem;
+}
+
+.quick-buy:hover {
+    background-color: rgb(241, 56, 56);
+}
+
+.quick-addto-cart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: inherit;
+    background-color: rgba(255, 255, 255, 0.22);
+    backdrop-filter: blur(5px);
+    height: inherit;
+    align-items: center;
+}
+
+.quick-attribute {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.quick-addtocart .active-add-to-cart {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2rem;
+    width: 18.25rem;
+    height: 3.25rem;
+    color: var(--c-white);
+    border: none;
+    font-family: var(--font-raleway);
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: rgb(240, 97, 97);
+}
+.quick-addtocart .inactive-add-to-cart {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2rem;
+    width: 18.25rem;
+    height: 3.25rem;
+    color: var(--c-text);
+    background-color: rgba(255, 255, 255, 0.22);
+    border: none;
+    font-family: var(--font-raleway);
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: not-allowed;
+    opacity: 0.6;
+    border: 1px solid var(--c-text);
+}
+
+.close-quickbuy {
+    text-align: center;
+    color: var(--c-text);
+    text-decoration: underline;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-family: var(--font-raleway);
+    font-weight: 500;
+}
