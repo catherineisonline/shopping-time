@@ -210,14 +210,15 @@ export default class Product extends React.Component {
                 className="quick-buy"
                 src={addToCart}
                 onClick={this.toggleQuickAddToCart}
-                alt=""
-              ></img>
+                alt="Add to cart icon"
+              />
             )}
           </div>
         </div>
 
         {!quickAddToCartVisible ? null : (
           <QuickAddToCart
+            key={item.name}
             handleAddProduct={handleAddProduct}
             item={item}
             allAttributesAreSelected={allAttributesAreSelected}
