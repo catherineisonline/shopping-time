@@ -15,7 +15,7 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     text-align: center;
-    color: white;
+    color: var(--c-white);
 }
 .products-hero video {
     position: absolute;
@@ -132,7 +132,7 @@
     right: 25%;
     top: 50%;
     cursor: pointer;
-    background-color: rgb(240, 97, 97);
+    background-color: var(--c-primary);
     border-radius: 50%;
     width: 1.5rem;
     height: 1.5rem;
@@ -175,7 +175,7 @@
     font-weight: 600;
     font-size: 1rem;
     cursor: pointer;
-    background-color: rgb(240, 97, 97);
+    background-color: var(--c-primary);
 }
 .quick-addtocart .inactive-add-to-cart {
     flex-direction: column;

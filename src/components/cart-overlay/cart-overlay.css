@@ -8,7 +8,7 @@
   right: 0;
   flex-direction: column;
   padding-bottom: 1rem;
-  color: white;
+  color: var(--c-white);
 }
 
 .cartoverlay-background {
@@ -145,8 +145,8 @@
   background-color: transparent;
   border-width: 1px;
   border-style: solid;
-  border-color: white;
-  color: white;
+  border-color: var(--c-white);
+  color: var(--c-white);
 }
 
 .check-out {
@@ -190,7 +190,7 @@
   font-weight: 400;
   font-size: 0.813rem;
   background-color: transparent;
-  color: white;
+  color: var(--c-white);
 }
 
 .cart-overlay-item-attr .selected-color-box {
@@ -327,4 +327,17 @@
   font-size: 1rem;
   font-weight: 500;
   font-family: var(--font-raleway);
+}
+
+.titles-block {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 0.313rem;
+}
+.titles-block h4 {
+  font-family: var(--font-raleway);
+  color: var(--c-text);
+  font-weight: 300;
+  font-size: 1rem;
 }

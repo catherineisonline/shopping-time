@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+
 export default class CategoryMenu extends React.Component {
   render() {
     const { allCategories, changeCategory, activeCategory } = this.props;

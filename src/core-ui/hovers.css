@@ -1,5 +1,5 @@
 /* TRANSITIONS */
-.header ul li,
+/* .headerOne ul li, */
 .order-btn,
 .active-add-to-cart,
 .cartoverlay-product-interaction button,
@@ -14,7 +14,7 @@
 }
 
 @media (hover: hover) {
-  .header ul li:hover,
+  /* .headerOne ul li:hover, */
   .order-btn:hover,
   .active-add-to-cart:hover .cartoverlay-product-interaction button:hover,
   .cart-product-interaction button:hover,
@@ -23,9 +23,9 @@
   .single-currency:hover {
     transition: all ease-in-out 0.2s;
   }
-  .header ul li:hover {
+  /* .headerOne ul li:hover {
     color: var(--c-primary);
-  }
+  } */
   .order-btn:hover,
   .active-add-to-cart:hover {
     opacity: 0.7;

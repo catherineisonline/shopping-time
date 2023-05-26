@@ -95,7 +95,7 @@ div.rsis-container {
   text-align: center;
   justify-content: center;
   align-items: center;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--c-white);
   border: 1px solid rgb(157, 156, 156);
   border-radius: 5px;
 }
@@ -189,4 +189,18 @@ div.rsis-container {
   font-size: 0.875rem;
   background-color: var(--c-primary);
   margin-top: -0.313rem;
+}
+
+.cart-content div div button {
+  margin-top: 4rem !important;
+  background-color: rgba(0, 0, 0, 0.73) !important;
+  height: 1.5rem !important;
+  width: 1.5rem !important;
+}
+
+.cart-content div div:first-of-type button {
+  margin-left: 5rem !important;
+}
+.cart-content div div:last-of-type button {
+  margin-right: -1rem !important;
 }

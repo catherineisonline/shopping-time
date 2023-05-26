@@ -4,6 +4,7 @@ import CartIcon from "../cart-overlay/CartIcon.js";
 import Alert from "../Alert.js";
 import CategoryMenu from "./CategoryMenu.js";
 import CurrencyIcon from "../currency-overlay/CurrencyIcon.js";
+import "./header.css";
 
 export default class Navigation extends React.Component {
   constructor(props) {
@@ -48,7 +49,7 @@ export default class Navigation extends React.Component {
             onClick={() => {
               changeCategory("");
             }}
-            className="headerOne"
+            className="header-one"
           >
             <h1>Shopping Time</h1>
           </NavLink>
@@ -57,7 +58,7 @@ export default class Navigation extends React.Component {
             changeCategory={changeCategory}
             activeCategory={activeCategory}
           />
-          <section className="dropdown-section">
+          <section className="icons-section">
             <CurrencyIcon
               toggleCurrencyMenu={this.toggleCurrencyMenu}
               dropdownMenu={dropdownMenu}
