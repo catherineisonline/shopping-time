@@ -1,23 +1,32 @@
 .cart-hero {
-  min-height: 25rem;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  height: 40vh;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-weight: 700;
-  font-size: 2rem;
-  text-transform: uppercase;
+  justify-content: center;
 }
 .cart-hero h2 {
-  margin-top: 30%;
+  position: absolute;
+  z-index: 3;
+  font-family: var(--font-raleway);
+  top: 50%;
+  font-size: 4rem;
   letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+}
+.cart-hero video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 2;
 }
 
 .cart {
+  padding-top: 5rem;
   flex-direction: column;
   margin: 0 auto;
   width: 90%;

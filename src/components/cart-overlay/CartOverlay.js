@@ -29,7 +29,7 @@ export default class CartOverlay extends React.Component {
           <section className="all-products">
             {productsQuantity === 1 ? (
               <h4>
-                My Bag, <span>{productsQuantity} items</span>
+                My cart, <span>{productsQuantity} items</span>
               </h4>
             ) : (
               <h4>
@@ -56,7 +56,7 @@ export default class CartOverlay extends React.Component {
             </section>
             <section className="payment">
               <Link onClick={ToggleCartOverlay} to="/cart">
-                <button className="view-bag"> View bag </button>
+                <button className="view-bag"> View cart </button>
               </Link>
               <Link onClick={ToggleCartOverlay} to="">
                 <button className="check-out">Check out </button>

@@ -2,6 +2,7 @@ import React from "react";
 import CartSingleItem from "./CartSingleItem.js";
 import CartTotals from "./CartTotals.js";
 import "./cart.css";
+import CartHero from "../../assets/images/cart-hero.mp4"
 
 export default class Cart extends React.Component {
     render() {
@@ -20,6 +21,9 @@ export default class Cart extends React.Component {
             <main>
                 <article className="cart-hero">
                     <h2>Cart</h2>
+                    <video autoPlay loop muted playsInline>
+                        <source src={CartHero} type="video/mp4" />
+                    </video>
                 </article>
                 <article className="cart">
                     {productsQuantity === 0 ? (
