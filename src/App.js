@@ -6,7 +6,7 @@ import {
 import Header from "./components/header/Header.js";
 import AllProducts from "./routes/all-products/AllProducts";
 import SingleProduct from "./routes/single-product/SingleProduct";
-import Cart from './routes/cart/Cart'
+import Cart from "./routes/cart/Cart.js"
 import Landing from "./routes/landing/Landing.js";
 
 
