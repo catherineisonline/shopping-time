@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import QuickAddToCart from "../AllProductsPage/QuickAddToCart";
-import addToCart from "../../images/add-to-cart.png";
+import addToCart from "../../assets/images/add-to-cart.png";
 export default class Product extends React.Component {
   constructor(props) {
     super(props);

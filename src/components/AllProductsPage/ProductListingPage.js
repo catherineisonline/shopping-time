@@ -1,10 +1,10 @@
 import React from "react";
 import Product from "../AllProductsPage/Product";
-import CategoryAllHero from '../../images/product-listing-images/category-all-hero.mp4'
-import CategoryDressesHero from '../../images/product-listing-images/category-dresses-hero.mp4'
-import CategoryBlousesHero from '../../images/product-listing-images/category-blouses-hero.mp4'
-import CategoryShoesHero from '../../images/product-listing-images/category-shoes-hero.mp4'
-import CategoryJeansHero from '../../images/product-listing-images/category-jeans-hero.mp4'
+import CategoryAllHero from '../../assets/images/product-listing-images/category-all-hero.mp4'
+import CategoryDressesHero from '../../assets/images/product-listing-images/category-dresses-hero.mp4'
+import CategoryBlousesHero from '../../assets/images/product-listing-images/category-blouses-hero.mp4'
+import CategoryShoesHero from '../../assets/images/product-listing-images/category-shoes-hero.mp4'
+import CategoryJeansHero from '../../assets/images/product-listing-images/category-jeans-hero.mp4'
 
 
 export default class ProductListingPage extends React.Component {
