@@ -3,7 +3,7 @@ import { Route, Routes, BrowserRouter } from "react-router-dom";
 import {
   currenciesObj, itemsObj, categoriesObj
 } from "./prodcuts-data";
-import Header from "./components/Header/Header.js";
+import Header from "./components/header/Header.js";
 import AllProducts from "./routes/all-products/AllProducts";
 import SingleProduct from "./routes/single-product/SingleProduct";
 import Cart from './routes/cart/Cart'
