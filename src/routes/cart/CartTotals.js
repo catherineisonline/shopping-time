@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default class CartTotals extends React.Component {
   render() {
@@ -23,8 +24,8 @@ export default class CartTotals extends React.Component {
             {totalPayment}
           </p>
         </section>
-        <section></section>
-        <button className="order-btn">Order</button>
+        {/* <section></section> */}
+        <Link to="/checkout" className="order-btn">Checkout</Link>
       </section>
     );
   }

@@ -8,6 +8,7 @@ import AllProducts from "./routes/all-products/AllProducts.js";
 import SingleProduct from "./routes/single-product/SingleProduct.js";
 import Cart from "./routes/cart/Cart.js"
 import Landing from "./routes/landing/Landing.js";
+import Checkout from "./routes/checkout/Checkout";
 
 
 
@@ -380,6 +381,7 @@ export default class App extends React.Component {
               />
             }
           />
+          <Route path="/checkout" element={<Checkout />} />
         </Routes>
       </BrowserRouter>
     );
