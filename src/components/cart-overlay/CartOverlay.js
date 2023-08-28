@@ -55,8 +55,8 @@ export default class CartOverlay extends React.Component {
               </p>
             </section>
             <section className="payment">
-              <Link onClick={ToggleCartOverlay} to="/cart">
-                <button className="view-bag"> View cart </button>
+              <Link onClick={ToggleCartOverlay} className="view-bag" to="/cart">
+                View cart
               </Link>
               <Link onClick={ToggleCartOverlay} className="check-out" to="/checkout">
                 Check out

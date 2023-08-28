@@ -187,17 +187,19 @@ div.rsis-container {
   font-size: 1.5rem;
 }
 .order-btn {
+  text-decoration: none;
   cursor: pointer;
-  color: var(--c-white);
+  padding: 1rem;
+  font-weight: 400;
+  font-size: 1rem;
   text-transform: uppercase;
-  border: none;
-  padding: 1rem 2rem;
-  width: 17.438rem;
-  height: 2.688rem;
-  font-weight: 600;
-  font-size: 0.875rem;
+  text-decoration: none;
   background-color: var(--c-primary);
-  margin-top: -0.313rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--c-primary);
+  color: var(--c-white);
+  width: max-content;
 }
 
 .cart-content div div button {

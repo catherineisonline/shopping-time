@@ -134,18 +134,15 @@
 
 .cartoverlay .payment a {
   text-decoration: none;
-}
-.cartoverlay .payment button {
   cursor: pointer;
-  padding: 1rem 2rem;
-  font-weight: 600;
-  font-size: 0.875rem;
+  padding: 1rem;
+  font-weight: 400;
+  font-size: 1rem;
   text-transform: uppercase;
   text-decoration: none;
 }
 
 .view-bag {
-  background-color: var(--c-white);
   background-color: transparent;
   border-width: 1px;
   border-style: solid;
