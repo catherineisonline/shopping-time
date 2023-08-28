@@ -14,20 +14,22 @@ const CartIcon = ({ totalPayment,
   const toggleCartOverlay = () => {
     setDropdownMenu(!dropdownMenu)
   };
-  const handleOutsideClick = (e) => {
-    if (cartIcon.current && !cartIcon.current.contains(e.target)) {
-      setDropdownMenu(false);
-    }
-  };
+
   useEffect(() => {
+    const handleOutsideClick = (e) => {
+      if (cartIcon.current && !cartIcon.current.contains(e.target)) {
+        setDropdownMenu(false);
+      }
+    };
     document.addEventListener("mousedown", handleOutsideClick);
     return () => {
       document.removeEventListener("mousedown", handleOutsideClick);
     };
-  });
+  }, []);
 
   return (
     <section
+      className="cart-icon-section"
       ref={cartIcon}
     >
       <section className="cart-icon" onClick={toggleCartOverlay}>
@@ -37,19 +39,17 @@ const CartIcon = ({ totalPayment,
         ) : null}
       </section>
 
-      {!dropdownMenu ? null : (
-        <article className="cartoverlay-background">
-          <CartOverlay
-            handleAddProduct={handleAddProduct}
-            handleRemoveProduct={handleRemoveProduct}
-            ToggleCartOverlay={toggleCartOverlay}
-            productsQuantity={productsQuantity}
-            cartItems={cartItems}
-            selectedCurrency={selectedCurrency}
-            totalPayment={totalPayment}
-          />
-        </article>
-      )}
+      {!dropdownMenu ? null :
+        <CartOverlay
+          handleAddProduct={handleAddProduct}
+          handleRemoveProduct={handleRemoveProduct}
+          ToggleCartOverlay={toggleCartOverlay}
+          productsQuantity={productsQuantity}
+          cartItems={cartItems}
+          selectedCurrency={selectedCurrency}
+          totalPayment={totalPayment}
+        />
+      }
     </section>
   );
 }
