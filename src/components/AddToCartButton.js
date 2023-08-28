@@ -10,6 +10,7 @@ export default class AddToCartButton extends React.Component {
       className,
       alertMessageMain,
       toggleQuickAddToCart,
+      setActiveItem
     } = this.props;
     return (
       <div className={className}>
@@ -18,6 +19,7 @@ export default class AddToCartButton extends React.Component {
             handleAddProduct(item, selectedAttributes);
             alertMessageMain();
             toggleQuickAddToCart();
+            setActiveItem(null)
           }}
           className={
             item.inStock && allAttributesAreSelected
