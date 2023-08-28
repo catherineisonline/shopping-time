@@ -19,7 +19,9 @@ export default class AddToCartButton extends React.Component {
             handleAddProduct(item, selectedAttributes);
             alertMessageMain();
             toggleQuickAddToCart();
-            setActiveItem(null)
+            if (className === 'quick-addtocart') {
+              setActiveItem(null)
+            }
           }}
           className={
             item.inStock && allAttributesAreSelected

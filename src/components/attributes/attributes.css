@@ -37,8 +37,8 @@
     flex-direction: row;
     align-items: flex-start;
     cursor: pointer;
-    width: 3.938rem;
-    height: 2.813rem;
+    width: 2.5rem;
+    height: 2.5rem;
     font-weight: 400;
     font-size: 1rem;
     color: var(--c-text);

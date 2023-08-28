@@ -5,6 +5,7 @@
   width: 90%;
   margin-bottom: 3.5rem;
   justify-content: center;
+  gap: 3rem;
 }
 .single-product-titles {
   display: flex;
@@ -12,6 +13,10 @@
   align-items: center;
   margin: 0 auto;
   padding: 8rem;
+}
+.addtocart .active-add-to-cart,
+.addtocart .inactive-add-to-cart {
+  width: max-content;
 }
 .single-product-titles .category {
   text-transform: uppercase;
