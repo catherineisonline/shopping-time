@@ -1,48 +1,57 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import CurrencyOverlay from "./CurrencyOverlay.js";
 import "./currency-overlay.css"
 
-export default class CurrencyIcon extends React.Component {
-  handleOutsideClick = (e) => {
-    if (!this.node.contains(e.target)) this.toggleCurrencyMenu();
-  };
-  render() {
-    const {
-      toggleCurrencyMenu,
-      dropdownMenu,
-      selectedCurrency,
-      allCurrencies,
-      changeCurrency,
-    } = this.props;
+const CurrencyIcon = ({
+  selectedCurrency,
+  allCurrencies,
+  changeCurrency }) => {
+  const [dropdownMenu, setDropdownMenu] = useState(false);
+  const currencyIcon = useRef(null);
 
-    return (
-      <section
-        onClick={toggleCurrencyMenu}
-        className="initial-currency"
-        ref={(node) => {
-          this.node = node;
-        }}
-      >
-        <p>
-          {selectedCurrency}{" "}
-          <span
-            style={
-              dropdownMenu === false ? null : { transform: "rotate(180deg)" }
-            }
-            className="arrow-icon"
-          >
-            ⌄
-          </span>
-        </p>
-        {dropdownMenu && (
-          <CurrencyOverlay
-            allCurrencies={allCurrencies}
-            changeCurrency={changeCurrency}
-            dropdownMenu={dropdownMenu}
-            toggleCurrencyMenu={this.toggleCurrencyMenu}
-          />
-        )}
-      </section>
-    );
-  }
+  const toggleCurrencyMenu = () => {
+    setDropdownMenu(!dropdownMenu)
+  };
+  const handleOutsideClick = (e) => {
+    if (currencyIcon.current && !currencyIcon.current.contains(e.target)) {
+      setDropdownMenu(false);
+    }
+  };
+  useEffect(() => {
+    document.addEventListener("mousedown", handleOutsideClick);
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    };
+  });
+
+  return (
+    <section
+      onClick={toggleCurrencyMenu}
+      className="initial-currency"
+      ref={currencyIcon}
+    >
+      <p>
+        {selectedCurrency}{" "}
+        <span
+          style={
+            dropdownMenu === false ? null : { transform: "rotate(180deg)" }
+          }
+          className="arrow-icon"
+        >
+          ⌄
+        </span>
+      </p>
+      {dropdownMenu && (
+        <CurrencyOverlay
+          allCurrencies={allCurrencies}
+          changeCurrency={changeCurrency}
+          dropdownMenu={dropdownMenu}
+          toggleCurrencyMenu={toggleCurrencyMenu}
+        />
+      )}
+    </section>
+  );
 }
+
+
+export default CurrencyIcon;

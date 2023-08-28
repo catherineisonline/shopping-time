@@ -1,73 +1,58 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import EmptyCart from "../../assets/images/cart-icon.png";
 import CartOverlay from "./CartOverlay.js";
 
-export default class CartIcon extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isVisible: false,
+const CartIcon = ({ totalPayment,
+  cartItems,
+  selectedCurrency,
+  productsQuantity,
+  handleAddProduct,
+  handleRemoveProduct }) => {
+  const [dropdownMenu, setDropdownMenu] = useState(false);
+  const cartIcon = useRef(null);
+
+  const toggleCartOverlay = () => {
+    setDropdownMenu(!dropdownMenu)
+  };
+  const handleOutsideClick = (e) => {
+    if (cartIcon.current && !cartIcon.current.contains(e.target)) {
+      setDropdownMenu(false);
+    }
+  };
+  useEffect(() => {
+    document.addEventListener("mousedown", handleOutsideClick);
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
     };
-  }
-  ToggleCartOverlay = () => {
-    if (!this.state.isVisible) {
-      document.addEventListener("click", this.handleOutsideClick, false);
-    } else {
-      document.removeEventListener("click", this.handleOutsideClick, false);
-    }
+  });
 
-    this.setState({
-      isVisible: !this.state.isVisible,
-    });
-  };
-  handleOutsideClick = (e) => {
-    e.preventDefault();
-
-    const cartOverlayBg = document.querySelector(".cartoverlay-background");
-    if (!this.node.contains(e.target)) {
-      return this.ToggleCartOverlay();
-    }
-    if (e.target.contains(cartOverlayBg)) {
-      return this.ToggleCartOverlay();
-    }
-  };
-  render() {
-    const {
-      totalPayment,
-      cartItems,
-      selectedCurrency,
-      productsQuantity,
-      handleAddProduct,
-      handleRemoveProduct,
-    } = this.props;
-    const { isVisible } = this.state;
-    return (
-      <section
-        ref={(node) => {
-          this.node = node;
-        }}
-      >
-        <section className="cart-icon" onClick={this.ToggleCartOverlay}>
-          <img src={EmptyCart} alt="empty cart" />
-          {productsQuantity > 0 ? (
-            <p className="cart-quantity">{productsQuantity}</p>
-          ) : null}
-        </section>
-
-        {!isVisible ? null : (
-          <article className="cartoverlay-background">
-            <CartOverlay
-              handleAddProduct={handleAddProduct}
-              handleRemoveProduct={handleRemoveProduct}
-              ToggleCartOverlay={this.ToggleCartOverlay}
-              productsQuantity={productsQuantity}
-              cartItems={cartItems}
-              selectedCurrency={selectedCurrency}
-              totalPayment={totalPayment}
-            />
-          </article>
-        )}
+  return (
+    <section
+      ref={cartIcon}
+    >
+      <section className="cart-icon" onClick={toggleCartOverlay}>
+        <img src={EmptyCart} alt="empty cart" className="cart-icon" />
+        {productsQuantity > 0 ? (
+          <p className="cart-quantity">{productsQuantity}</p>
+        ) : null}
       </section>
-    );
-  }
+
+      {!dropdownMenu ? null : (
+        <article className="cartoverlay-background">
+          <CartOverlay
+            handleAddProduct={handleAddProduct}
+            handleRemoveProduct={handleRemoveProduct}
+            ToggleCartOverlay={toggleCartOverlay}
+            productsQuantity={productsQuantity}
+            cartItems={cartItems}
+            selectedCurrency={selectedCurrency}
+            totalPayment={totalPayment}
+          />
+        </article>
+      )}
+    </section>
+  );
 }
+
+
+export default CartIcon;
