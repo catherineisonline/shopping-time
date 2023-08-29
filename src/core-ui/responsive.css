@@ -39,10 +39,7 @@
     overflow-x: scroll;
     gap: 2rem;
   }
-  /* .cartoverlay {
-    transform: translate(-15%, 0);
-    top: 0;
-  } */
+
   .grid-one,
   .grid-two,
   .grid-three,

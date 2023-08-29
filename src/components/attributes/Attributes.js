@@ -22,13 +22,7 @@ export default class Attributes extends React.Component {
               style={
                 selectedAttribute === item.value && attribute.id === "Color"
                   ? {
-                    border: "2px solid  rgb(157, 156, 156)",
-                    borderRadius: "8px",
-                    width: "30px",
-                    height: "30px",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
+                    border: "2px solid  rgb(240, 97, 97)"
                   }
                   : null
               }
@@ -37,7 +31,7 @@ export default class Attributes extends React.Component {
             >
               {attribute.id === "Color" ? (
                 <button
-                  className="attribute-button"
+                  className="attribute-button color-attribute"
                   onClick={() =>
                     this.setState({
                       selectedAttribute: item.value,
@@ -45,12 +39,9 @@ export default class Attributes extends React.Component {
                   }
                   style={{
                     backgroundColor: `${item.value}`,
-                    border: `1px solid ${item.value}`,
-                    width: "30px",
-                    height: "30px",
-                    cursor: "pointer",
+                    border: `1px solid ${item.value}`
                   }}
-                ></button>
+                >C</button>
               ) : (
                 <button
                   className="attribute-button"
@@ -63,9 +54,7 @@ export default class Attributes extends React.Component {
                     selectedAttribute === item.value || item.isSelected === true
                       ? {
                         background: "black",
-                        color: "white",
-                        border: "1px solid black",
-                        bordeRadius: "15px",
+                        color: "white"
                       }
                       : null
                   }

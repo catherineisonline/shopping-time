@@ -1,7 +1,8 @@
 .cart-icon-section {
   position: relative;
 }
-.all-products {
+.all-products,
+.cart-overlay {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.693);
   backdrop-filter: blur(2px);
@@ -24,6 +25,7 @@
   font-size: 1rem;
   color: var(--c-white);
 }
+
 .all-products h4 span {
   font-weight: 500;
 }
@@ -319,7 +321,7 @@
 }
 .titles-block h4 {
   font-family: var(--font-raleway);
-  color: var(--c-text);
+  color: var(--white);
   font-weight: 300;
   font-size: 1rem;
 }

@@ -4,8 +4,9 @@ const CurrencyOverlay = ({ allCurrencies, changeCurrency }) => {
   return (
     <section className="currency-switcher">
       {allCurrencies ? (
-        allCurrencies.map((currency) => (
+        allCurrencies.map((currency, index) => (
           <p
+            key={index}
             className="single-currency"
             onClick={() => {
               changeCurrency(currency.symbol);

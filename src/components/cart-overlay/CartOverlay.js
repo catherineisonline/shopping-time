@@ -11,26 +11,31 @@ const CartOverlay = ({ totalPayment,
   handleAddProduct,
   handleRemoveProduct }) => {
   return (
-    // <article className="cartoverlay">
     <React.Fragment>
       {productsQuantity === 0 ? (
-        <section className="all-products">
-          <h4>
-            My Bag, <span>{productsQuantity} items</span>
-          </h4>
-          <p className="empty-cart">
-            Looks like you haven't added anything to your cart yet
-          </p>
-        </section>
-      ) : (
-        <section className="all-products">
+        <section className="cart-overlay">
           {productsQuantity === 1 ? (
             <h4>
               My cart, <span>{productsQuantity} items</span>
             </h4>
           ) : (
             <h4>
-              My Bag, <span>{productsQuantity} items</span>
+              My cart, <span>{productsQuantity} items</span>
+            </h4>
+          )}
+          <p className="empty-cart">
+            Looks like you haven't added anything to your cart yet
+          </p>
+        </section>
+      ) : (
+        <section className="cart-overlay">
+          {productsQuantity === 1 ? (
+            <h4>
+              My cart, <span>{productsQuantity} items</span>
+            </h4>
+          ) : (
+            <h4>
+              My cart, <span>{productsQuantity} items</span>
             </h4>
           )}
           <section className="cartoverlay-grid">

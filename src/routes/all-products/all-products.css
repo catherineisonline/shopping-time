@@ -28,7 +28,7 @@
 .product-listing-page {
     margin-top: 3rem;
 }
-.product-listing-page h3 {
+.product-listing-page .active-category {
     text-align: center;
     color: var(--c-text);
     font-family: var(--font-raleway);

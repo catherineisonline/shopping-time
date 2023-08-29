@@ -35,7 +35,7 @@ const AllProducts = ({ allProducts,
         </video>
       </article>
       <article className="product-listing-page">
-        <h3>{activeCategory}</h3>
+        <h3 className="active-category">{activeCategory}</h3>
         <section className="store-products">
           {allProducts
             ? allProducts.map((item) => (
