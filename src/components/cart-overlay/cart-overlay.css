@@ -305,7 +305,7 @@
   align-items: center;
   border-radius: 50px;
   box-shadow: 0 0 2px #888;
-  padding: 3px 10px;
+  padding: 3px 8px;
   background-color: var(--c-white);
   color: var(--c-text);
   font-size: 0.7rem;

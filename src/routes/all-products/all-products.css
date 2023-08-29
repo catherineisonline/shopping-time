@@ -123,12 +123,6 @@
     background-repeat: no-repeat;
 }
 
-/* .product-card-infromation {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 3rem;
-} */
 .quick-buy {
     position: absolute;
     right: 3rem;
