@@ -1,6 +1,6 @@
 import React from "react";
 import SelectedAttributes from "../attributes/SelectedAttributes.js";
-import CartProductInteraction from "../CartProductInteraction.js";
+import ChangeCartItemQuantity from "../ChangeCartItemQuantity.js";
 
 export default class CartOverlayItem extends React.Component {
   constructor(props) {
@@ -79,7 +79,7 @@ export default class CartOverlayItem extends React.Component {
             ))}
           </section>
         </section>
-        <CartProductInteraction
+        <ChangeCartItemQuantity
           className="cartoverlay-product-interaction"
           handleAddProduct={handleAddProduct}
           handleRemoveProduct={handleRemoveProduct}

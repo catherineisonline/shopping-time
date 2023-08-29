@@ -8,10 +8,6 @@
 }
 
 @media screen and (max-width: 1025px) {
-  /* header {
-    padding: 1.8rem 1rem;
-    gap: 8rem;
-  } */
   .single-product {
     flex-direction: column;
   }
@@ -48,11 +44,9 @@
     height: 20rem;
   }
   .grid-four .grid-button {
-    /* top: 85%; */
     right: -50%;
   }
   .grid-five .grid-button {
-    /* bottom: -10%; */
     right: -70%;
   }
   .landing-hero {

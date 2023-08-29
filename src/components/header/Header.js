@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import CartIcon from "../cart-overlay/CartIcon.js";
-import Alert from "../Alert.js";
+import SuccessMessage from "../SuccessMessage.js";
 import CategoryMenu from "./CategoryMenu.js";
 import CurrencyIcon from "../currency-overlay/CurrencyIcon.js";
 import "./header.css";
@@ -55,7 +55,7 @@ const Navigation = ({ allCategories,
         </section>
       </nav>
 
-      <Alert />
+      <SuccessMessage />
     </header>
   );
 }

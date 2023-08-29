@@ -33,7 +33,7 @@
     font-family: var(--font-roboto);
 }
 
-.quick-attribute .attribute-button {
+.attribute-button {
     flex-direction: row;
     align-items: flex-start;
     cursor: pointer;
@@ -101,5 +101,5 @@
 }
 
 .attribute-button.color-attribute {
-    font-size: 0;
+    font-size: 0 !important;
 }

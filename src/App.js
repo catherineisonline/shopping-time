@@ -139,7 +139,8 @@ export default class App extends React.Component {
     return currentProductList;
   }
 
-  handleAddProduct = (targetProduct, userSelectedAttributes) => {
+  handleAddProduct = (targetProduct, userSelectedAttributes = null) => {
+    // console.log()
     let updatedProductList;
     const productAlreadyInCart = this.CheckRepeatableProducts(
       this.state.cartItems,

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import SelectedAttributes from "../../components/attributes/SelectedAttributes.js";
 import SimpleImageSlider from "react-simple-image-slider";
-import CartProductInteraction from "../../components/CartProductInteraction.js";
+import ChangeCartItemQuantity from "../../components/ChangeCartItemQuantity.js";
 
 
 const CartSingleItem = ({ selectedCurrency, singleProduct, handleAddProduct, handleRemoveProduct }) => {
@@ -35,7 +35,7 @@ const CartSingleItem = ({ selectedCurrency, singleProduct, handleAddProduct, han
                 ))}
             </section>
             <section className="cart-content">
-                <CartProductInteraction
+                <ChangeCartItemQuantity
                     className="cart-product-interaction"
                     handleAddProduct={handleAddProduct}
                     handleRemoveProduct={handleRemoveProduct}
