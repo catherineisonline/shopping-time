@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import {
   currenciesObj, itemsObj, categoriesObj
-} from "./prodcuts-data";
+} from "./data/all-products";
 import Header from "./components/header/Header.js";
 import AllProducts from "./routes/all-products/AllProducts.js";
 import SingleProduct from "./routes/single-product/SingleProduct.js";

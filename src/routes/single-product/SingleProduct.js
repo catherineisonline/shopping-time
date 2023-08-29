@@ -3,9 +3,8 @@ import Attribute from "../../components/attributes/Attributes.js";
 import AddToCartButton from "../../components/AddToCartButton.js";
 import ProductShowcase from "./ProductShowcase.js";
 import ProductTitles from "./ProductTitles.js";
-import {
-  itemsObj
-} from "../../prodcuts-data";
+import { itemsObj } from "../../data/all-products.js";
+import { ResetLocation } from "../../helpers/ResetLocation.js";
 
 export default class SingleProduct extends React.Component {
   constructor(props) {
@@ -99,7 +98,7 @@ export default class SingleProduct extends React.Component {
   componentDidMount() {
     ///Need to change url like store/category/id
     this.GetProductById(window.location.pathname.toString().substring(1));
-    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+    ResetLocation()
   }
   shouldComponentUpdate(nextProps, nextState) {
     if (this.props.selectedCurrency !== nextProps.selectedCurrency) {

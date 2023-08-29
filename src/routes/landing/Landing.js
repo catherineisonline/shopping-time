@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import HeroVideo from '../../assets/images/landing-images/hero-video.mp4'
 import "./landing.css"
+import { ResetLocation } from "../../helpers/ResetLocation";
 
 export default class Landing extends React.Component {
   render() {
@@ -21,6 +22,7 @@ export default class Landing extends React.Component {
               className="custom-btn grid-button"
               onClick={() => {
                 changeCategory("blouses");
+                ResetLocation();
               }}
             >
               <span>Blouses</span>
@@ -31,6 +33,7 @@ export default class Landing extends React.Component {
               to={`/store/jeans`}
               onClick={() => {
                 changeCategory("jeans");
+                ResetLocation();
               }}
               className="custom-btn grid-button"
             >
@@ -42,6 +45,7 @@ export default class Landing extends React.Component {
               to={`/store/shoes`}
               onClick={() => {
                 changeCategory("shoes");
+                ResetLocation();
               }}
               className=" custom-btn grid-button"
             >
@@ -53,6 +57,7 @@ export default class Landing extends React.Component {
               to={`/store/dresses`}
               onClick={() => {
                 changeCategory("dresses");
+                ResetLocation();
               }}
               className="custom-btn grid-button"
             >
@@ -64,6 +69,7 @@ export default class Landing extends React.Component {
               to={`/store/all`}
               onClick={() => {
                 changeCategory("all");
+                ResetLocation();
               }}
               className="custom-btn grid-button"
             >
