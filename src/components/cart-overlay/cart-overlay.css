@@ -299,16 +299,16 @@
 .cart-quantity {
   display: inline-block;
   position: absolute;
-  top: -10%;
-  right: -20%;
+  top: -0.5rem;
+  right: -1.1rem;
   flex-direction: column;
   align-items: center;
   border-radius: 50px;
   box-shadow: 0 0 2px #888;
-  padding: 0.01em 0.3em;
+  padding: 3px 10px;
   background-color: var(--c-white);
   color: var(--c-text);
-  font-size: 1rem;
+  font-size: 0.7rem;
   font-weight: 500;
   font-family: var(--font-raleway);
 }

@@ -23,6 +23,10 @@ header ul {
     font-size: 0.8rem;
     justify-content: center;
 }
+header ul li:hover {
+    color: var(--c-primary);
+    transition: all ease-in-out 0.3s;
+}
 nav {
     width: 100%;
     display: flex;
