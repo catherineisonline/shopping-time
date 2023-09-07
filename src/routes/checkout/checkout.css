@@ -1,3 +1,4 @@
+
 .checkout {
     display: flex;
     flex-direction: column;
@@ -18,4 +19,57 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+.personalStyle{
+    font-size: xx-large;
+    text-align: center;
+}
+
+.input-style{
+    margin-top: 2rem;
+    border: 0;
+    border-radius: 3px;
+    border-bottom: 1px solid black;
+    box-shadow: rgba(18, 18, 18, 0.25) 0 16px 32px;
+    height: 2rem;
+    width: 20vw;
+    margin-right: 2rem;
+    text-align: center;
+    font-size: small;
+    outline: none;
+}
+
+.main-btn-style {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.conti-btn{
+ 
+  background-color: #c2fbd7;
+  margin-right: 1rem;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 1.5rem;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-33:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
 }

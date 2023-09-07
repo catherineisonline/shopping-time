@@ -1,3 +1,4 @@
+import MoneyPreview from "../../assets/images/money-preview.mp4"
 import React, { useState } from "react";
 import "./checkout.css"
 
@@ -21,48 +22,48 @@ const Checkout = () => {
         const errors = {};
         if (step === "details") {
             if (!values.firstname) {
-                errors.firstname = "Required";
+                errors.firstname = "*";
             }
             if (!values.lastname) {
-                errors.lastname = "Required";
+                errors.lastname = "*";
             }
 
             if (!values.email) {
-                errors.email = "Required";
+                errors.email = "*";
             }
             else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) {
                 errors.email = "Invalid email address";
             }
             if (!values.phonenumber) {
-                errors.phonenumber = "Required";
+                errors.phonenumber = "*";
             }
         }
         if (step === "address") {
             if (!values.streetaddress) {
-                errors.streetaddress = "Required";
+                errors.streetaddress = "*";
             }
             if (!values.country) {
-                errors.country = "Required";
+                errors.country = "*";
             }
             if (!values.postal) {
-                errors.postal = "Required";
+                errors.postal = "*";
             }
             if (!values.city) {
-                errors.city = "Required";
+                errors.city = "*";
             }
             if (!values.province) {
-                errors.province = "Required";
+                errors.province = "*";
             }
         }
         if (step === "payment") {
             if (!values.card) {
-                errors.card = "Required";
+                errors.card = "*";
             }
             if (!values.expiration) {
-                errors.expiration = "Required";
+                errors.expiration = "*";
             }
             if (!values.cvv) {
-                errors.cvv = "Required";
+                errors.cvv = "*";
             }
         }
         return errors;
@@ -85,17 +86,24 @@ const Checkout = () => {
     }
     return (
         <main>
+        <article className="cart-hero">
+                    
+                <video autoPlay loop muted playsInline>
+                    <source src={MoneyPreview} type="video/mp4" />
+                </video>
+           
+        </article>
             <article className="checkout">
                 {currentStep === "done" ? null :
                     <ul>
-                        <li onClick={() => setStep("detail")}>1<span>-</span></li>
-                        <li onClick={() => setStep("payment")}>2<span>-</span></li>
-                        <li onClick={() => setStep("detail")}>3</li>
+                        <li onClick={() => setStep("detail")}><span></span></li>
+                        <li onClick={() => setStep("payment")}><span></span></li>
+                        <li onClick={() => setStep("detail")}> </li>
                     </ul>}
 
                 <form onSubmit={submitForm}>
                     {currentStep === "details" ?
-                        <section>
+                        <section className="personalStyle">
                             <h2>Personal details</h2>
                             <input
                                 onChange={handleChange}
@@ -103,6 +111,7 @@ const Checkout = () => {
                                 type="text"
                                 name="firstname"
                                 placeholder="Firstname"
+                                className="input-style"
                             />
                             <span>{formErrors.firstname}</span>
                             <input
@@ -111,6 +120,7 @@ const Checkout = () => {
                                 type="text"
                                 name="lastname"
                                 placeholder="Lastname"
+                                className="input-style"
                             />
                             <span>{formErrors.lastname}</span>
                             <input
@@ -118,7 +128,8 @@ const Checkout = () => {
                                 value={formValues.email}
                                 type="email"
                                 name="email"
-                                placeholder="Email" />
+                                placeholder="Email"
+                                className="input-style" />
                             <span>{formErrors.email}</span>
                             <input
                                 onChange={handleChange}
@@ -126,11 +137,12 @@ const Checkout = () => {
                                 type="text"
                                 name="phonenumber"
                                 placeholder="Phone number"
+                                className="input-style"
                             />
                             <span>{formErrors.phonenumber}</span>
                         </section> :
                         currentStep === "address" ?
-                            <section>
+                            <section className="personalStyle">
                                 <h2>Delivery information</h2>
                                 <input
                                     onChange={handleChange}
@@ -138,6 +150,7 @@ const Checkout = () => {
                                     type="text"
                                     name="streetaddress"
                                     placeholder="Street address"
+                                    className="input-style"
                                 />
                                 <span>{formErrors.streetaddress}</span>
                                 <input
@@ -146,6 +159,7 @@ const Checkout = () => {
                                     type="text"
                                     name="country"
                                     placeholder="Country"
+                                    className="input-style"
                                 />
                                 <span>{formErrors.Country}</span>
                                 <input
@@ -153,7 +167,9 @@ const Checkout = () => {
                                     value={formValues.postal}
                                     type="text"
                                     name="postal"
-                                    placeholder="Postal" />
+                                    placeholder="Postal" 
+                                    className="input-style"
+                                    />
                                 <span>{formErrors.postal}</span>
                                 <input
                                     onChange={handleChange}
@@ -161,6 +177,7 @@ const Checkout = () => {
                                     type="text"
                                     name="city"
                                     placeholder="City"
+                                    className="input-style"
                                 />
                                 <span>{formErrors.city}</span>
                                 <input
@@ -169,11 +186,12 @@ const Checkout = () => {
                                     type="text"
                                     name="province"
                                     placeholder="Province"
+                                    className="input-style"
                                 />
                                 <span>{formErrors.province}</span>
                             </section> :
                             currentStep === "payment" ?
-                                <section>
+                                <section className="personalStyle">
                                     <h2>Payment</h2>
                                     <input
                                         onChange={handleChange}
@@ -181,6 +199,7 @@ const Checkout = () => {
                                         type="text"
                                         name="card"
                                         placeholder="Card number"
+                                        className="input-style"
                                     />
                                     <span>{formErrors.card}</span>
                                     <input
@@ -189,6 +208,7 @@ const Checkout = () => {
                                         type="text"
                                         name="expiration"
                                         placeholder="MM / YY"
+                                        className="input-style"
                                     />
                                     <span>{formErrors.expiration}</span>
                                     <input
@@ -196,7 +216,8 @@ const Checkout = () => {
                                         value={formValues.cvv}
                                         type="cvv"
                                         name="cvv"
-                                        placeholder="CVV" />
+                                        placeholder="CVV"
+                                        className="input-style" />
                                     <span>{formErrors.cvv}</span>
                                 </section> :
                                 currentStep === "done" ?
@@ -234,20 +255,23 @@ const Checkout = () => {
                                         <p>Warm regards, <br />
                                             The Shopping Time Team</p>
                                     </section> : null}
+
+                                    <div className="main-btn-style">
                     {currentStep === "details" ?
-                        <button type="button" onClick={() => { setStep("address", "details") }}>Continue to address</button>
+                        <button className="conti-btn" type="button" onClick={() => { setStep("address", "details") }}>Continue to address</button>
                         :
                         currentStep === "address" ?
-                            <section className="">
-                                <button type="button" onClick={() => { setCurrentStep("details") }}>Go back</button>
-                                <button type="button" onClick={(e) => { e.preventDefault(); setStep("payment", "address") }}>Continue to payment</button>
+                            <section className="personalStyle">
+                                <button className="conti-btn" type="button" onClick={() => { setCurrentStep("details") }}>Go back</button>
+                                <button className="conti-btn" type="button" onClick={(e) => { e.preventDefault(); setStep("payment", "address") }}>Continue to payment</button>
                             </section> :
                             currentStep === "payment" ?
-                                <section className="">
-                                    <button type="button" onClick={() => { setCurrentStep("address") }}>Go back</button>
-                                    <button type="submit">Submit</button>
+                                <section className="personalStyle">
+                                    <button className="conti-btn" type="button" onClick={() => { setCurrentStep("address") }}>Go back</button>
+                                    <button className="conti-btn" type="submit">Submit</button>
                                 </section> :
                                 null}
+                                </div>
                 </form>
             </article>
         </main >
