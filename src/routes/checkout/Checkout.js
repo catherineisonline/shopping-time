@@ -21,48 +21,48 @@ const Checkout = () => {
         const errors = {};
         if (step === "details") {
             if (!values.firstname) {
-                errors.firstname = "Required";
+                errors.firstname = "First name is required";
             }
             if (!values.lastname) {
-                errors.lastname = "Required";
+                errors.lastname = "Last name is required";
             }
 
             if (!values.email) {
-                errors.email = "Required";
+                errors.email = "Please enter an email";
             }
             else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) {
                 errors.email = "Invalid email address";
             }
             if (!values.phonenumber) {
-                errors.phonenumber = "Required";
+                errors.phonenumber = "The phone number is required";
             }
         }
         if (step === "address") {
             if (!values.streetaddress) {
-                errors.streetaddress = "Required";
+                errors.streetaddress = "Enter the street address";
             }
             if (!values.country) {
-                errors.country = "Required";
+                errors.country = "Please enter a country";
             }
             if (!values.postal) {
-                errors.postal = "Required";
+                errors.postal = "Please enter a postal code";
             }
             if (!values.city) {
-                errors.city = "Required";
+                errors.city = "Please enter the city";
             }
             if (!values.province) {
-                errors.province = "Required";
+                errors.province = "Please enter the province name";
             }
         }
         if (step === "payment") {
             if (!values.card) {
-                errors.card = "Required";
+                errors.card = "Card number is required";
             }
             if (!values.expiration) {
-                errors.expiration = "Required";
+                errors.expiration = "Enter the expiration date";
             }
             if (!values.cvv) {
-                errors.cvv = "Required";
+                errors.cvv = "CVV is required";
             }
         }
         return errors;
@@ -84,123 +84,131 @@ const Checkout = () => {
         setFormValues({ ...formValues, [name]: value });
     }
     return (
-        <main>
-            <article className="checkout">
+        <main className="checkout">
+            <h1>Checkout</h1>
+            <article className="checkout-content">
                 {currentStep === "done" ? null :
-                    <ul>
-                        <li onClick={() => setStep("detail")}>1<span>-</span></li>
-                        <li onClick={() => setStep("payment")}>2<span>-</span></li>
-                        <li onClick={() => setStep("detail")}>3</li>
+                    <ul className="multi-steps">
+                        <li><span className={`step-number`}>1</span><span className="step-title">Personal details</span></li>
+                        <li><span className="step-number">2</span><span className="step-title">Delivery address</span></li>
+                        <li><span className="step-number">3</span><span className="step-title">Payment method</span></li>
                     </ul>}
 
                 <form onSubmit={submitForm}>
                     {currentStep === "details" ?
-                        <section>
+                        <React.Fragment>
                             <h2>Personal details</h2>
-                            <input
-                                onChange={handleChange}
-                                value={formValues.firstname}
-                                type="text"
-                                name="firstname"
-                                placeholder="Firstname"
-                            />
-                            <span>{formErrors.firstname}</span>
-                            <input
-                                onChange={handleChange}
-                                value={formValues.lastname}
-                                type="text"
-                                name="lastname"
-                                placeholder="Lastname"
-                            />
-                            <span>{formErrors.lastname}</span>
-                            <input
-                                onChange={handleChange}
-                                value={formValues.email}
-                                type="email"
-                                name="email"
-                                placeholder="Email" />
-                            <span>{formErrors.email}</span>
-                            <input
-                                onChange={handleChange}
-                                value={formValues.phonenumber}
-                                type="text"
-                                name="phonenumber"
-                                placeholder="Phone number"
-                            />
-                            <span>{formErrors.phonenumber}</span>
-                        </section> :
+                            <section className="checkout-inputs">
+                                <input
+                                    onChange={handleChange}
+                                    value={formValues.firstname}
+                                    type="text"
+                                    name="firstname"
+                                    placeholder="First name"
+                                />
+                                <span className="error">{formErrors.firstname}</span>
+                                <input
+                                    onChange={handleChange}
+                                    value={formValues.lastname}
+                                    type="text"
+                                    name="lastname"
+                                    placeholder="Last name"
+                                />
+                                <span className="error">{formErrors.lastname}</span>
+                                <input
+                                    onChange={handleChange}
+                                    value={formValues.email}
+                                    type="email"
+                                    name="email"
+                                    placeholder="Email" />
+                                <span className="error">{formErrors.email}</span>
+                                <input
+                                    onChange={handleChange}
+                                    value={formValues.phonenumber}
+                                    type="text"
+                                    name="phonenumber"
+                                    placeholder="Phone number"
+                                />
+                                <span className="error">{formErrors.phonenumber}</span>
+                            </section>
+                        </React.Fragment> :
                         currentStep === "address" ?
-                            <section>
+                            <React.Fragment>
                                 <h2>Delivery information</h2>
-                                <input
-                                    onChange={handleChange}
-                                    value={formValues.streetaddress}
-                                    type="text"
-                                    name="streetaddress"
-                                    placeholder="Street address"
-                                />
-                                <span>{formErrors.streetaddress}</span>
-                                <input
-                                    onChange={handleChange}
-                                    value={formValues.country}
-                                    type="text"
-                                    name="country"
-                                    placeholder="Country"
-                                />
-                                <span>{formErrors.Country}</span>
-                                <input
-                                    onChange={handleChange}
-                                    value={formValues.postal}
-                                    type="text"
-                                    name="postal"
-                                    placeholder="Postal" />
-                                <span>{formErrors.postal}</span>
-                                <input
-                                    onChange={handleChange}
-                                    value={formValues.city}
-                                    type="text"
-                                    name="city"
-                                    placeholder="City"
-                                />
-                                <span>{formErrors.city}</span>
-                                <input
-                                    onChange={handleChange}
-                                    value={formValues.province}
-                                    type="text"
-                                    name="province"
-                                    placeholder="Province"
-                                />
-                                <span>{formErrors.province}</span>
-                            </section> :
+                                <section className="checkout-inputs">
+                                    <input
+                                        onChange={handleChange}
+                                        value={formValues.streetaddress}
+                                        type="text"
+                                        name="streetaddress"
+                                        placeholder="Street address"
+                                    />
+                                    <span className="error">{formErrors.streetaddress}</span>
+                                    <input
+                                        onChange={handleChange}
+                                        value={formValues.country}
+                                        type="text"
+                                        name="country"
+                                        placeholder="Country"
+                                    />
+                                    <span className="error">{formErrors.country}</span>
+                                    <input
+                                        onChange={handleChange}
+                                        value={formValues.postal}
+                                        type="text"
+                                        name="postal"
+                                        placeholder="Postal code" />
+                                    <span className="error">{formErrors.postal}</span>
+                                    <input
+                                        onChange={handleChange}
+                                        value={formValues.city}
+                                        type="text"
+                                        name="city"
+                                        placeholder="City"
+                                    />
+                                    <span className="error">{formErrors.city}</span>
+                                    <input
+                                        onChange={handleChange}
+                                        value={formValues.province}
+                                        type="text"
+                                        name="province"
+                                        placeholder="Province"
+                                    />
+                                    <span className="error">{formErrors.province}</span>
+                                </section>
+                            </React.Fragment>
+                            :
                             currentStep === "payment" ?
-                                <section>
+
+                                <React.Fragment>
                                     <h2>Payment</h2>
-                                    <input
-                                        onChange={handleChange}
-                                        value={formValues.card}
-                                        type="text"
-                                        name="card"
-                                        placeholder="Card number"
-                                    />
-                                    <span>{formErrors.card}</span>
-                                    <input
-                                        onChange={handleChange}
-                                        value={formValues.expiration}
-                                        type="text"
-                                        name="expiration"
-                                        placeholder="MM / YY"
-                                    />
-                                    <span>{formErrors.expiration}</span>
-                                    <input
-                                        onChange={handleChange}
-                                        value={formValues.cvv}
-                                        type="cvv"
-                                        name="cvv"
-                                        placeholder="CVV" />
-                                    <span>{formErrors.cvv}</span>
-                                </section> :
+                                    <section className="checkout-inputs">
+                                        <input
+                                            onChange={handleChange}
+                                            value={formValues.card}
+                                            type="text"
+                                            name="card"
+                                            placeholder="Card number"
+                                        />
+                                        <span className="error">{formErrors.card}</span>
+                                        <input
+                                            onChange={handleChange}
+                                            value={formValues.expiration}
+                                            type="text"
+                                            name="expiration"
+                                            placeholder="MM / YY"
+                                        />
+                                        <span className="error">{formErrors.expiration}</span>
+                                        <input
+                                            onChange={handleChange}
+                                            value={formValues.cvv}
+                                            type="cvv"
+                                            name="cvv"
+                                            placeholder="CVV" />
+                                        <span className="error">{formErrors.cvv}</span>
+                                    </section>      </React.Fragment> :
                                 currentStep === "done" ?
-                                    <section>
+                                    <section className="order-success">
                                         <h2>Order Received Successfully!</h2>
                                         <p>Dear {formValues.firstname} {formValues.lastname},</p>
                                         <p>Congratulations!<br />
@@ -235,17 +243,19 @@ const Checkout = () => {
                                             The Shopping Time Team</p>
                                     </section> : null}
                     {currentStep === "details" ?
-                        <button type="button" onClick={() => { setStep("address", "details") }}>Continue to address</button>
+                        <button className="active-add-to-cart" type="button" onClick={() => { setStep("address", "details") }}>Continue to address</button>
                         :
                         currentStep === "address" ?
-                            <section className="">
-                                <button type="button" onClick={() => { setCurrentStep("details") }}>Go back</button>
-                                <button type="button" onClick={(e) => { e.preventDefault(); setStep("payment", "address") }}>Continue to payment</button>
+                            <section className="form-buttons">
+
+                                <button className="active-add-to-cart" type="button" onClick={(e) => { e.preventDefault(); setStep("payment", "address") }}>Continue to payment</button>
+                                <button className="go-back" type="button" onClick={() => { setCurrentStep("details") }}>Go back</button>
                             </section> :
                             currentStep === "payment" ?
-                                <section className="">
-                                    <button type="button" onClick={() => { setCurrentStep("address") }}>Go back</button>
-                                    <button type="submit">Submit</button>
+                                <section className="form-buttons">
+
+                                    <button className="active-add-to-cart" type="submit">Submit</button>
+                                    <button className="go-back" type="button" onClick={() => { setCurrentStep("address") }}>Go back</button>
                                 </section> :
                                 null}
                 </form>
