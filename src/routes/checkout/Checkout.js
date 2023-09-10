@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./checkout.css"
 import { CheckoutSingleItem } from "./CheckoutSingleItem";
 
 
 const Checkout = ({ cartItems, selectedCurrency }) => {
-    const [currentStep, setCurrentStep] = useState("done");
+    const [currentStep, setCurrentStep] = useState("details");
     const [formValues, setFormValues] = useState({ firstname: "", lastname: "", email: "", phonenumber: "", streetaddress: "", country: "", postal: "", city: "", province: "", card: "", expiration: "", cvv: "" })
     const [formErrors, setFormErrors] = useState({});
 
@@ -87,7 +87,7 @@ const Checkout = ({ cartItems, selectedCurrency }) => {
     }
     return (
         <main className="checkout">
-            <h1>Checkout</h1>
+            <h1>{currentStep === "done" ? "Thank you for ordering" : "Checkout"}</h1>
             <article className="checkout-content">
                 {currentStep === "done" ? null :
                     <ul className="multi-steps">
@@ -211,7 +211,6 @@ const Checkout = ({ cartItems, selectedCurrency }) => {
                                     </section>      </React.Fragment> :
                                 currentStep === "done" ?
                                     <section className="order-success">
-                                        <h2>Thank you for ordering</h2>
                                         <p>Dear {formValues.firstname} {formValues.lastname},</p>
                                         <p>
                                             Your order has been received successfully at Shopping Time. We're thrilled that you've chosen us for your fashion needs. Your style journey is about to begin!
@@ -235,14 +234,15 @@ const Checkout = ({ cartItems, selectedCurrency }) => {
                                                 );
                                             })}
                                         </ul>
+                                        <h3>Delivery Information:</h3>
                                         <p>
-                                            Delivery Information:
+
                                             Your items will be carefully prepared and dispatched for delivery. You will receive a confirmation email with tracking information once your order ships.
-                                            <br />
-                                            Stay Connected:
-                                            If you have any questions or need assistance, feel free to contact our customer support team at support@shoppingtime.com or +1 1234 344 2342.
-                                            <br />
-                                            Happy Shopping!
+                                        </p>
+                                        <h3>    Stay Connected:</h3>
+                                        If you have any questions or need assistance, feel free to contact our customer support team at support@shoppingtime.com or +1 1234 344 2342.
+                                        <br />
+                                        <p>  Happy Shopping!
                                         </p>
                                         <p>Warm regards, <br />
                                             The Shopping Time Team</p>

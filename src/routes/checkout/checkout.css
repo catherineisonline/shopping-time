@@ -121,9 +121,18 @@
     gap: 1rem;
     width: 100%;
     margin: 0 auto;
-    /* align-items: center; */
+    font-family: var(--font-raleway);
 }
 
 .order-success h2 {
-    text-align: center;
+    font-size: 2rem;
+}
+.order-success h3 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.order-details,
+.items-ordered {
+    list-style: none;
 }
