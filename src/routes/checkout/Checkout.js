@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./checkout.css"
+import { CheckoutSingleItem } from "./CheckoutSingleItem";
 
 
-const Checkout = () => {
+const Checkout = ({ cartItems, selectedCurrency }) => {
     const [currentStep, setCurrentStep] = useState("done");
     const [formValues, setFormValues] = useState({ firstname: "", lastname: "", email: "", phonenumber: "", streetaddress: "", country: "", postal: "", city: "", province: "", card: "", expiration: "", cvv: "" })
     const [formErrors, setFormErrors] = useState({});
+
 
     const setStep = (step, validationStep) => {
         setFormErrors(validateForm(formValues, validationStep));
@@ -209,32 +211,36 @@ const Checkout = () => {
                                     </section>      </React.Fragment> :
                                 currentStep === "done" ?
                                     <section className="order-success">
-                                        <h2>Order Received Successfully!</h2>
+                                        <h2>Thank you for ordering</h2>
                                         <p>Dear {formValues.firstname} {formValues.lastname},</p>
-                                        <p>Congratulations!<br />
+                                        <p>
                                             Your order has been received successfully at Shopping Time. We're thrilled that you've chosen us for your fashion needs. Your style journey is about to begin!
                                         </p>
                                         <h3> Order Details:</h3>
-                                        <ul>
+                                        <ul className="order-details">
                                             <li>Order Number: [Order Number]</li>
                                             <li> Order Date: [Order Date]</li>
                                             <li>Shipping Address: {formValues.firstname}</li>
                                             <li>Payment Method: Bank card</li>
                                         </ul>
                                         <h3>Items Ordered:</h3>
-                                        <ul>
-                                            <li>[Item 1]: [Item Name] - [Item Price]</li>
-                                            <li>[Item 1]: [Item Name] - [Item Price]</li>
-                                            <li>[Item 1]: [Item Name] - [Item Price]</li>
+                                        <ul className="items-ordered">
+                                            {cartItems.map((singleProduct) => {
+                                                return (
+                                                    <CheckoutSingleItem
+                                                        key={singleProduct.uniqueId}
+                                                        singleProduct={singleProduct}
+                                                        selectedCurrency={selectedCurrency}
+                                                    />
+                                                );
+                                            })}
                                         </ul>
                                         <p>
                                             Delivery Information:
                                             Your items will be carefully prepared and dispatched for delivery. You will receive a confirmation email with tracking information once your order ships.
                                             <br />
                                             Stay Connected:
-                                            If you have any questions or need assistance, feel free to contact our customer support team at [Customer Support Email] or [Customer Support Phone Number].
-                                            <br />
-                                            Thank you for choosing Shopping Time. We can't wait to see you rocking your new outfits! Your satisfaction is our top priority.
+                                            If you have any questions or need assistance, feel free to contact our customer support team at support@shoppingtime.com or +1 1234 344 2342.
                                             <br />
                                             Happy Shopping!
                                         </p>
@@ -259,7 +265,7 @@ const Checkout = () => {
                                 null}
                 </form>
             </article>
-        </main>
+        </main >
 
     )
 }

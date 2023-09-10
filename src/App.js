@@ -382,7 +382,7 @@ export default class App extends React.Component {
               />
             }
           />
-          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/checkout" element={<Checkout cartItems={cartItems} selectedCurrency={selectedCurrency} />} />
         </Routes>
       </BrowserRouter>
     );
