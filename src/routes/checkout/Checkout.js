@@ -3,7 +3,7 @@ import "./checkout.css"
 
 
 const Checkout = () => {
-    const [currentStep, setCurrentStep] = useState("details");
+    const [currentStep, setCurrentStep] = useState("done");
     const [formValues, setFormValues] = useState({ firstname: "", lastname: "", email: "", phonenumber: "", streetaddress: "", country: "", postal: "", city: "", province: "", card: "", expiration: "", cvv: "" })
     const [formErrors, setFormErrors] = useState({});
 
@@ -89,9 +89,9 @@ const Checkout = () => {
             <article className="checkout-content">
                 {currentStep === "done" ? null :
                     <ul className="multi-steps">
-                        <li><span className={`step-number`}>1</span><span className="step-title">Personal details</span></li>
-                        <li><span className="step-number">2</span><span className="step-title">Delivery address</span></li>
-                        <li><span className="step-number">3</span><span className="step-title">Payment method</span></li>
+                        <li><span className={`step-number ${currentStep === "details" ? "active" : ""}`}>1</span><span className="step-title">Personal details</span></li>
+                        <li><span className={`step-number ${currentStep === "address" ? "active" : ""}`}>2</span><span className="step-title">Delivery address</span></li>
+                        <li><span className={`step-number ${currentStep === "payment" ? "active" : ""}`}>3</span><span className="step-title">Payment method</span></li>
                     </ul>}
 
                 <form onSubmit={submitForm}>
@@ -218,9 +218,8 @@ const Checkout = () => {
                                         <ul>
                                             <li>Order Number: [Order Number]</li>
                                             <li> Order Date: [Order Date]</li>
-                                            <li>Shipping Address: [Shipping Address]</li>
-                                            <li>Billing Address: [Billing Address]</li>
-                                            <li>Payment Method: [Payment Method]</li>
+                                            <li>Shipping Address: {formValues.firstname}</li>
+                                            <li>Payment Method: Bank card</li>
                                         </ul>
                                         <h3>Items Ordered:</h3>
                                         <ul>
@@ -260,7 +259,7 @@ const Checkout = () => {
                                 null}
                 </form>
             </article>
-        </main >
+        </main>
 
     )
 }
