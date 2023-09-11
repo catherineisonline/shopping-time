@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import CartIcon from "../cart-overlay/CartIcon.js";
 import SuccessMessage from "../SuccessMessage.js";
 import CategoryMenu from "./CategoryMenu.js";
 import CurrencyIcon from "../currency-overlay/CurrencyIcon.js";
 import "./header.css";
+import inactiveHamburger from "../../assets/images/inactive-hamburger.png";
+import activeHamburger from "../../assets/images/active-hamburger.png";
 
 const Navigation = ({ allCategories,
   changeCategory,
@@ -19,13 +21,22 @@ const Navigation = ({ allCategories,
   handleAddProduct,
   cartItems }) => {
 
+  const [activeMenu, setInactiveMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setInactiveMenu(!activeMenu);
+  }
+  const closeMenu = () => setInactiveMenu(false);
+
   return (
     <header>
-      <nav>
+      <img className="hamburger" src={activeMenu ? activeHamburger : inactiveHamburger} alt="toggle menu" onClick={toggleMenu} />
+      <nav className={activeMenu ? "active-menu" : ""}>
         <NavLink
           to="/"
           onClick={() => {
             changeCategory("");
+            closeMenu();
           }}
           className="header-one"
         >
@@ -35,6 +46,7 @@ const Navigation = ({ allCategories,
           allCategories={allCategories}
           changeCategory={changeCategory}
           activeCategory={activeCategory}
+          closeMenu={closeMenu}
         />
         <section className="icons-section">
           <CurrencyIcon
@@ -51,6 +63,7 @@ const Navigation = ({ allCategories,
             totalPayment={totalPayment}
             cartItems={cartItems}
             selectedCurrency={selectedCurrency}
+            activeMenu={activeMenu}
           />
         </section>
       </nav>

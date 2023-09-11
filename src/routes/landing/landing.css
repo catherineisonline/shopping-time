@@ -12,6 +12,13 @@
     letter-spacing: 1px;
     text-transform: uppercase;
 }
+
+@media (max-width: 750px) {
+    .landing .hero h2 {
+        top: 60%;
+        left: 20%;
+    }
+}
 .landing .hero h2 span {
     color: var(--c-primary);
 }

@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import CartOverlayItem from "./CartOverlayItem.js";
 import "./cart-overlay.css"
+import activeHamburger from "../../assets/images/active-hamburger.png";
 
 const CartOverlay = ({ totalPayment,
   cartItems,
@@ -9,17 +10,18 @@ const CartOverlay = ({ totalPayment,
   ToggleCartOverlay,
   productsQuantity,
   handleAddProduct,
-  handleRemoveProduct }) => {
+  handleRemoveProduct, activeMenu, removeCartOverlay }) => {
   return (
     <React.Fragment>
       {productsQuantity === 0 ? (
-        <section className="cart-overlay">
+        <section className={`cart-overlay ${activeMenu ? 'active-overlay' : ''}`}>
+          <img className="cartoverlay-hamburger" src={activeHamburger} alt="toggle menu" onClick={() => removeCartOverlay()} />
           {productsQuantity === 1 ? (
-            <h4>
+            <h4 className="overlay-title">
               My cart, <span>{productsQuantity} items</span>
             </h4>
           ) : (
-            <h4>
+            <h4 className="overlay-title">
               My cart, <span>{productsQuantity} items</span>
             </h4>
           )}
@@ -28,13 +30,14 @@ const CartOverlay = ({ totalPayment,
           </p>
         </section>
       ) : (
-        <section className="cart-overlay">
+        <section className={`cart-overlay ${activeMenu ? 'active-overlay' : ''}`}>
+          <img className="cartoverlay-hamburger" src={activeHamburger} alt="toggle menu" onClick={() => removeCartOverlay()} />
           {productsQuantity === 1 ? (
-            <h4>
+            <h4 className="overlay-title">
               My cart, <span>{productsQuantity} items</span>
             </h4>
           ) : (
-            <h4>
+            <h4 className="overlay-title">
               My cart, <span>{productsQuantity} items</span>
             </h4>
           )}
@@ -65,7 +68,8 @@ const CartOverlay = ({ totalPayment,
             </Link>
           </section>
         </section>
-      )}
+      )
+      }
     </React.Fragment>
   );
 }

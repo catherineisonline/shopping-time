@@ -3,13 +3,14 @@ import { NavLink } from "react-router-dom";
 
 export default class CategoryMenu extends React.Component {
   render() {
-    const { allCategories, changeCategory, activeCategory } = this.props;
+    const { allCategories, changeCategory, activeCategory, closeMenu } = this.props;
     return (
       <ul>
         <NavLink
           to="/"
           onClick={() => {
             changeCategory("");
+            closeMenu();
           }}
           className="home-link"
         >
@@ -28,6 +29,7 @@ export default class CategoryMenu extends React.Component {
             <li
               onClick={() => {
                 changeCategory(category.name);
+                closeMenu();
               }}
             >
               {category.name}

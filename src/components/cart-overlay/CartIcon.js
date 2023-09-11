@@ -7,12 +7,16 @@ const CartIcon = ({ totalPayment,
   selectedCurrency,
   productsQuantity,
   handleAddProduct,
-  handleRemoveProduct }) => {
+  handleRemoveProduct, activeMenu }) => {
   const [dropdownMenu, setDropdownMenu] = useState(false);
   const cartIcon = useRef(null);
 
   const toggleCartOverlay = () => {
     setDropdownMenu(!dropdownMenu)
+  };
+  const removeCartOverlay = () => {
+    setDropdownMenu(false);
+    window.scrollTo(0, 0);
   };
 
   useEffect(() => {
@@ -48,6 +52,8 @@ const CartIcon = ({ totalPayment,
           cartItems={cartItems}
           selectedCurrency={selectedCurrency}
           totalPayment={totalPayment}
+          activeMenu={activeMenu}
+          removeCartOverlay={removeCartOverlay}
         />
       }
     </section>
