@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import CartOverlayItem from "./CartOverlayItem.js";
 import "./cart-overlay.css"
-import activeHamburger from "../../assets/images/active-hamburger.png";
+import activeHamburger from "../../assets/images/active-cart-overlay.png";
 
 const CartOverlay = ({ totalPayment,
   cartItems,

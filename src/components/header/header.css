@@ -95,7 +95,7 @@ nav {
     .hamburger {
         display: inline-block;
         position: absolute;
-        z-index: 998;
+        z-index: 997;
         right: 0;
         padding: 1rem;
         cursor: pointer;
@@ -117,7 +117,7 @@ nav {
     background-color: rgba(255, 255, 255, 0.616);
     backdrop-filter: blur(10px);
     align-items: center;
-    z-index: 997;
+    z-index: 996;
 }
 .active-menu ul {
     flex-direction: column;
@@ -160,7 +160,7 @@ nav {
 .active-overlay .cartoverlay-hamburger {
     display: inline-block;
     position: absolute;
-    z-index: 9999;
+    z-index: 999;
     right: 0;
     padding: 1rem;
     cursor: pointer;
