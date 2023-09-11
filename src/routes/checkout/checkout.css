@@ -3,6 +3,7 @@
     flex-direction: column;
     margin-top: 3rem;
     padding: 2rem;
+    margin-bottom: 4rem;
 }
 .checkout-content {
     display: flex;
@@ -135,4 +136,10 @@
 .order-details,
 .items-ordered {
     list-style: none;
+}
+
+@media (max-width: 600px) {
+    .checkout-content form {
+        width: 90%;
+    }
 }
