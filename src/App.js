@@ -183,9 +183,11 @@ const App = () => {
       const productId = updatedProduct.id;
       return (updatedProduct.uniqueId = `${productId}-${firstValue}-${secondValue}-${thirdValue}`);
     });
-
+    // Update cart items
     setCartItems(updatedProductList);
     localStorage.setItem('cartItems', JSON.stringify(updatedProductList));
+
+    // Update cart quantity
     if (updatedProductList.length <= 1) {
       updatedProductList.map((item) => {
         localStorage.setItem('productsQuantity', JSON.stringify(item.quantity));
@@ -198,6 +200,16 @@ const App = () => {
       localStorage.setItem('productsQuantity', JSON.stringify(sum));
     }
   };
+  // useEffect(() => {
+  //   if (localStorage.getItem('cartItems') !== null) {
+  //     const jsonCartItems = sessionStorage.getItem('cartItems')
+  //     const cartItems = JSON.parse(jsonCartItems);
+  //     // setCartItems(cartItems);
+  //     console.log(cartItems)
+  //   }
+  // }, [])
+
+
   const alertMessageMain = () => {
     const alertMessage = document.querySelector('.success-alert');
     alertMessage.classList.add('visible');
@@ -224,8 +236,12 @@ const App = () => {
       products.splice(indexOfProduct, 1);
       updatedProductList = products;
     }
+
+    // Update cart items
     setCartItems(updatedProductList);
     localStorage.setItem('cartItems', JSON.stringify(updatedProductList));
+
+    // Update cart quantity
     if (updatedProductList.length <= 1) {
       updatedProductList.map((item) => {
         localStorage.setItem('productsQuantity', JSON.stringify(item.quantity));
@@ -243,11 +259,7 @@ const App = () => {
     }
   };
   const getPrice = (prices, currency) => {
-    const [correctPrice] = prices.filter(
-      (price) => price.currency.symbol === currency
-    );
-
-    return correctPrice;
+    return prices.filter((price) => price.currency.symbol === currency)[0];
   };
 
 
@@ -255,7 +267,6 @@ const App = () => {
   const getTotalPrice = useCallback(
     (selectedCurrency, cartItems) => {
       let totalPayment = 0;
-
       for (const item of cartItems) {
         const correctPrice = getPrice(item.prices, selectedCurrency);
 
