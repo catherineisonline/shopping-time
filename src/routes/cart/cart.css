@@ -151,7 +151,8 @@ div.rsis-container {
   border-width: 1px;
   border-style: solid;
   border-color: var(--c-text);
-  padding: 0.4rem 0.938rem;
+  height: 2rem;
+  width: 2rem;
   background-color: transparent;
   cursor: pointer;
   font-size: 1.3rem;
@@ -168,23 +169,50 @@ div.rsis-container {
 }
 
 .cart-totals {
-  margin-top: 0.5rem;
-
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 2rem;
 }
-.cart-totals section {
-  flex-direction: row;
-  gap: 1rem;
-  width: 20%;
-}
-.cart-totals .cart-totals-sum {
-  font-weight: 400;
+.cart-totals h3 {
+  font-family: var(--font-raleway);
   font-size: 1.5rem;
 }
+.cart-totals ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  flex-direction: row;
+  justify-content: space-between;
+  width: max-content;
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+.cart-totals ul::before {
+  display: block;
+  background-color: black;
+  height: 2px;
+  width: 100%;
+}
+
+.cart-totals ul li {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  font-weight: 600;
+}
+.cart-totals ul li span {
+  font-weight: 400;
+}
+
 .cart-totals p {
   font-weight: 700;
   font-size: 1.5rem;
+}
+
+.cart-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
 }
 .order-btn {
   text-decoration: none;
@@ -192,7 +220,6 @@ div.rsis-container {
   padding: 1rem;
   font-weight: 400;
   font-size: 1rem;
-  text-transform: uppercase;
   text-decoration: none;
   background-color: var(--c-primary);
   border-width: 1px;
@@ -200,6 +227,26 @@ div.rsis-container {
   border-color: var(--c-primary);
   color: var(--c-white);
   width: max-content;
+}
+
+.cart-go-back {
+  text-decoration: none;
+  cursor: pointer;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  width: max-content;
+  color: gray;
+  border: 1px solid gray;
+  font-family: var(--font-raleway);
+  font-weight: 600;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+.cart-go-back:hover {
+  color: var(--c-primary);
+  border-color: var(--c-primary);
+  transition: all ease-in-out 0.3s;
 }
 
 .cart-content div div button {
@@ -214,4 +261,27 @@ div.rsis-container {
 }
 .cart-content div div:last-of-type button {
   margin-right: -1rem !important;
+}
+
+@media screen and (max-width: 600px) {
+  .cart-content {
+    width: 300px;
+  }
+  .cart-content div {
+    width: 300px !important;
+    height: 300px !important;
+  }
+  .cart-products-single {
+    flex-direction: column;
+    justify-content: initial;
+    gap: 2rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cart-totals ul {
+    width: inherit;
+    flex-direction: column;
+  }
 }

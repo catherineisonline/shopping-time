@@ -55,23 +55,6 @@
 }
 
 @media screen and (max-width: 600px) {
-  .cart-item-section {
-    align-items: center;
-    gap: 6rem;
-  }
-
-  .cart-products-single::after {
-    content: "";
-    display: inline-block;
-    width: inherit;
-    height: 1px;
-    background-color: rgba(159, 159, 159, 0.481);
-  }
-  .cart-products-single {
-    flex-direction: column;
-    justify-content: initial;
-    gap: 2rem;
-  }
   .cart-content {
     flex-direction: column-reverse;
   }

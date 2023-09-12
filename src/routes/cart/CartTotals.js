@@ -4,25 +4,18 @@ import { Link } from "react-router-dom";
 const CartTotals = ({ totalPayment, productsQuantity, selectedCurrency, taxes }) => {
   return (
     <section className="cart-totals">
-      <section>
-        <p className="cart-totals-sum">Tax 21%:</p>
-        <p>
-          {selectedCurrency}
-          {taxes}
-        </p>
+      <h3>Totals</h3>
+      <ul>
+        <li className="cart-totals-sum">Tax 21%: <span>{selectedCurrency}
+          {taxes}</span></li>
+        <li className="cart-totals-sum">Quantity: <span>{productsQuantity}</span></li>
+        <li className="cart-totals-sum">Total: <span>{selectedCurrency}
+          {totalPayment}</span></li>
+      </ul>
+      <section className="cart-buttons">
+        <Link to="/store/all" className="cart-go-back">Continue shopping</Link>
+        <Link to="/checkout" className="order-btn">Checkout</Link>
       </section>
-      <section>
-        <p className="cart-totals-sum">Quantity:</p>
-        <p>{productsQuantity}</p>
-      </section>
-      <section>
-        <p className="cart-totals-sum">Total:</p>
-        <p>
-          {selectedCurrency}
-          {totalPayment}
-        </p>
-      </section>
-      <Link to="/checkout" className="order-btn">Checkout</Link>
     </section>
   );
 }
