@@ -200,14 +200,17 @@ const App = () => {
       localStorage.setItem('productsQuantity', JSON.stringify(sum));
     }
   };
-  // useEffect(() => {
-  //   if (localStorage.getItem('cartItems') !== null) {
-  //     const jsonCartItems = sessionStorage.getItem('cartItems')
-  //     const cartItems = JSON.parse(jsonCartItems);
-  //     // setCartItems(cartItems);
-  //     console.log(cartItems)
-  //   }
-  // }, [])
+  useEffect(() => {
+    if (localStorage.getItem('cartItems') !== null) {
+      const jsonCartItems = localStorage.getItem('cartItems');
+      const cartItems = JSON.parse(jsonCartItems);
+      setCartItems(cartItems);
+    } if (localStorage.getItem('productsQuantity') !== null) {
+      const jsonProductsQuantity = localStorage.getItem('productsQuantity');
+      const productsQuantity = JSON.parse(jsonProductsQuantity);
+      setProductsQuantity(productsQuantity);
+    }
+  }, [])
 
 
   const alertMessageMain = () => {

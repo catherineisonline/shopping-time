@@ -21,7 +21,7 @@ const Cart = ({ selectedCurrency,
                 </video>
             </article>
             <article className="cart">
-                {productsQuantity === 0 ? (
+                {cartItems.length === 0 ? (
                     <section className="cart-item-section">
                         <p className="empty-cart">
                             Looks like you haven't added anything to your cart yet.
