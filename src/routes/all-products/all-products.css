@@ -199,3 +199,13 @@
     font-family: var(--font-raleway);
     font-weight: 500;
 }
+
+@media (max-width: 750px) {
+    .products-hero,
+    .products-hero video {
+        height: 100vh;
+    }
+    .products-hero h2 {
+        top: 20%;
+    }
+}
