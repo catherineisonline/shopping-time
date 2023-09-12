@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Product from "./Product.js";
 import CategoryAllHero from '../../assets/images/product-listing-images/category-all-hero.mp4'
 import CategoryDressesHero from '../../assets/images/product-listing-images/category-dresses-hero.mp4'
@@ -17,7 +17,9 @@ const AllProducts = ({ allProducts,
 
   const [quickAddToCartVisible, setQuickAddToCartVisible] = useState(false);
   const [activeItem, setActiveItem] = useState(null);
-
+  // useEffect(() => {
+  //   console.log(allProducts)
+  // })
 
   const toggleQuickCart = () => {
     setQuickAddToCartVisible(!quickAddToCartVisible);
