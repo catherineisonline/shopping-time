@@ -133,6 +133,17 @@ header ul,
   display: flex;
 }
 
+.cart-hero h2 {
+  position: absolute;
+  z-index: 3;
+  font-family: var(--font-raleway);
+  top: 50%;
+  font-size: 4rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--c-white);
+}
 .active-add-to-cart {
   flex-direction: column;
   align-items: center;
