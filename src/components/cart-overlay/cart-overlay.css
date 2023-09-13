@@ -187,6 +187,16 @@
   cursor: "pointer";
 }
 
+.clear-cart {
+  background-color: var(--c-primary);
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--c-primary);
+  color: var(--c-white);
+  padding: 1rem;
+  cursor: pointer;
+}
+
 .cart-overlay-item-attr .unselected-color-box {
   border-color: transparent;
   border-width: 1px;

@@ -5,6 +5,7 @@
 .cart-product-interaction button,
 .view-bag,
 .check-out,
+.clear-cart,
 .single-currency,
 .big-picture,
 .big-picture.zoom-image,
@@ -18,6 +19,7 @@
   .cart-product-interaction button:hover,
   .view-bag:hover,
   .check-out:hover,
+  .clear-cart:hover,
   .single-currency:hover {
     transition: all ease-in-out 0.2s;
   }
@@ -35,7 +37,8 @@
     color: var(--c-primary);
     border-color: var(--c-primary);
   }
-  .check-out:hover {
+  .check-out:hover,
+  .clear-cart:hover {
     color: var(--c-primary);
     border-color: var(--c-primary);
     background-color: transparent;

@@ -7,7 +7,7 @@ const CartIcon = ({ totalPayment,
   selectedCurrency,
   productsQuantity,
   handleAddProduct,
-  handleRemoveProduct, activeMenu }) => {
+  handleRemoveProduct, activeMenu, clearCart }) => {
   const [dropdownMenu, setDropdownMenu] = useState(false);
   const cartIcon = useRef(null);
 
@@ -54,6 +54,7 @@ const CartIcon = ({ totalPayment,
           totalPayment={totalPayment}
           activeMenu={activeMenu}
           removeCartOverlay={removeCartOverlay}
+          clearCart={clearCart}
         />
       }
     </section>

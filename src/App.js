@@ -21,6 +21,14 @@ const App = () => {
   const [taxes, setTaxes] = useState(0);
   const [productsQuantity, setProductsQuantity] = useState(0);
 
+  const clearCart = () => {
+
+    setCartItems([]);
+    setProductsQuantity(0);
+    localStorage.removeItem('cartItems');
+    localStorage.removeItem('productsQuantity');
+  }
+
   const changeCategory = (newCategory) => {
     setActiveCategory(newCategory);
     GetProducts(newCategory);
@@ -311,6 +319,7 @@ const App = () => {
         cartItems={cartItems}
         handleRemoveProduct={handleRemoveProduct}
         handleAddProduct={handleAddProduct}
+        clearCart={clearCart}
       />
 
       <Routes>

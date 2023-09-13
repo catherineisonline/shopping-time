@@ -10,7 +10,7 @@ const CartOverlay = ({ totalPayment,
   ToggleCartOverlay,
   productsQuantity,
   handleAddProduct,
-  handleRemoveProduct, activeMenu, removeCartOverlay }) => {
+  handleRemoveProduct, activeMenu, removeCartOverlay, clearCart }) => {
   return (
     <React.Fragment>
       {cartItems.length === 0 ? (
@@ -63,14 +63,14 @@ const CartOverlay = ({ totalPayment,
             <Link onClick={ToggleCartOverlay} className="view-bag" to="/cart">
               View cart
             </Link>
-            <Link onClick={ToggleCartOverlay} className="check-out" to="/checkout">
-              Check out
-            </Link>
+            <button onClick={() => { ToggleCartOverlay(); clearCart() }} className="clear-cart" to="/checkout">
+              Clear cart
+            </button>
           </section>
         </section>
       )
       }
-    </React.Fragment>
+    </React.Fragment >
   );
 }
 

@@ -19,7 +19,7 @@ const Navigation = ({ allCategories,
   productsQuantity,
   handleRemoveProduct,
   handleAddProduct,
-  cartItems }) => {
+  cartItems, clearCart }) => {
 
   const [activeMenu, setInactiveMenu] = useState(false);
 
@@ -64,6 +64,7 @@ const Navigation = ({ allCategories,
             cartItems={cartItems}
             selectedCurrency={selectedCurrency}
             activeMenu={activeMenu}
+            clearCart={clearCart}
           />
         </section>
       </nav>
