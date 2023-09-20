@@ -21,8 +21,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "server": "node backend/api/index.mjs"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [

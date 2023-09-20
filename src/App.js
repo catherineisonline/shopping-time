@@ -21,38 +21,6 @@ const App = () => {
   const [taxes, setTaxes] = useState(0);
   const [productsQuantity, setProductsQuantity] = useState(0);
 
-
-
-  useEffect(() => {
-
-    const getAllUsers = async () => {
-      try {
-        const response = await fetch("http://localhost:4000/users");
-        const body = await response.json();
-        console.log(body);
-      }
-      catch (err) {
-        console.log(err.message)
-      }
-    }
-    getAllUsers();
-
-  }, [])
-  useEffect(() => {
-    const getUser = async (id) => {
-      try {
-        const response = await fetch(`http://localhost:4000/users/${id}`);
-        const body = await response.json();
-        console.log(body);
-      }
-      catch (err) {
-        console.log(err.message)
-      }
-    }
-
-    getUser(1111);
-  }, [])
-
   const clearCart = () => {
 
     setCartItems([]);
