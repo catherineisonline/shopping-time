@@ -361,6 +361,7 @@ const App = () => {
               taxes={taxes}
               handleRemoveProduct={handleRemoveProduct}
               handleAddProduct={handleAddProduct}
+              clearCart={clearCart}
             />
           }
         />

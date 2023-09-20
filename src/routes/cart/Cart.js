@@ -11,7 +11,7 @@ const Cart = ({ selectedCurrency,
     cartItems,
     handleAddProduct,
     selectedAttributes,
-    productsQuantity }) => {
+    productsQuantity, clearCart }) => {
     useEffect(() => {
         document.title = "Cart| Shopping Time";
     }, []);
@@ -50,6 +50,7 @@ const Cart = ({ selectedCurrency,
                             totalPayment={totalPayment}
                             productsQuantity={productsQuantity}
                             taxes={taxes}
+                            clearCart={clearCart}
                         />
                     </section>
                 )}

@@ -175,6 +175,17 @@ div.rsis-container {
 .cart-totals h3 {
   font-family: var(--font-raleway);
   font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.clear-cart-totals {
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all ease-in-out 0.3s;
 }
 .cart-totals ul {
   display: flex;
@@ -263,6 +274,12 @@ div.rsis-container {
   margin-right: -1rem !important;
 }
 
+@media (hover: hover) {
+  .clear-cart-totals:hover {
+    color: var(--c-primary);
+    transition: all ease-in-out 0.3s;
+  }
+}
 @media screen and (max-width: 600px) {
   .cart-content {
     width: 300px;
