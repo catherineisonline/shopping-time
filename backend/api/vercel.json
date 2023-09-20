@@ -1,0 +1,27 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "index.mjs",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "index.mjs"
+        },
+        {
+            "src": "/users",
+            "dest": "index.mjs"
+        },
+        {
+            "src": "/users/:id",
+            "dest": "index.mjs"
+        },
+        {
+            "src": "/verify-recaptcha",
+            "dest": "index.mjs"
+        }
+    ]
+}
