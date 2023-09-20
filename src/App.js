@@ -9,6 +9,7 @@ import SingleProduct from "./routes/single-product/SingleProduct.js";
 import Cart from "./routes/cart/Cart.js"
 import Landing from "./routes/landing/Landing.js";
 import Checkout from "./routes/checkout/Checkout";
+import NotFound from "./routes/not-found/NotFound";
 
 const App = () => {
   const [allCategories, setAllCategories] = useState([]);
@@ -340,7 +341,7 @@ const App = () => {
           }
         />
         <Route
-          path={`/:id`}
+          path={`/store/:id`}
           element={
             <SingleProduct
               selectedCurrency={selectedCurrency}
@@ -364,6 +365,7 @@ const App = () => {
           }
         />
         <Route path="/checkout" element={<Checkout cartItems={cartItems} selectedCurrency={selectedCurrency} />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );

@@ -18,20 +18,33 @@ const SingleProduct = ({ selectedCurrency, handleAddProduct, alertMessageMain })
   };
 
   const getProductById = useCallback((uniqueId) => {
-    const targetproduct = itemsObj.filter((item) => item.id === uniqueId)[0];
-    setSingleProduct(targetproduct);
-    document.querySelector(".description").innerHTML =
-      targetproduct.description;
-    filterCurrency(targetproduct, selectedCurrency);
-    if (targetproduct.attributes.length === 0) {
-      setAllAttributesAreSelected(true);
+    const targetProduct = itemsObj.find((item) => item.id === uniqueId);
+
+    if (targetProduct) {
+      setSingleProduct(targetProduct);
+      document.querySelector(".description").innerHTML = targetProduct.description;
+      filterCurrency(targetProduct, selectedCurrency);
+
+      if (targetProduct.attributes.length === 0) {
+        setAllAttributesAreSelected(true);
+      }
     }
   }, [selectedCurrency]);
 
   useEffect(() => {
-    getProductById(window.location.pathname.toString().substring(1));
-    ResetLocation();
+    const pathname = window.location.pathname.toString().substring(7);
+    getProductById(pathname);
+
+    return () => {
+      // Clean up any resources here if necessary.
+      // For example, remove event listeners.
+    };
   }, [getProductById]);
+
+  useEffect(() => {
+    ResetLocation();
+  }, []);
+
 
 
   const handleSelectedAttributes = (attributeId, attributeValue) => {

@@ -17,9 +17,6 @@ const AllProducts = ({ allProducts,
 
   const [quickAddToCartVisible, setQuickAddToCartVisible] = useState(false);
   const [activeItem, setActiveItem] = useState(null);
-  // useEffect(() => {
-  //   console.log(allProducts)
-  // })
 
   const toggleQuickCart = () => {
     setQuickAddToCartVisible(!quickAddToCartVisible);

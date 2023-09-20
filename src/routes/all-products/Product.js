@@ -78,7 +78,7 @@ const Product = ({
         setImageShadow(false);
       }}
     >
-      <Link to={`/${item.id}`} className="item-preview">
+      <Link to={`/store/${item.id}`} className="item-preview">
         <div className="img-container">
           {!item.inStock && (
             <p className="out-of-stock-sign">OUT OF STOCK</p>
