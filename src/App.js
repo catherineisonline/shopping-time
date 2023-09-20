@@ -25,7 +25,7 @@ const App = () => {
 
   useEffect(() => {
 
-    const fetchData = async () => {
+    const getAllUsers = async () => {
       try {
         const response = await fetch("http://localhost:4000/users");
         const body = await response.json();
@@ -35,8 +35,22 @@ const App = () => {
         console.log(err.message)
       }
     }
-    fetchData();
+    getAllUsers();
 
+  }, [])
+  useEffect(() => {
+    const getUser = async (id) => {
+      try {
+        const response = await fetch(`http://localhost:4000/users/${id}`);
+        const body = await response.json();
+        console.log(body);
+      }
+      catch (err) {
+        console.log(err.message)
+      }
+    }
+
+    getUser(1111);
   }, [])
 
   const clearCart = () => {
