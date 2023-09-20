@@ -21,6 +21,24 @@ const App = () => {
   const [taxes, setTaxes] = useState(0);
   const [productsQuantity, setProductsQuantity] = useState(0);
 
+
+
+  useEffect(() => {
+
+    const fetchData = async () => {
+      try {
+        const response = await fetch("http://localhost:4000/users");
+        const body = await response.json();
+        console.log(body);
+      }
+      catch (err) {
+        console.log(err.message)
+      }
+    }
+    fetchData();
+
+  }, [])
+
   const clearCart = () => {
 
     setCartItems([]);
