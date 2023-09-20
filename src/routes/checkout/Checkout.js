@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./checkout.css"
 import { CheckoutSingleItem } from "./CheckoutSingleItem";
 
@@ -8,7 +8,9 @@ const Checkout = ({ cartItems, selectedCurrency }) => {
     const [formValues, setFormValues] = useState({ firstname: "", lastname: "", email: "", phonenumber: "", streetaddress: "", country: "", postal: "", city: "", province: "", card: "", expiration: "", cvv: "" })
     const [formErrors, setFormErrors] = useState({});
 
-
+    useEffect(() => {
+        document.title = "Checkout | Shopping Time";
+    }, []);
     const setStep = (step, validationStep) => {
         setFormErrors(validateForm(formValues, validationStep));
         if (Object.keys(validateForm(formValues, validationStep)).length > 0) {

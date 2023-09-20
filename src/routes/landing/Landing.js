@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import HeroVideo from '../../assets/images/landing-images/hero-video.mp4'
 import "./landing.css"
 import { ResetLocation } from "../../helpers/ResetLocation";
 
 const Landing = ({ changeCategory }) => {
+  useEffect(() => {
+    document.title = "Shopping Time";
+  }, []);
   return (
     <main className="landing">
       <article className="hero">

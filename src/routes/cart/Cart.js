@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import CartSingleItem from "./CartSingleItem.js";
 import CartTotals from "./CartTotals.js";
 import "./cart.css";
@@ -12,6 +12,9 @@ const Cart = ({ selectedCurrency,
     handleAddProduct,
     selectedAttributes,
     productsQuantity }) => {
+    useEffect(() => {
+        document.title = "Cart| Shopping Time";
+    }, []);
     return (
         <main>
             <article className="cart-hero">

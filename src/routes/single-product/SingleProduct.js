@@ -12,6 +12,10 @@ const SingleProduct = ({ selectedCurrency, handleAddProduct, alertMessageMain })
   const [singleProduct, setSingleProduct] = useState({});
   const [priceAmount, setPriceAmount] = useState("");
 
+  useEffect(() => {
+    document.title = `${singleProduct.name} | Shopping Time`;
+  }, [singleProduct]);
+
   const filterCurrency = (singleProduct, selectedCurrency) => {
     const price = singleProduct?.prices?.filter((price) => price.currency.symbol === selectedCurrency)[0];
     setPriceAmount(price?.amount?.toFixed(2));
@@ -35,10 +39,6 @@ const SingleProduct = ({ selectedCurrency, handleAddProduct, alertMessageMain })
     const pathname = window.location.pathname.toString().substring(7);
     getProductById(pathname);
 
-    return () => {
-      // Clean up any resources here if necessary.
-      // For example, remove event listeners.
-    };
   }, [getProductById]);
 
   useEffect(() => {

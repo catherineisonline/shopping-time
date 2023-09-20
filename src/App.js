@@ -364,7 +364,8 @@ const App = () => {
             />
           }
         />
-        <Route path="/checkout" element={<Checkout cartItems={cartItems} selectedCurrency={selectedCurrency} />} />
+        <Route path="/checkout" element={cartItems.length > 0 ? <Checkout cartItems={cartItems} selectedCurrency={selectedCurrency} /> :
+          <NotFound />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
