@@ -22,13 +22,29 @@ const Checkout = ({ cartItems, selectedCurrency }) => {
     };
 
     const validateForm = (values, step = "payment") => {
+        const numberRegex = /\d/;
+        const expiration = /^(0[1-9]|1[0-2])\/(2[2-9]|[3-9][0-9])$/;
+        const cvvRegex3 = /^[0-9]{3}$/;
+        const cvvRegex4 = /^[0-9]{4}$/;
         const errors = {};
         if (step === "details") {
             if (!values.firstname) {
                 errors.firstname = "First name is required";
             }
+            else if (values.firstname.length < 3) {
+                errors.firstname = "First name is invalid";
+            }
+            else if (numberRegex.test(values.firstname)) {
+                errors.firstname = "Last name is invalid";
+            }
             if (!values.lastname) {
                 errors.lastname = "Last name is required";
+            }
+            else if (values.lastname.length < 3) {
+                errors.lastname = "Last name is invalid";
+            }
+            else if (numberRegex.test(values.lastname)) {
+                errors.lastname = "Last name is invalid";
             }
 
             if (!values.email) {
@@ -40,6 +56,12 @@ const Checkout = ({ cartItems, selectedCurrency }) => {
             if (!values.phonenumber) {
                 errors.phonenumber = "The phone number is required";
             }
+            else if (values.phonenumber.length < 5) {
+                errors.phonenumber = "The phone number is invalid";
+            }
+            else if (!numberRegex.test(values.phonenumber)) {
+                errors.phonenumber = "The phone number is invalid";
+            }
         }
         if (step === "address") {
             if (!values.streetaddress) {
@@ -48,26 +70,58 @@ const Checkout = ({ cartItems, selectedCurrency }) => {
             if (!values.country) {
                 errors.country = "Please enter a country";
             }
+            else if (values.country.length < 3) {
+                errors.country = "Please enter a valid country";
+            }
+            else if (numberRegex.test(values.country)) {
+                errors.country = "Please enter a valid country";
+            }
             if (!values.postal) {
                 errors.postal = "Please enter a postal code";
+            }
+            else if (values.postal.length < 3) {
+                errors.postal = "Please enter a valid postal";
             }
             if (!values.city) {
                 errors.city = "Please enter the city";
             }
+            else if (values.city.length < 3) {
+                errors.city = "Please enter a valid city";
+            }
+            else if (numberRegex.test(values.city)) {
+                errors.city = "Please enter a valid city";
+            }
             if (!values.province) {
                 errors.province = "Please enter the province name";
             }
+            else if (values.province.length < 3) {
+                errors.province = "Please enter a valid province";
+            }
+            else if (numberRegex.test(values.province)) {
+                errors.province = "Please enter a valid province";
+            }
+
         }
         if (step === "payment") {
             if (!values.card) {
                 errors.card = "Card number is required";
             }
+            else if (values.card.length < 16) {
+                errors.card = "Card number should be 16 characters";
+            }
             if (!values.expiration) {
                 errors.expiration = "Enter the expiration date";
+            }
+            else if (!expiration.test(values.expiration)) {
+                errors.expiration = "Enter the valid expiration date";
             }
             if (!values.cvv) {
                 errors.cvv = "CVV is required";
             }
+            else if (!cvvRegex3.test(values.cvv)) {
+                errors.cvv = "CVV is invalid";
+            }
+
         }
         return errors;
     }
@@ -79,6 +133,7 @@ const Checkout = ({ cartItems, selectedCurrency }) => {
         }
         else {
             setCurrentStep("done");
+
             setFormValues({ firstname: "", lastname: "", email: "", phonenumber: "", streetaddress: "", country: "", postal: "", city: "", province: "", card: "", expiration: "", cvv: "" })
         }
     }
@@ -221,7 +276,7 @@ const Checkout = ({ cartItems, selectedCurrency }) => {
                                         <ul className="order-details">
                                             <li>Order Number: [Order Number]</li>
                                             <li> Order Date: [Order Date]</li>
-                                            <li>Shipping Address: {formValues.firstname}</li>
+                                            <li>Shipping Address: {formValues.country}, {formValues.city}, {formValues.postal}, {formValues.address}</li>
                                             <li>Payment Method: Bank card</li>
                                         </ul>
                                         <h3>Items Ordered:</h3>
