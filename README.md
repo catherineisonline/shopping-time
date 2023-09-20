@@ -83,10 +83,15 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Dependencies
+## Dependencies | APIs | Services 
 
 - [React Router](https://www.npmjs.com/package/react-router-dom)
 - [React Slider](https://www.npmjs.com/package/react-simple-image-slider)
+- [Express](https://www.npmjs.com/package/express)
+- [mysql2](https://www.npmjs.com/package/mysql2)
+- [dotenv](https://www.npmjs.com/package/dotenv)
+- [cors](https://www.npmjs.com/package/cors)
+= [Planetscale](https://planetscale.com/)
 
 ## Contribution <a id="contribution"></a>
 
