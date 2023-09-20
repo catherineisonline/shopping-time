@@ -9,19 +9,19 @@
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "server.mjs"
+            "dest": "index.mjs"
         },
         {
             "src": "/users",
-            "dest": "server.mjs"
+            "dest": "index.mjs"
         },
         {
             "src": "/users/:id",
-            "dest": "server.mjs"
+            "dest": "index.mjs"
         },
         {
             "src": "/verify-recaptcha",
-            "dest": "server.mjs"
+            "dest": "index.mjs"
         }
     ]
 }
