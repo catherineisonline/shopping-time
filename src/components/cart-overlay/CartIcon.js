@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import EmptyCart from "../../assets/images/cart-icon.png";
 import CartOverlay from "./CartOverlay.js";
+import { ResetLocation } from "../../helpers/ResetLocation";
 
 const CartIcon = ({ totalPayment,
   cartItems,
@@ -16,7 +17,7 @@ const CartIcon = ({ totalPayment,
   };
   const removeCartOverlay = () => {
     setDropdownMenu(false);
-    window.scrollTo(0, 0);
+    ResetLocation();
   };
 
   useEffect(() => {

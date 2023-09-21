@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .cart-hero h2 {
   position: absolute;
   z-index: 3;
@@ -17,6 +18,7 @@
   text-align: center;
   color: black;
 }
+
 .cart-hero video {
   position: absolute;
   width: 100%;
@@ -54,6 +56,7 @@
   flex-direction: column;
   gap: 0.7rem;
 }
+
 .cart-products-single .cart-data h2 {
   font-size: 1.875rem;
 }
@@ -61,9 +64,11 @@
 .cart-products-single .product-brand {
   font-weight: 600;
 }
+
 .cart-products-single .product-name {
   font-weight: 400;
 }
+
 .cart-item-pricing .product-price {
   font-weight: 700;
   font-size: 1.5rem;
@@ -73,6 +78,7 @@
   flex-direction: column;
   gap: 0.313rem;
 }
+
 div.rsis-container {
   max-width: 100%;
 }
@@ -116,7 +122,7 @@ div.rsis-container {
   border: none;
   width: 1.5rem;
   height: 1.5rem;
-  cursor: "pointer";
+  cursor: pointer;
 }
 
 .cart-attr .unselected-color-box {
@@ -172,6 +178,7 @@ div.rsis-container {
   flex-direction: column;
   gap: 2rem;
 }
+
 .cart-totals h3 {
   font-family: var(--font-raleway);
   font-size: 1.5rem;
@@ -187,6 +194,7 @@ div.rsis-container {
   background-color: transparent;
   transition: all ease-in-out 0.3s;
 }
+
 .cart-totals ul {
   display: flex;
   gap: 1rem;
@@ -211,6 +219,7 @@ div.rsis-container {
   gap: 1rem;
   font-weight: 600;
 }
+
 .cart-totals ul li span {
   font-weight: 400;
 }
@@ -225,6 +234,7 @@ div.rsis-container {
   flex-direction: row;
   gap: 2rem;
 }
+
 .order-btn {
   text-decoration: none;
   cursor: pointer;
@@ -254,11 +264,6 @@ div.rsis-container {
   font-size: 1rem;
   opacity: 0.8;
 }
-.cart-go-back:hover {
-  color: var(--c-primary);
-  border-color: var(--c-primary);
-  transition: all ease-in-out 0.3s;
-}
 
 .cart-content div div button {
   margin-top: 4rem !important;
@@ -270,24 +275,33 @@ div.rsis-container {
 .cart-content div div:first-of-type button {
   margin-left: 5rem !important;
 }
+
 .cart-content div div:last-of-type button {
   margin-right: -1rem !important;
 }
 
 @media (hover: hover) {
+  .cart-go-back:hover {
+    color: var(--c-primary);
+    border-color: var(--c-primary);
+    transition: all ease-in-out 0.3s;
+  }
   .clear-cart-totals:hover {
     color: var(--c-primary);
     transition: all ease-in-out 0.3s;
   }
 }
+
 @media screen and (max-width: 600px) {
   .cart-content {
     width: 300px;
   }
+
   .cart-content div {
     width: 300px !important;
     height: 300px !important;
   }
+
   .cart-products-single {
     flex-direction: column;
     justify-content: initial;

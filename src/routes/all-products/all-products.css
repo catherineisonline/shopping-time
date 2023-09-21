@@ -135,10 +135,6 @@
     padding: 0.8rem;
 }
 
-.quick-buy:hover {
-    background-color: rgb(241, 56, 56);
-}
-
 .quick-addto-cart {
     position: absolute;
     top: 0;
@@ -198,6 +194,12 @@
     letter-spacing: 1px;
     font-family: var(--font-raleway);
     font-weight: 500;
+}
+
+@media (hover: hover) {
+    .quick-buy:hover {
+        background-color: rgb(241, 56, 56);
+    }
 }
 
 @media (max-width: 750px) {

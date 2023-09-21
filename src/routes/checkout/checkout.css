@@ -5,6 +5,7 @@
     padding: 2rem;
     margin-bottom: 4rem;
 }
+
 .checkout-content {
     display: flex;
     flex-direction: column;
@@ -17,6 +18,7 @@
     letter-spacing: 1px;
     text-align: center;
 }
+
 .checkout-content .multi-steps {
     display: flex;
     flex-direction: row;
@@ -24,16 +26,19 @@
     gap: 4rem;
     justify-content: center;
 }
+
 .checkout-content .multi-steps li {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     align-items: center;
 }
+
 .multi-steps .step-title {
     font-family: var(--font-raleway);
     color: grey;
 }
+
 .multi-steps .step-number {
     display: flex;
     flex-direction: column;
@@ -48,6 +53,7 @@
     height: 1rem;
     padding: 6px;
 }
+
 .multi-steps .step-number.active {
     background-color: var(--c-primary);
     border-color: var(--c-primary);
@@ -59,6 +65,7 @@
     gap: 2rem;
     width: 60%;
 }
+
 .checkout-content form h2 {
     font-family: var(--font-raleway);
     font-size: 2rem;
@@ -71,6 +78,7 @@
     flex-direction: column;
     gap: 1rem;
 }
+
 .checkout-inputs input {
     padding: 1rem;
     border: 1px solid black;

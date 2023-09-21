@@ -1,6 +1,11 @@
-.order {
+.order,
+.order-success {
     display: flex;
     flex-direction: column;
+    font-family: var(--font-raleway);
+}
+
+.order {
     gap: 2rem;
     margin-top: 3rem;
     padding: 2rem;
@@ -8,28 +13,51 @@
     position: relative;
 }
 
-.order h2 {
-    font-family: var(--font-raleway);
+.order h2,
+.order-success h2 {
     font-size: 3rem;
     letter-spacing: 1px;
     text-align: center;
 }
 
 .order-success {
-    display: flex;
-    flex-direction: column;
     gap: 1rem;
     width: 100%;
     margin: 0 auto;
-    font-family: var(--font-raleway);
 }
 
 .order-success h2 {
     font-size: 2rem;
 }
+
 .order-success h3 {
     font-size: 1rem;
     font-weight: 600;
+}
+
+.print,
+.exit-order {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2rem;
+    width: max-content;
+    height: 3.25rem;
+    font-family: var(--font-raleway);
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.print {
+    color: var(--c-white);
+    border: none;
+    background-color: var(--c-primary);
+}
+
+.exit-order {
+    color: gray;
+    border: none;
+    opacity: 0.8;
 }
 
 .order-details,
@@ -37,40 +65,18 @@
     list-style: none;
 }
 
-.print {
+.confirmation-dialog-inner .buttons button {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 10px;
     width: max-content;
-    height: 3.25rem;
     color: var(--c-white);
     border: none;
     font-family: var(--font-raleway);
     font-weight: 600;
-    font-size: 1rem;
     cursor: pointer;
     background-color: var(--c-primary);
-}
-
-.exit-order {
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem 2rem;
-    width: max-content;
-    height: 3.25rem;
-    color: gray;
-    border: none;
-    font-family: var(--font-raleway);
-    font-weight: 600;
-    font-size: 1rem;
-    opacity: 0.8;
-    cursor: pointer;
-}
-
-.order-buttons {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
 }
 
 .confirmation-dialog {
@@ -95,23 +101,7 @@
     background-color: white;
     padding: 2rem;
 }
-.confirmation-dialog-inner .buttons {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-}
+
 .confirmation-dialog-inner h3 {
     font-weight: 400;
-}
-.confirmation-dialog-inner .buttons button {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    width: max-content;
-    color: var(--c-white);
-    border: none;
-    font-family: var(--font-raleway);
-    font-weight: 600;
-    cursor: pointer;
-    background-color: var(--c-primary);
 }
