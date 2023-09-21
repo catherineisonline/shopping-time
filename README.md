@@ -87,6 +87,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 - [React Router](https://www.npmjs.com/package/react-router-dom)
 - [React Slider](https://www.npmjs.com/package/react-simple-image-slider)
+- [uuid](https://www.npmjs.com/package/uuid)
 
 ## Contribution <a id="contribution"></a>
 
