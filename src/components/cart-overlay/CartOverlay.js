@@ -4,6 +4,7 @@ import CartOverlayItem from "./CartOverlayItem.js";
 import "./cart-overlay.css"
 import activeHamburger from "../../assets/images/active-cart-overlay.png";
 
+
 const CartOverlay = ({ totalPayment,
   cartItems,
   selectedCurrency,
@@ -70,7 +71,7 @@ const CartOverlay = ({ totalPayment,
         </section>
       )
       }
-    </React.Fragment >
+    </React.Fragment>
   );
 }
 

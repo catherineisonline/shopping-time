@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { v4 as uuidv4 } from 'uuid';
 import "./checkout.css"
 import { CheckoutSingleItem } from "./CheckoutSingleItem";
 
@@ -26,7 +27,6 @@ const Checkout = ({ cartItems, selectedCurrency }) => {
         const numberRegex = /\d/;
         const expiration = /^(0[1-9]|1[0-2])\/(2[2-9]|[3-9][0-9])$/;
         const cvvRegex3 = /^[0-9]{3}$/;
-        // const cvvRegex4 = /^[0-9]{4}$/;
         const errors = {};
         if (step === "details") {
             if (!values.firstname) {
@@ -133,8 +133,9 @@ const Checkout = ({ cartItems, selectedCurrency }) => {
             return;
         }
         else {
+            const today = new Date().toDateString();
             setCurrentStep("done");
-            setOrderFormValue(formValues);
+            setOrderFormValue({ ...formValues, id: uuidv4(), date: today });
             setFormValues({ firstname: "", lastname: "", email: "", phonenumber: "", streetaddress: "", country: "", postal: "", city: "", province: "", card: "", expiration: "", cvv: "" })
         }
     }
@@ -275,8 +276,8 @@ const Checkout = ({ cartItems, selectedCurrency }) => {
                                         </p>
                                         <h3> Order Details:</h3>
                                         <ul className="order-details">
-                                            <li>Order Number: [Order Number]</li>
-                                            <li> Order Date: [Order Date]</li>
+                                            <li>Order Number: {orderFormValue.id}</li>
+                                            <li> Order Date: {orderFormValue.date}</li>
                                             <li>Shipping Address: {orderFormValue.country}, {orderFormValue.city}, {orderFormValue.postal}, {orderFormValue.address}</li>
                                             <li>Payment Method: Bank card</li>
                                         </ul>
