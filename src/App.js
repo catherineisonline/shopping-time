@@ -10,6 +10,7 @@ import Cart from "./routes/cart/Cart.js"
 import Landing from "./routes/landing/Landing.js";
 import Checkout from "./routes/checkout/Checkout";
 import NotFound from "./routes/not-found/NotFound";
+import Order from "./routes/order/Order";
 
 const App = () => {
   const [allCategories, setAllCategories] = useState([]);
@@ -21,6 +22,7 @@ const App = () => {
   const [totalPayment, setTotalPayment] = useState(0);
   const [taxes, setTaxes] = useState(0);
   const [productsQuantity, setProductsQuantity] = useState(0);
+  const [orderFormValue, setOrderFormValue] = useState({});
 
   const clearCart = () => {
 
@@ -365,7 +367,9 @@ const App = () => {
             />
           }
         />
-        <Route path="/checkout" element={cartItems.length > 0 ? <Checkout cartItems={cartItems} selectedCurrency={selectedCurrency} /> :
+        <Route path="/checkout" element={cartItems.length > 0 ? <Checkout cartItems={cartItems} selectedCurrency={selectedCurrency} setOrderFormValue={setOrderFormValue} /> :
+          <NotFound />} />
+        <Route path="/order" element={cartItems.length > 0 && Object.keys(orderFormValue).length > 0 ? <Order cartItems={cartItems} selectedCurrency={selectedCurrency} orderFormValue={orderFormValue} clearCart={clearCart} /> :
           <NotFound />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

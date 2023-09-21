@@ -116,28 +116,6 @@
     font-weight: 100;
 }
 
-.order-success {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    width: 100%;
-    margin: 0 auto;
-    font-family: var(--font-raleway);
-}
-
-.order-success h2 {
-    font-size: 2rem;
-}
-.order-success h3 {
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-.order-details,
-.items-ordered {
-    list-style: none;
-}
-
 @media (max-width: 600px) {
     .checkout-content form {
         width: 90%;
