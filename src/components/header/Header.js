@@ -65,6 +65,7 @@ const Navigation = ({ allCategories,
             selectedCurrency={selectedCurrency}
             activeMenu={activeMenu}
             clearCart={clearCart}
+            closeMenu={closeMenu}
           />
         </section>
       </nav>

@@ -7,6 +7,7 @@ const Checkout = ({ cartItems, selectedCurrency }) => {
     const [currentStep, setCurrentStep] = useState("details");
     const [formValues, setFormValues] = useState({ firstname: "", lastname: "", email: "", phonenumber: "", streetaddress: "", country: "", postal: "", city: "", province: "", card: "", expiration: "", cvv: "" })
     const [formErrors, setFormErrors] = useState({});
+    const [orderFormValue, setOrderFormValue] = useState({});
 
     useEffect(() => {
         document.title = "Checkout | Shopping Time";
@@ -25,7 +26,7 @@ const Checkout = ({ cartItems, selectedCurrency }) => {
         const numberRegex = /\d/;
         const expiration = /^(0[1-9]|1[0-2])\/(2[2-9]|[3-9][0-9])$/;
         const cvvRegex3 = /^[0-9]{3}$/;
-        const cvvRegex4 = /^[0-9]{4}$/;
+        // const cvvRegex4 = /^[0-9]{4}$/;
         const errors = {};
         if (step === "details") {
             if (!values.firstname) {
@@ -133,7 +134,7 @@ const Checkout = ({ cartItems, selectedCurrency }) => {
         }
         else {
             setCurrentStep("done");
-
+            setOrderFormValue(formValues);
             setFormValues({ firstname: "", lastname: "", email: "", phonenumber: "", streetaddress: "", country: "", postal: "", city: "", province: "", card: "", expiration: "", cvv: "" })
         }
     }
@@ -268,7 +269,7 @@ const Checkout = ({ cartItems, selectedCurrency }) => {
                                     </section>      </React.Fragment> :
                                 currentStep === "done" ?
                                     <section className="order-success">
-                                        <p>Dear {formValues.firstname} {formValues.lastname},</p>
+                                        <p>Dear {orderFormValue.firstname} {orderFormValue.lastname},</p>
                                         <p>
                                             Your order has been received successfully at Shopping Time. We're thrilled that you've chosen us for your fashion needs. Your style journey is about to begin!
                                         </p>
@@ -276,7 +277,7 @@ const Checkout = ({ cartItems, selectedCurrency }) => {
                                         <ul className="order-details">
                                             <li>Order Number: [Order Number]</li>
                                             <li> Order Date: [Order Date]</li>
-                                            <li>Shipping Address: {formValues.country}, {formValues.city}, {formValues.postal}, {formValues.address}</li>
+                                            <li>Shipping Address: {orderFormValue.country}, {orderFormValue.city}, {orderFormValue.postal}, {orderFormValue.address}</li>
                                             <li>Payment Method: Bank card</li>
                                         </ul>
                                         <h3>Items Ordered:</h3>
@@ -309,13 +310,11 @@ const Checkout = ({ cartItems, selectedCurrency }) => {
                         :
                         currentStep === "address" ?
                             <section className="form-buttons">
-
                                 <button className="active-add-to-cart" type="button" onClick={(e) => { e.preventDefault(); setStep("payment", "address") }}>Continue to payment</button>
                                 <button className="go-back" type="button" onClick={() => { setCurrentStep("details") }}>Go back</button>
                             </section> :
                             currentStep === "payment" ?
                                 <section className="form-buttons">
-
                                     <button className="active-add-to-cart" type="submit">Submit</button>
                                     <button className="go-back" type="button" onClick={() => { setCurrentStep("address") }}>Go back</button>
                                 </section> :
