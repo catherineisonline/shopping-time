@@ -1,8 +1,5 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
-import {
-  currenciesObj, itemsObj, categoriesObj
-} from "./data/all-products";
 import Header from "./components/header/Header.js";
 import AllProducts from "./routes/all-products/AllProducts.js";
 import SingleProduct from "./routes/single-product/SingleProduct.js";
@@ -11,9 +8,10 @@ import Landing from "./routes/landing/Landing.js";
 import Checkout from "./routes/checkout/Checkout";
 import NotFound from "./routes/not-found/NotFound";
 import Order from "./routes/order/Order";
+import products_database from "./database/firebase.js"
+import { collection, getDocs } from 'firebase/firestore/lite';
 
 const App = () => {
-  const [allCategories, setAllCategories] = useState([]);
   const [activeCategory, setActiveCategory] = useState('');
   const [allCurrencies, setAllCurrencies] = useState([]);
   const [selectedCurrency, setSelectedCurrency] = useState('$');
@@ -23,9 +21,54 @@ const App = () => {
   const [taxes, setTaxes] = useState(0);
   const [productsQuantity, setProductsQuantity] = useState(0);
   const [orderFormValue, setOrderFormValue] = useState({});
+  const [cachedProducts, setCachedProducts] = useState([]);
+  const [cachedCurrencies, setCachedCurrencies] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+
+  const GetProducts = useCallback(async (targetcategory) => {
+    setIsLoading(true);
+    if (cachedProducts.length === 0) {
+      try {
+        const products = await retrieveProducts(products_database);
+        setCachedProducts(products);
+        if (targetcategory === 'all') {
+          setAllProducts(products);
+        } else {
+          const targetProducts = products.filter(item =>
+            Object.values(item).includes(targetcategory)
+          );
+          setAllProducts(targetProducts);
+        }
+      } catch (error) {
+        console.error('Error fetching products:', error);
+      }
+    } else {
+      // Use cached products
+      if (targetcategory === 'all') {
+        setAllProducts(cachedProducts);
+      } else {
+        const targetProducts = cachedProducts.filter(item =>
+          Object.values(item).includes(targetcategory)
+        );
+        setAllProducts(targetProducts);
+      }
+    }
+    setIsLoading(false)
+  }, [cachedProducts]);
+
+  const retrieveProducts = async (db) => {
+    const all_products_col = collection(db, 'products');
+    const productsSnapshot = await getDocs(all_products_col);
+    const all_products = productsSnapshot.docs.map(doc => doc.data());
+    return all_products;
+  }
+
+  useEffect(() => {
+  }, [activeCategory, GetProducts]);
+
+
 
   const clearCart = () => {
-
     setCartItems([]);
     setProductsQuantity(0);
     localStorage.removeItem('cartItems');
@@ -33,17 +76,20 @@ const App = () => {
   }
 
   const changeCategory = (newCategory) => {
+
     setActiveCategory(newCategory);
     GetProducts(newCategory);
     localStorage.setItem('activeCategory', JSON.stringify(newCategory));
   };
+
   useEffect(() => {
     const storedActiveCategory = JSON.parse(localStorage.getItem('activeCategory'));
     if (storedActiveCategory) {
       setActiveCategory(storedActiveCategory);
       GetProducts(storedActiveCategory);
     }
-  }, []);
+  }, [GetProducts]);
+
   useEffect(() => {
     const storedSelectedCurrency = JSON.parse(localStorage.getItem('selectedCurrency'));
     if (storedSelectedCurrency) {
@@ -55,30 +101,36 @@ const App = () => {
     setSelectedCurrency(newSelectedCurrency);
     localStorage.setItem('selectedCurrency', JSON.stringify(newSelectedCurrency));
   };
-  const getCategories = () => {
-    setAllCategories(categoriesObj);
-  };
 
-  const GetProducts = (targetcategory) => {
-    let targetProducts = [];
-    itemsObj.forEach(item => {
-      Object.entries(item).forEach(target => {
-        if (target[1] === targetcategory) {
-          targetProducts.push(item);
-          setAllProducts(targetProducts);
-        }
-        if (targetcategory === 'all') {
-          setAllProducts(itemsObj);
-        }
-      });
-    });
-  };
+  async function getCurrencies() {
+    if (cachedCurrencies.length === 0) {
+      try {
+        const all_currencies = await retrieveCurrencies(products_database);
+        setCachedCurrencies(all_currencies);
+      } catch (error) {
+        console.error('Error fetching currencies:', error);
+      }
 
-  const getCurrencies = async () => {
-    setAllCurrencies(currenciesObj);
-  };
+    } else {
+      // Use cached currencies
+      setAllCurrencies(cachedCurrencies);
+    }
+  }
+
+  async function retrieveCurrencies(db) {
+    try {
+      const all_currencies_col = collection(db, 'currencies');
+      const currenciesSnapshot = await getDocs(all_currencies_col);
+      const all_currencies = currenciesSnapshot.docs.map(doc => doc.data());
+      return all_currencies;
+    } catch (error) {
+      console.error('Error retrieving currencies from Firebase:', error);
+      return [];
+    }
+  }
+
   useEffect(() => {
-    setAllCurrencies(currenciesObj);
+    getCurrencies();
   }, []);
 
   const MatchingAttributes = (userSelectedAttributes, targetProduct) => {
@@ -200,7 +252,7 @@ const App = () => {
 
     // Update cart quantity
     if (updatedProductList.length <= 1) {
-      updatedProductList.map((item) => {
+      updatedProductList.forEach((item) => {
         localStorage.setItem('productsQuantity', JSON.stringify(item.quantity));
         setProductsQuantity(item.quantity);
       });
@@ -257,7 +309,7 @@ const App = () => {
 
     // Update cart quantity
     if (updatedProductList.length <= 1) {
-      updatedProductList.map((item) => {
+      updatedProductList.forEach((item) => {
         localStorage.setItem('productsQuantity', JSON.stringify(item.quantity));
         setProductsQuantity(item.quantity);
       });
@@ -299,12 +351,7 @@ const App = () => {
 
 
 
-  useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-    getCategories();
-    GetProducts(activeCategory);
-    getCurrencies();
-  }, [activeCategory]);
+
 
 
 
@@ -312,7 +359,6 @@ const App = () => {
     <BrowserRouter>
       <Header
         productsQuantity={productsQuantity}
-        allCategories={allCategories}
         activeCategory={activeCategory}
         selectedCurrency={selectedCurrency}
         allCurrencies={allCurrencies}
@@ -339,6 +385,7 @@ const App = () => {
               selectedCurrency={selectedCurrency}
               handleAddProduct={handleAddProduct}
               alertMessageMain={alertMessageMain}
+              isLoading={isLoading}
             />
           }
         />
@@ -349,6 +396,7 @@ const App = () => {
               selectedCurrency={selectedCurrency}
               handleAddProduct={handleAddProduct}
               alertMessageMain={alertMessageMain}
+              allProducts={allProducts}
             />
           }
         />

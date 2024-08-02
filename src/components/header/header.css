@@ -99,8 +99,8 @@ nav {
         right: 0;
         padding: 1rem;
         cursor: pointer;
-        width: 3rem;
-        height: 3rem;
+        width: 10%;
+        height: auto;
     }
 }
 .active-menu {

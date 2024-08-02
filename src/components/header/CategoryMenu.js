@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import { categoriesObj } from "../../data/all-products";
 
-const CategoryMenu = ({ allCategories, changeCategory, activeCategory, closeMenu }) => {
+const CategoryMenu = ({  changeCategory, activeCategory, closeMenu }) => {
+  const [allCategories, setAllCategories] = useState([]);
+
+  const getCategories = () => {
+    setAllCategories(categoriesObj);
+  };
+  useEffect(() => {
+    getCategories()
+  }, []);
+  
   return (
     <ul>
       <NavLink
@@ -16,7 +26,7 @@ const CategoryMenu = ({ allCategories, changeCategory, activeCategory, closeMenu
       {allCategories.map((category) => (
         <NavLink
           to={`/store/${category.name}`}
-          key={category.name}
+          key={category.id}
           className={activeCategory === category.name
             ? "active-category-link"
             : "inactive-category-link"}>

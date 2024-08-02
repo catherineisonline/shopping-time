@@ -24,6 +24,18 @@
     object-position: center;
     z-index: 2;
 }
+.products-loader {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.products-loader h3 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 400;
+    padding-top: 5rem;
+}
 
 .product-listing-page {
     margin-top: 3rem;

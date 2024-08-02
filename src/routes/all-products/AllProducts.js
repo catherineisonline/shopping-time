@@ -13,7 +13,9 @@ const AllProducts = ({ allProducts,
   selectedCurrency,
   handleAddProduct,
   alertMessageMain,
-  productId }) => {
+  productId,
+  isLoading
+}) => {
 
   const [quickAddToCartVisible, setQuickAddToCartVisible] = useState(false);
   const [activeItem, setActiveItem] = useState(null);
@@ -37,29 +39,35 @@ const AllProducts = ({ allProducts,
           <source src={activeCategory === 'all' ? CategoryAllHero : activeCategory === 'dresses' ? CategoryDressesHero : activeCategory === 'blouses' ? CategoryBlousesHero : activeCategory === 'shoes' ? CategoryShoesHero : activeCategory === 'jeans' ? CategoryJeansHero : CategoryAllHero} type="video/mp4" />
         </video>
       </article>
+
       <article className="product-listing-page">
-        <h3 className="active-category">{activeCategory}</h3>
-        <section className="store-products">
-          {allProducts
-            ? allProducts.map((item) => (
-              <Product
-                key={item.id}
-                item={item}
-                productId={productId}
-                selectedCurrency={selectedCurrency}
-                handleAddProduct={handleAddProduct}
-                alertMessageMain={alertMessageMain}
-                toggleQuickCart={toggleQuickCart}
-                quickAddToCartVisible={quickAddToCartVisible}
-                removeQuickAddToCart={removeQuickAddToCart}
-                activeCategory={activeCategory}
-                setQuickAddToCartVisible={setQuickAddToCartVisible}
-                setActiveItem={setActiveItem}
-                activeItem={activeItem}
-              />
-            ))
-            : "Loading..."}
-        </section>
+        <h3 className="active-category">{activeCategory}{activeCategory === 'all' && ' Products'}</h3>
+
+        {isLoading ?
+          <section className="products-loader">
+            <h3>Products are loading, please wait...</h3>
+          </section> :
+          <section className="store-products">
+            {allProducts
+              && allProducts.map((item) => (
+                <Product
+                  key={item.id}
+                  item={item}
+                  productId={productId}
+                  selectedCurrency={selectedCurrency}
+                  handleAddProduct={handleAddProduct}
+                  alertMessageMain={alertMessageMain}
+                  toggleQuickCart={toggleQuickCart}
+                  quickAddToCartVisible={quickAddToCartVisible}
+                  removeQuickAddToCart={removeQuickAddToCart}
+                  activeCategory={activeCategory}
+                  setQuickAddToCartVisible={setQuickAddToCartVisible}
+                  setActiveItem={setActiveItem}
+                  activeItem={activeItem}
+                />
+              ))}
+          </section>}
+
       </article>
     </article>
   );

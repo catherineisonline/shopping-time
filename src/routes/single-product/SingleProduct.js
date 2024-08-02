@@ -3,37 +3,43 @@ import Attribute from "../../components/attributes/Attributes.js";
 import AddToCartButton from "../../components/AddToCartButton.js";
 import ProductShowcase from "./ProductShowcase.js";
 import ProductTitles from "./ProductTitles.js";
-import { itemsObj } from "../../data/all-products.js";
 import { ResetLocation } from "../../helpers/ResetLocation.js";
 
-const SingleProduct = ({ selectedCurrency, handleAddProduct, alertMessageMain }) => {
+const SingleProduct = ({ selectedCurrency, handleAddProduct, alertMessageMain, allProducts }) => {
   const [selectedAttributes, setSelectedAttributes] = useState([]);
   const [allAttributesAreSelected, setAllAttributesAreSelected] = useState(false);
   const [singleProduct, setSingleProduct] = useState({});
   const [priceAmount, setPriceAmount] = useState("");
+  const [isLoading, setIsLoading] = useState(false)
 
   useEffect(() => {
     document.title = `${singleProduct.name} | Shopping Time`;
+    ResetLocation();
   }, [singleProduct]);
 
-  const filterCurrency = (singleProduct, selectedCurrency) => {
-    const price = singleProduct?.prices?.filter((price) => price.currency.symbol === selectedCurrency)[0];
+  const filterCurrency = useCallback((product, currency) => {
+    const price = product?.prices?.find((price) => price.currency.symbol === currency);
     setPriceAmount(price?.amount?.toFixed(2));
-  };
+  }, []);
 
   const getProductById = useCallback((uniqueId) => {
-    const targetProduct = itemsObj.find((item) => item.id === uniqueId);
 
+    const targetProduct = allProducts.find((item) => item.id === uniqueId);
+    setIsLoading(true)
     if (targetProduct) {
       setSingleProduct(targetProduct);
-      document.querySelector(".description").innerHTML = targetProduct.description;
       filterCurrency(targetProduct, selectedCurrency);
 
       if (targetProduct.attributes.length === 0) {
         setAllAttributesAreSelected(true);
       }
+      setIsLoading(false)
+      if (singleProduct.description) {
+        document.querySelector(".description").innerHTML = singleProduct.description;
+      }
     }
-  }, [selectedCurrency]);
+
+  }, [selectedCurrency, filterCurrency, allProducts, singleProduct.description]);
 
   useEffect(() => {
     const pathname = window.location.pathname.toString().substring(7);
@@ -41,9 +47,6 @@ const SingleProduct = ({ selectedCurrency, handleAddProduct, alertMessageMain })
 
   }, [getProductById]);
 
-  useEffect(() => {
-    ResetLocation();
-  }, []);
 
 
 
@@ -68,40 +71,46 @@ const SingleProduct = ({ selectedCurrency, handleAddProduct, alertMessageMain })
   };
   return (
     <main>
-      <ProductTitles singleProduct={singleProduct} />
-      <section className="single-product">
-        <ProductShowcase singleProduct={singleProduct} />
-        <section className="data">
-          {singleProduct?.attributes?.map((attribute) => (
-            <Attribute
-              className="attribute"
-              key={attribute.id}
-              attribute={attribute}
-              handleSelectedAttributes={handleSelectedAttributes}
-              selectedAttributes={selectedAttributes}
-            />
-          ))}
-          <section className="pricing-section">
-            <h3 className="price-title"> Price:</h3>
-            <div className="single-product-pricing">
-              <p className="product-price">
-                {selectedCurrency}
-                {priceAmount}
-              </p>
-            </div>
-          </section>
-          <AddToCartButton
-            className="addtocart"
-            alertMessageMain={alertMessageMain}
-            handleAddProduct={handleAddProduct}
-            item={singleProduct}
-            allAttributesAreSelected={allAttributesAreSelected}
-            handleSelectedAttributes={handleSelectedAttributes}
-            selectedAttributes={selectedAttributes}
-          />
-          <section className="description"></section>
+      {isLoading ?
+        <section className="single-products__loader">
+          <h3>The product is loading, please wait...</h3>
         </section>
-      </section>
+        : <React.Fragment>
+          <ProductTitles singleProduct={singleProduct} />
+          <section className="single-product">
+            <ProductShowcase singleProduct={singleProduct} />
+            <section className="data">
+              {singleProduct?.attributes?.map((attribute) => (
+                <Attribute
+                  className="attribute"
+                  key={attribute.id}
+                  attribute={attribute}
+                  handleSelectedAttributes={handleSelectedAttributes}
+                  selectedAttributes={selectedAttributes}
+                />
+              ))}
+              <section className="pricing-section">
+                <h3 className="price-title"> Price:</h3>
+                <div className="single-product-pricing">
+                  <p className="product-price">
+                    {selectedCurrency}
+                    {priceAmount}
+                  </p>
+                </div>
+              </section>
+              <AddToCartButton
+                className="addtocart"
+                alertMessageMain={alertMessageMain}
+                handleAddProduct={handleAddProduct}
+                item={singleProduct}
+                allAttributesAreSelected={allAttributesAreSelected}
+                handleSelectedAttributes={handleSelectedAttributes}
+                selectedAttributes={selectedAttributes}
+              />
+              <section className="description"></section>
+            </section>
+          </section>
+        </React.Fragment>}
     </main>
   );
 }

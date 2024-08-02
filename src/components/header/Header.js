@@ -30,7 +30,7 @@ const Navigation = ({ allCategories,
 
   return (
     <header>
-      <img className="hamburger" src={activeMenu ? activeHamburger : inactiveHamburger} alt="toggle menu" onClick={toggleMenu} />
+      <img className="hamburger" width={50} height={50} src={activeMenu ? activeHamburger : inactiveHamburger} alt="toggle menu" onClick={toggleMenu} />
       <nav className={activeMenu ? "active-menu" : ""}>
         <NavLink
           to="/"
