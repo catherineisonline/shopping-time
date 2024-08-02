@@ -31,8 +31,10 @@ Below is a comprehensive overview of the functionalities that the website offers
 - Form Validations: To prevent errors and ensure accurate order information, the checkout page includes form validations. This guarantees that the necessary details are correctly entered, helping to streamline shopping experience.
 
 ## Goals I achieved
-- Practice React Class components.
+- Practice React Class components and then refactor to hooks
 - Build logic to choose attributes and add items to the cart
+- Add form validations
+- Use Firebase to save data externally
 
 
 ## Getting Started with Create React App
@@ -88,6 +90,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 - [React Router](https://www.npmjs.com/package/react-router-dom)
 - [React Slider](https://www.npmjs.com/package/react-simple-image-slider)
 - [uuid](https://www.npmjs.com/package/uuid)
+- [Firestore](https://firebase.google.com/docs/firestore)
 
 ## Contribution <a id="contribution"></a>
 

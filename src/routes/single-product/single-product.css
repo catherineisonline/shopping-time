@@ -15,7 +15,17 @@
   margin: 0 auto;
   padding: 8rem;
 }
-
+.single-products__loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.single-products__loader h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
 .addtocart .active-add-to-cart,
 .addtocart .inactive-add-to-cart {
   width: max-content;
