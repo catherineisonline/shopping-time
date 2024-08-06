@@ -19,18 +19,39 @@ const Navigation = ({ allCategories,
   productsQuantity,
   handleRemoveProduct,
   handleAddProduct,
-  cartItems, clearCart }) => {
+  cartItems, clearCart, }) => {
 
-  const [activeMenu, setInactiveMenu] = useState(false);
+  const [activeMenu, setActiveMenu] = useState(false);
 
   const toggleMenu = () => {
-    setInactiveMenu(!activeMenu);
+    setActiveMenu(!activeMenu);
   }
-  const closeMenu = () => setInactiveMenu(false);
+  const closeMenu = () => setActiveMenu(false);
 
   return (
     <header>
-      <img className="hamburger" width={50} height={50} src={activeMenu ? activeHamburger : inactiveHamburger} alt="toggle menu" onClick={toggleMenu} />
+      <section className="icons-section-active">
+        <CurrencyIcon
+          selectedCurrency={selectedCurrency}
+          allCurrencies={allCurrencies}
+          changeCurrency={changeCurrency}
+        />
+
+        <CartIcon
+          handleRemoveProduct={handleRemoveProduct}
+          handleAddProduct={handleAddProduct}
+          productsQuantity={productsQuantity}
+          amountOfItems={amountOfItems}
+          totalPayment={totalPayment}
+          cartItems={cartItems}
+          selectedCurrency={selectedCurrency}
+          activeMenu={activeMenu}
+          clearCart={clearCart}
+          setActiveMenu={setActiveMenu}
+          toggleMenu={toggleMenu}
+        />
+        <img className="hamburger" width={50} height={50} src={activeMenu ? activeHamburger : inactiveHamburger} alt="toggle menu" onClick={toggleMenu} />
+      </section>
       <nav className={activeMenu ? "active-menu" : ""}>
         <NavLink
           to="/"
@@ -64,7 +85,8 @@ const Navigation = ({ allCategories,
             selectedCurrency={selectedCurrency}
             activeMenu={activeMenu}
             clearCart={clearCart}
-            closeMenu={closeMenu}
+            setActiveMenu={setActiveMenu}
+            toggleMenu={toggleMenu}
           />
         </section>
       </nav>

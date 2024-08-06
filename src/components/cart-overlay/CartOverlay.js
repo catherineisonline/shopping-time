@@ -8,10 +8,9 @@ import activeHamburger from "../../assets/images/active-cart-overlay.png";
 const CartOverlay = ({ totalPayment,
   cartItems,
   selectedCurrency,
-  ToggleCartOverlay,
   productsQuantity,
   handleAddProduct,
-  handleRemoveProduct, activeMenu, removeCartOverlay, clearCart, closeMenu }) => {
+  handleRemoveProduct, activeMenu, removeCartOverlay, clearCart }) => {
   return (
     <React.Fragment>
       {cartItems.length === 0 ? (
@@ -61,10 +60,10 @@ const CartOverlay = ({ totalPayment,
             </p>
           </section>
           <section className="all-products-payment">
-            <Link onClick={() => { ToggleCartOverlay(); closeMenu(); }} className="view-bag" to="/cart">
+            <Link onClick={() => { removeCartOverlay(); }} className="view-bag" to="/cart">
               View cart
             </Link>
-            <button onClick={() => { ToggleCartOverlay(); clearCart(); closeMenu() }} className="clear-cart" to="/checkout">
+            <button onClick={() => { clearCart(); removeCartOverlay() }} className="clear-cart" to="/checkout">
               Clear cart
             </button>
           </section>

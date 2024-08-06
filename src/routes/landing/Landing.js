@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import HeroVideo from '../../assets/images/landing-images/hero-video.mp4'
+import HeroCover from '../../assets/images/landing-images/hero-cover.jpg'
 import "./landing.css"
 import { ResetLocation } from "../../helpers/ResetLocation";
 
@@ -12,9 +12,7 @@ const Landing = ({ changeCategory }) => {
     <main className="landing">
       <article className="hero">
         <h2>Building a better <span>you!</span></h2>
-        <video autoPlay loop muted playsInline>
-          <source src={HeroVideo} type="video/mp4" />
-        </video>
+        <img src={HeroCover} aria-hidden="true" alt="" />
       </article>
       <article className="grid">
         <section className="grid-one">

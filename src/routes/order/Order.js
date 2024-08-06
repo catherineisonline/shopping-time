@@ -44,7 +44,7 @@ const Order = ({ orderFormValue, cartItems, selectedCurrency, clearCart }) => {
                 <ul className="order-details">
                     <li>Order Number: {orderFormValue.id}</li>
                     <li> Order Date: {orderFormValue.date}</li>
-                    <li>Shipping Address: {orderFormValue.country}, {orderFormValue.city}, {orderFormValue.postal}, {orderFormValue.address}</li>
+                    <li>Shipping Address: {orderFormValue.country}, {orderFormValue.city}, {orderFormValue.province}, {orderFormValue.postal}, {orderFormValue.streetaddress}</li>
                     <li>Payment Method: Bank card</li>
                 </ul>
                 <h3>Items Ordered:</h3>
