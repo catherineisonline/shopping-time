@@ -3,6 +3,8 @@ header {
     flex-direction: column;
     align-items: center;
     position: relative;
+    position: absolute;
+    top: 0;
     width: 100%;
 }
 .icons-section-active {

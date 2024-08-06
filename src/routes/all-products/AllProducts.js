@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Product from "./Product.js";
-import CategoryAllHero from '../../assets/images/product-listing-images/category-all-hero.jpg'
-import CategoryDressesHero from '../../assets/images/product-listing-images/category-dresses-hero.jpg'
-import CategoryBlousesHero from '../../assets/images/product-listing-images/category-blouses-hero.jpg'
-import CategoryShoesHero from '../../assets/images/product-listing-images/category-shoes-hero.jpg'
-import CategoryJeansHero from '../../assets/images/product-listing-images/category-jeans-hero.jpg'
+import CategoryAllHero from '../../assets/images/product-listing-images/category-all-hero.webp'
+import CategoryDressesHero from '../../assets/images/product-listing-images/category-dresses-hero.webp'
+import CategoryBlousesHero from '../../assets/images/product-listing-images/category-blouses-hero.webp'
+import CategoryShoesHero from '../../assets/images/product-listing-images/category-shoes-hero.webp'
+import CategoryJeansHero from '../../assets/images/product-listing-images/category-jeans-hero.webp'
 import "./all-products.css";
 
 

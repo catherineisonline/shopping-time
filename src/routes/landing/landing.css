@@ -71,27 +71,27 @@
 
 .grid-one {
     grid-area: 1 / 1 / 2 / 4;
-    background-image: url("../../assets/images/landing-images/gridOne.jpeg");
+    background-image: url("../../assets/images/landing-images/gridOne.webp");
 }
 
 .grid-two {
     grid-area: 1 / 4 / 2 / 6;
-    background-image: url("../../assets/images/landing-images/gridTwo.jpeg");
+    background-image: url("../../assets/images/landing-images/gridTwo.webp");
 }
 
 .grid-three {
     grid-area: 2 / 1 / 3 / 3;
-    background-image: url("../../assets/images/landing-images/gridThree.jpeg");
+    background-image: url("../../assets/images/landing-images/gridThree.webp");
 }
 
 .grid-four {
     grid-area: 2 / 3 / 3 / 6;
-    background-image: url("../../assets/images/landing-images/gridFour.jpeg");
+    background-image: url("../../assets/images/landing-images/gridFour.webp");
 }
 
 .grid-five {
     grid-area: 3 / 1 / 4 / 6;
-    background-image: url("../../assets/images/landing-images/gridFive.jpeg");
+    background-image: url("../../assets/images/landing-images/gridFive.webp");
 }
 
 .grid-one .grid-button {

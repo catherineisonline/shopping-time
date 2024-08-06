@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import HeroCover from '../../assets/images/landing-images/hero-cover.jpg'
+import HeroCover from '../../assets/images/landing-images/hero-cover.webp'
 import "./landing.css"
 import { ResetLocation } from "../../helpers/ResetLocation";
 
