@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import CartSingleItem from "./CartSingleItem.js";
 import CartTotals from "./CartTotals.js";
 import "./cart.css";
-import CartHero from "../../assets/images/cart-hero.mp4"
+import CartHero from "../../assets/images/cart-hero.webp"
 
 const Cart = ({ selectedCurrency,
     totalPayment,
@@ -19,9 +19,7 @@ const Cart = ({ selectedCurrency,
         <main>
             <article className="cart-hero">
                 <h2>Cart</h2>
-                <video autoPlay loop muted playsInline>
-                    <source src={CartHero} type="video/mp4" />
-                </video>
+                <img src={CartHero} alt="" aria-hidden="true" />
             </article>
             <article className="cart">
                 {cartItems.length === 0 ? (

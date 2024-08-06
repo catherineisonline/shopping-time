@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Product from "./Product.js";
-import CategoryAllHero from '../../assets/images/product-listing-images/category-all-hero.mp4'
-import CategoryDressesHero from '../../assets/images/product-listing-images/category-dresses-hero.mp4'
-import CategoryBlousesHero from '../../assets/images/product-listing-images/category-blouses-hero.mp4'
-import CategoryShoesHero from '../../assets/images/product-listing-images/category-shoes-hero.mp4'
-import CategoryJeansHero from '../../assets/images/product-listing-images/category-jeans-hero.mp4'
+import CategoryAllHero from '../../assets/images/product-listing-images/category-all-hero.webp'
+import CategoryDressesHero from '../../assets/images/product-listing-images/category-dresses-hero.webp'
+import CategoryBlousesHero from '../../assets/images/product-listing-images/category-blouses-hero.webp'
+import CategoryShoesHero from '../../assets/images/product-listing-images/category-shoes-hero.webp'
+import CategoryJeansHero from '../../assets/images/product-listing-images/category-jeans-hero.webp'
 import "./all-products.css";
 
 
@@ -35,9 +35,8 @@ const AllProducts = ({ allProducts,
     <article>
       <article className="products-hero">
         <h2>{activeCategory === 'all' ? "Boost your style sense!" : activeCategory === 'dresses' ? "Let's create your own style" : activeCategory === 'blouses' ? "The joy of dressing" : activeCategory === 'shoes' ? "Unlock your style" : activeCategory === 'jeans' ? "Fashion never sleeps" : "Boost your style sense!"}</h2>
-        <video autoPlay loop muted playsInline key={activeCategory}>
-          <source src={activeCategory === 'all' ? CategoryAllHero : activeCategory === 'dresses' ? CategoryDressesHero : activeCategory === 'blouses' ? CategoryBlousesHero : activeCategory === 'shoes' ? CategoryShoesHero : activeCategory === 'jeans' ? CategoryJeansHero : CategoryAllHero} type="video/mp4" />
-        </video>
+
+        <img alt="" aria-hidden="true" src={activeCategory === 'all' ? CategoryAllHero : activeCategory === 'dresses' ? CategoryDressesHero : activeCategory === 'blouses' ? CategoryBlousesHero : activeCategory === 'shoes' ? CategoryShoesHero : activeCategory === 'jeans' ? CategoryJeansHero : CategoryAllHero} />
       </article>
 
       <article className="product-listing-page">

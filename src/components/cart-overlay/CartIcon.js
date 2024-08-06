@@ -8,22 +8,23 @@ const CartIcon = ({ totalPayment,
   selectedCurrency,
   productsQuantity,
   handleAddProduct,
-  handleRemoveProduct, activeMenu, clearCart, closeMenu }) => {
-  const [dropdownMenu, setDropdownMenu] = useState(false);
+  handleRemoveProduct, activeMenu, clearCart, setActiveMenu }) => {
+  const [toggleCart, setToggleCart] = useState(false);
   const cartIcon = useRef(null);
 
   const toggleCartOverlay = () => {
-    setDropdownMenu(!dropdownMenu)
+    setToggleCart(!toggleCart)
+    setActiveMenu(false)
   };
   const removeCartOverlay = () => {
-    setDropdownMenu(false);
+    setToggleCart(false);
     ResetLocation();
   };
 
   useEffect(() => {
     const handleOutsideClick = (e) => {
       if (cartIcon.current && !cartIcon.current.contains(e.target)) {
-        setDropdownMenu(false);
+        setToggleCart(false);
       }
     };
     document.addEventListener("mousedown", handleOutsideClick);
@@ -37,18 +38,17 @@ const CartIcon = ({ totalPayment,
       className="cart-icon-section"
       ref={cartIcon}
     >
-      <section className="cart-icon" onClick={toggleCartOverlay}>
-        <img src={EmptyCart} alt="empty cart" className="cart-icon" />
+      <section className="cart-icon" onClick={() => { toggleCartOverlay(); }}>
+        <img src={EmptyCart} alt="empty cart" className="cart-icon" width={50} height={50} />
         {productsQuantity > 0 ? (
           <p className="cart-quantity">{productsQuantity}</p>
         ) : null}
       </section>
 
-      {!dropdownMenu ? null :
+      {!toggleCart ? null :
         <CartOverlay
           handleAddProduct={handleAddProduct}
           handleRemoveProduct={handleRemoveProduct}
-          ToggleCartOverlay={toggleCartOverlay}
           productsQuantity={productsQuantity}
           cartItems={cartItems}
           selectedCurrency={selectedCurrency}
@@ -56,7 +56,6 @@ const CartIcon = ({ totalPayment,
           activeMenu={activeMenu}
           removeCartOverlay={removeCartOverlay}
           clearCart={clearCart}
-          closeMenu={closeMenu}
         />
       }
     </section>

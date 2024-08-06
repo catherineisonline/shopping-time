@@ -102,21 +102,20 @@ const App = () => {
     localStorage.setItem('selectedCurrency', JSON.stringify(newSelectedCurrency));
   };
 
-  async function getCurrencies() {
+  const getCurrencies = useCallback(async () => {
     if (cachedCurrencies.length === 0) {
       try {
         const all_currencies = await retrieveCurrencies(products_database);
         setCachedCurrencies(all_currencies);
+
       } catch (error) {
         console.error('Error fetching currencies:', error);
       }
-
     } else {
-      // Use cached currencies
       setAllCurrencies(cachedCurrencies);
     }
-  }
 
+  }, [cachedCurrencies]);
   async function retrieveCurrencies(db) {
     try {
       const all_currencies_col = collection(db, 'currencies');
@@ -131,7 +130,7 @@ const App = () => {
 
   useEffect(() => {
     getCurrencies();
-  }, []);
+  }, [getCurrencies]);
 
   const MatchingAttributes = (userSelectedAttributes, targetProduct) => {
     const attributesMatch = (groupOne, groupTwo) => {
@@ -369,6 +368,8 @@ const App = () => {
         handleRemoveProduct={handleRemoveProduct}
         handleAddProduct={handleAddProduct}
         clearCart={clearCart}
+      // setInactiveMenu={setInactiveMenu}
+      // activeMenu={activeMenu}
       />
 
       <Routes>

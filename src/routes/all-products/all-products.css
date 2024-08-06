@@ -16,7 +16,7 @@
     text-align: center;
     color: var(--c-white);
 }
-.products-hero video {
+.products-hero img {
     position: absolute;
     width: 100%;
     height: 90%;
@@ -216,7 +216,7 @@
 
 @media (max-width: 750px) {
     .products-hero,
-    .products-hero video {
+    .products-hero img {
         height: 100vh;
     }
     .products-hero h2 {

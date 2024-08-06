@@ -2,12 +2,14 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
     position: absolute;
-    width: 100%;
-    left: 0;
     top: 0;
+    width: 100%;
 }
-
+.icons-section-active {
+    display: none;
+}
 header ul a {
     text-decoration: none;
 }
@@ -20,7 +22,7 @@ header ul {
     align-items: center;
     font-family: var(--font-raleway);
     font-weight: 400;
-    font-size: 0.8rem;
+    font-size: 1rem;
     justify-content: center;
 }
 header ul li:hover {
@@ -35,7 +37,7 @@ nav {
     justify-content: space-around;
     top: 0;
     padding: 1rem 0;
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.331);
     backdrop-filter: blur(5px);
     align-items: center;
     margin: 0 auto;
@@ -94,13 +96,49 @@ nav {
     }
     .hamburger {
         display: inline-block;
+        cursor: pointer;
+        max-width: 100%;
+        height: auto;
+    }
+    .icons-section {
+        display: none;
+    }
+    .icons-section-active {
+        display: grid;
+        grid-template-columns: repeat(3, 3rem);
+        align-items: center;
         position: absolute;
         z-index: 997;
         right: 0;
+        justify-content: space-between;
+        padding: 1rem;
+        gap: 1rem;
+    }
+    .icons-section-active .cart-icon img {
+        max-width: 100%;
+        height: auto;
+    }
+    .icons-section-active .cart-quantity {
+        right: -10px;
+    }
+    .icons-section-active .initial-currency p {
+        font-size: 2.5rem;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .icons-section-active .initial-currency span {
+        font-size: 2.5rem;
+    }
+    .icons-section-active .cartoverlay-hamburger {
+        display: inline-block;
+        position: absolute;
+        z-index: 999;
+        right: 0;
         padding: 1rem;
         cursor: pointer;
-        width: 10%;
-        height: auto;
+        width: 3rem;
+        height: 3rem;
     }
 }
 .active-menu {
@@ -127,7 +165,7 @@ nav {
     font-size: 1rem;
 }
 
-.active-menu .cart-overlay {
+.icons-section-active .cart-overlay {
     position: fixed;
     background-color: rgba(0, 0, 0, 0.801);
     backdrop-filter: blur(5px);
@@ -155,15 +193,4 @@ nav {
 }
 .cartoverlay-hamburger {
     display: none;
-}
-
-.active-overlay .cartoverlay-hamburger {
-    display: inline-block;
-    position: absolute;
-    z-index: 999;
-    right: 0;
-    padding: 1rem;
-    cursor: pointer;
-    width: 3rem;
-    height: 3rem;
 }

@@ -7,7 +7,7 @@
   background-color: rgba(0, 0, 0, 0.693);
   backdrop-filter: blur(2px);
   transform: translate(-10%, 0);
-  width: max-content;
+  width: 30vw;
   top: 4rem;
   right: -3rem;
   color: var(--c-white);
@@ -36,7 +36,7 @@
 }
 .cartoverlay-grid {
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 4rem;
   overflow-y: scroll;
   max-height: 31.25rem;
   width: 100%;
@@ -73,9 +73,10 @@
 }
 
 .cartoverlay-products-single {
-  flex-direction: row;
-  align-items: stretch;
-  gap: 0.5rem;
+  display: grid;
+  width: inherit;
+  grid-template-columns: 1fr 2rem 8rem;
+  grid-template-rows: 10rem;
 }
 .cart-overlay-item {
   flex-direction: row;
@@ -83,7 +84,6 @@
 }
 .cartoverlay-products-single img {
   width: 100%;
-  max-height: 9rem;
   height: 100%;
   object-fit: cover;
 }
