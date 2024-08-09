@@ -104,9 +104,3 @@
   font-weight: 700;
   font-size: 1.5rem;
 }
-
-@media (max-width: 460px) {
-  .single-product-titles {
-    padding: 2rem;
-  }
-}
