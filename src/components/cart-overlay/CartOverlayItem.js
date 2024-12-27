@@ -56,16 +56,13 @@ export default class CartOverlayItem extends React.Component {
     return (
       <article className="cartoverlay-products-single">
         <section className="cart-overlay-item">
-          <section className="cart-overlay-item-data">
+          <section>
             <section className="titles-block">
-              <h4>{singleProduct.brand}</h4>
               <h4>{singleProduct.name}</h4>
-              <div className="cartoverlay-item-pricing">
                 <p className="product-price">
                   {pricing?.currency?.symbol}
                   {priceAmount}
                 </p>
-              </div>
             </section>
 
             {singleProduct?.attributes?.map((attribute) => (
@@ -86,7 +83,6 @@ export default class CartOverlayItem extends React.Component {
           singleProduct={singleProduct}
         />
         <img
-          className="cart-overlay-image"
           src={singleProduct.gallery[0]}
           alt={singleProduct.name}
         />
