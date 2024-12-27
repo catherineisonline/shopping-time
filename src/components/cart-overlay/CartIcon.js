@@ -34,18 +34,12 @@ const CartIcon = ({ totalPayment,
   }, []);
 
   return (
-    <section
-      className="cart-icon-section"
-      ref={cartIcon}
-    >
-      <section className="cart-icon" onClick={() => { toggleCartOverlay(); }}>
+    <section className="cart-icon-section" ref={cartIcon}>
+      <section className="cart-icon" onClick={toggleCartOverlay}>
         <img src={EmptyCart} alt="empty cart" className="cart-icon" width={50} height={50} />
-        {productsQuantity > 0 ? (
-          <p className="cart-quantity">{productsQuantity}</p>
-        ) : null}
+        {productsQuantity > 0 && <p className="cart-quantity">{productsQuantity}</p>}
       </section>
-
-      {!toggleCart ? null :
+      {toggleCart &&
         <CartOverlay
           handleAddProduct={handleAddProduct}
           handleRemoveProduct={handleRemoveProduct}
