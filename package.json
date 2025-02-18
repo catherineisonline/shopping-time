@@ -5,18 +5,19 @@
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
-    "@vitejs/plugin-react": "^4.3.4",
     "firebase": "^10.14.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.16.0",
     "react-simple-image-slider": "^2.4.1",
     "uuid": "^9.0.1",
-    "vite": "^6.1.0",
     "web-vitals": "^2.1.4"
   },
+  "devDependencies": {
+    "vite": "^6.1.0",
+    "@vitejs/plugin-react": "^4.3.4"
+  },
   "scripts": {
-    "install": "pnpm install",
     "dev": "vite",
     "start": "vite",
     "build": "vite build",
@@ -33,6 +34,12 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "pnpm": {
+    "ignoredBuiltDependencies": [
+      "esbuild",
+      "protobufjs"
     ]
   }
 }
