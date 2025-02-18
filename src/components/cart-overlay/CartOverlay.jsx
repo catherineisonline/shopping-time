@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import CartOverlayItem from "./CartOverlayItem.js";
+import CartOverlayItem from "./CartOverlayItem.jsx";
 import "./cart-overlay.css"
 import activeHamburger from "../../assets/images/active-cart-overlay.png";
 

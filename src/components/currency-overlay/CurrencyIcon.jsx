@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import CurrencyOverlay from "./CurrencyOverlay.js";
+import CurrencyOverlay from "./CurrencyOverlay.jsx";
 import "./currency-overlay.css"
 
 const CurrencyIcon = ({

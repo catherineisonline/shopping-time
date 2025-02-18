@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import CartSingleItem from "./CartSingleItem.js";
-import CartTotals from "./CartTotals.js";
+import CartSingleItem from "./CartSingleItem.jsx";
+import CartTotals from "./CartTotals.jsx";
 import "./cart.css";
 import CartHero from "../../assets/images/cart-hero.webp"
 

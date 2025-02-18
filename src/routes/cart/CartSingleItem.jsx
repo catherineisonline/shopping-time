@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import SelectedAttributes from "../../components/attributes/SelectedAttributes.js";
+import SelectedAttributes from "../../components/attributes/SelectedAttributes.jsx";
 import SimpleImageSlider from "react-simple-image-slider";
-import ChangeCartItemQuantity from "../../components/ChangeCartItemQuantity.js";
+import ChangeCartItemQuantity from "../../components/ChangeCartItemQuantity.jsx";
 
 
 const CartSingleItem = ({ selectedCurrency, singleProduct, handleAddProduct, handleRemoveProduct }) => {
