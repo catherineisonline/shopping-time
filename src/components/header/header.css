@@ -97,8 +97,9 @@ nav {
     .hamburger {
         display: inline-block;
         cursor: pointer;
-        max-width: 100%;
-        height: auto;
+        object-fit: contain;
+        width: 50px;
+        height: 50px;
     }
     .icons-section {
         display: none;
