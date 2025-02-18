@@ -39,7 +39,7 @@ Below is a comprehensive overview of the functionalities that the website offers
 
 ## Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was originally bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and now migrated to [Vite](https://vite.dev/).
 
 To get started you need to:
 
