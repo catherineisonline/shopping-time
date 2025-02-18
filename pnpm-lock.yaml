@@ -14,9 +14,6 @@ importers:
       '@testing-library/react':
         specifier: ^13.4.0
         version: 13.4.0(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@vitejs/plugin-react':
-        specifier: ^4.3.4
-        version: 4.3.4(vite@6.1.0(@types/node@22.13.4))
       firebase:
         specifier: ^10.14.1
         version: 10.14.1
@@ -35,12 +32,16 @@ importers:
       uuid:
         specifier: ^9.0.1
         version: 9.0.1
-      vite:
-        specifier: ^6.1.0
-        version: 6.1.0(@types/node@22.13.4)
       web-vitals:
         specifier: ^2.1.4
         version: 2.1.4
+    devDependencies:
+      '@vitejs/plugin-react':
+        specifier: ^4.3.4
+        version: 4.3.4(vite@6.1.0(@types/node@22.13.4))
+      vite:
+        specifier: ^6.1.0
+        version: 6.1.0(@types/node@22.13.4)
 
 packages:
 

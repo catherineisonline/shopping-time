@@ -1,8 +1,14 @@
 {
     "builds": [
         {
-            "src": "dist/**/*",
-            "use": "@vercel/static"
+            "src": "package.json",
+            "use": "@vercel/node"
+        }
+    ],
+    "rewrites": [
+        {
+            "source": "/:match*",
+            "destination": "/index.html"
         }
     ]
 }
