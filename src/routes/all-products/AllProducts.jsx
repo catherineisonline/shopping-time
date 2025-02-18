@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Product from "./Product.js";
+import Product from "./Product.jsx";
 import CategoryAllHero from '../../assets/images/product-listing-images/category-all-hero.webp'
 import CategoryDressesHero from '../../assets/images/product-listing-images/category-dresses-hero.webp'
 import CategoryBlousesHero from '../../assets/images/product-listing-images/category-blouses-hero.webp'

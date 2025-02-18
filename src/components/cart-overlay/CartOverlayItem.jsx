@@ -1,6 +1,6 @@
 import React from "react";
-import SelectedAttributes from "../attributes/SelectedAttributes.js";
-import ChangeCartItemQuantity from "../ChangeCartItemQuantity.js";
+import SelectedAttributes from "../attributes/SelectedAttributes.jsx";
+import ChangeCartItemQuantity from "../ChangeCartItemQuantity.jsx";
 
 export default class CartOverlayItem extends React.Component {
   constructor(props) {

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import CartIcon from "../cart-overlay/CartIcon.js";
-import SuccessMessage from "../SuccessMessage.js";
-import CategoryMenu from "./CategoryMenu.js";
-import CurrencyIcon from "../currency-overlay/CurrencyIcon.js";
+import CartIcon from "../cart-overlay/CartIcon.jsx";
+import SuccessMessage from "../SuccessMessage.jsx";
+import CategoryMenu from "./CategoryMenu.jsx";
+import CurrencyIcon from "../currency-overlay/CurrencyIcon.jsx";
 import "./header.css";
 import inactiveHamburger from "../../assets/images/inactive-hamburger.png";
 import activeHamburger from "../../assets/images/active-hamburger.png";

@@ -1,9 +1,9 @@
 import React, { useCallback, useEffect, useState } from "react";
-import Attribute from "../../components/attributes/Attributes.js";
-import AddToCartButton from "../../components/AddToCartButton.js";
-import ProductShowcase from "./ProductShowcase.js";
-import ProductTitles from "./ProductTitles.js";
-import { ResetLocation } from "../../helpers/ResetLocation.js";
+import Attribute from "../../components/attributes/Attributes.jsx";
+import AddToCartButton from "../../components/AddToCartButton.jsx";
+import ProductShowcase from "./ProductShowcase.jsx";
+import ProductTitles from "./ProductTitles.jsx";
+import { ResetLocation } from "../../helpers/ResetLocation.jsx";
 
 const SingleProduct = ({ selectedCurrency, handleAddProduct, alertMessageMain, allProducts }) => {
   const [selectedAttributes, setSelectedAttributes] = useState([]);

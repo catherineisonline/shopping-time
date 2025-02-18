@@ -1,6 +1,6 @@
 import React from "react";
-import Attribute from "../../components/attributes/Attributes.js";
-import AddToCartButton from "../../components/AddToCartButton.js";
+import Attribute from "../../components/attributes/Attributes.jsx";
+import AddToCartButton from "../../components/AddToCartButton.jsx";
 
 
 const QuickAddToCart = ({ item,

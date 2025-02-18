@@ -1,13 +1,13 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
-import Header from "./components/header/Header.js";
-import AllProducts from "./routes/all-products/AllProducts.js";
-import SingleProduct from "./routes/single-product/SingleProduct.js";
-import Cart from "./routes/cart/Cart.js"
-import Landing from "./routes/landing/Landing.js";
-import Checkout from "./routes/checkout/Checkout";
-import NotFound from "./routes/not-found/NotFound";
-import Order from "./routes/order/Order";
+import Header from "./components/header/Header.jsx";
+import AllProducts from "./routes/all-products/AllProducts.jsx";
+import SingleProduct from "./routes/single-product/SingleProduct.jsx";
+import Cart from "./routes/cart/Cart.jsx"
+import Landing from "./routes/landing/Landing.jsx";
+import Checkout from "./routes/checkout/Checkout.jsx";
+import NotFound from "./routes/not-found/NotFound.jsx";
+import Order from "./routes/order/Order.jsx";
 import products_database from "./database/firebase.js"
 import { collection, getDocs } from 'firebase/firestore/lite';
 
