@@ -12,6 +12,7 @@ header {
 }
 header ul a {
     text-decoration: none;
+    color: var(--c-text);
 }
 
 header ul {
@@ -25,7 +26,7 @@ header ul {
     font-size: 1rem;
     justify-content: center;
 }
-header ul li:hover {
+header ul li a:hover {
     color: var(--c-primary);
     transition: all ease-in-out 0.3s;
 }

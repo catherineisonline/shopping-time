@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { categoriesObj } from "../../data/all-products";
 
-const CategoryMenu = ({  changeCategory, activeCategory, closeMenu }) => {
+const CategoryMenu = ({ changeCategory, activeCategory, closeMenu }) => {
   const [allCategories, setAllCategories] = useState([]);
 
   const getCategories = () => {
@@ -11,31 +11,35 @@ const CategoryMenu = ({  changeCategory, activeCategory, closeMenu }) => {
   useEffect(() => {
     getCategories()
   }, []);
-  
+
   return (
     <ul>
-      <NavLink
-        to="/"
-        onClick={() => {
-          changeCategory("");
-          closeMenu();
-        }}
-        className="home-link">
-        <li>Home</li>
-      </NavLink>
-      {allCategories.map((category) => (
+      <li>
         <NavLink
-          to={`/store/${category.name}`}
-          key={category.id}
-          className={activeCategory === category.name
-            ? "active-category-link"
-            : "inactive-category-link"}>
-          <li
-            onClick={() => {
-              changeCategory(category.name);
-              closeMenu();
-            }}>{category.name}</li>
+          to="/"
+          onClick={() => {
+            changeCategory("");
+            closeMenu();
+          }}
+          className="home-link">
+          Home
         </NavLink>
+      </li>
+      {allCategories.map((category) => (
+        <li
+          key={category.id}
+          onClick={() => {
+            changeCategory(category.name);
+            closeMenu();
+          }}>
+          <NavLink
+            to={`/store/${category.name}`}
+            className={activeCategory === category.name
+              ? "active-category-link"
+              : "inactive-category-link"}>
+            {category.name}
+          </NavLink>
+        </li>
       ))}
     </ul>
   );
