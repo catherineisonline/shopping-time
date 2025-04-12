@@ -37,9 +37,7 @@ Below is a comprehensive overview of the functionalities that the website offers
 - Use Firebase to save data externally
 
 
-## Getting Started with Create React App
-
-This project was originally bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and now migrated to [Vite](https://vite.dev/).
+## Getting Started
 
 To get started you need to:
 
