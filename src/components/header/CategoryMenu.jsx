@@ -22,7 +22,7 @@ const CategoryMenu = ({ changeCategory, activeCategory, closeMenu }) => {
             closeMenu();
           }}
           className="home-link">
-          Home
+          Homedddd
         </NavLink>
       </li>
       {allCategories.map((category) => (
